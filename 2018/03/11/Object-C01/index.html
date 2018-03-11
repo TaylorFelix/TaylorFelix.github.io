@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: IOS | 
+            Object-C入门(一) | 
         
         Felix
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Object-C">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Felix">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/IOS/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/03/11/Object-C01/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Felix">
@@ -232,13 +232,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/IOS/">
+    <meta property="og:url" content="http://yoursite.com/2018/03/11/Object-C01/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: IOS | Felix">
+    <meta property="og:title" content="Object-C入门(一) | Felix">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="Object-C"> 
 
+    
+        <meta property="article:published_time" content="Sun Mar 11 2018 20:27:52 GMT+0800">
+        <meta property="article:modified_time" content="Sun Mar 11 2018 20:29:17 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,13 +249,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/IOS/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/03/11/Object-C01/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/03/11/Object-C01/index.html",
+    "headline": "Object-C入门(一)",
+    "datePublished": "Sun Mar 11 2018 20:27:52 GMT+0800",
+    "dateModified": "Sun Mar 11 2018 20:29:17 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Felix",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "愿我还有那烫死人的热情"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Felix",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Object-C",
+    "description": "",
+}
+</script>
 
 
     
@@ -286,161 +319,341 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简单的应用"><span class="post-toc-number">1.</span> <span class="post-toc-text">简单的应用</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/28/IOS-2/">IOS开发学习(二)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            关于运算符与表达式的学习
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/28/IOS-2/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 28, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Study/">Study</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/26/IOS-1/">IOS开发学习(一)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            C程序的结构与变量
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/26/IOS-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Study/">Study</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Object-C入门(一)
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Felix</strong>
+        <span>3月 11, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACcUlEQVR42u3aSW7DMBAEQP//084DAsnd3LygdDICOWLpMEM35/H86euBh4eHh4eHh4f3YbxHfP3/1tXnsfuvvlWvDQ8PD+8I70WpnXjw1SLuX8fU2vDw8PAO8q4WdF/6229d3TPWQvDw8PC+l3ffNpLivuwF4eHh4X08r92IJ20ADw8P71t4yUKTRY+1kORZ27MWPDw8vJiXh7DnPx8938PDw8MLePVIUzwokG+R8zZQD13h4eHhbeDlhbjdNLfNJvl7EoXg4eHh7ea1oUMeRrRPGWs5xZYaDw8PbykvKf11gR4aBZjZyuPh4eGd4dUh6aIDs7H4eHB0AA8PD28b7/7xyRIT9vzoVR3j4uHh4S3ltSHCWKHP7082zS/Wg4eHh3eENx8rRDFBGUYkq5rKWvDw8PCGePnP/rw0jwXEbftZ9osBDw8PbxEvjx7aF5G3jbbZ4OHh4Z3kjRX0tVFsPmJVH4Dh4eHhbeMVx/NLw9z2dddDV3h4eHhLeWMb33b7m5f4PLyoz/fw8PDwlvKSTXBbxMcGXvMAFw8PD+9dvPkCnSw032S3JDw8PLx38Z63Vz5e0C5lphnUWQseHh7eZl7CbjfcOb4Nf/Hw8PDexWs3tfkw1kxEW0cheHh4eJt57ZWPF4zFu/noQNQY8PDw8Dbw5otyGzG0TSjfcOPh4eGd5CUFPYlcZwYL2sZQjA7g4eHhbePNHGvl7ST//3nYgYeHh/ddvDyWHRsLaAcI8PDw8D6TN7btbkPewbAYDw8P7yAvCSPyWDY6rJpuM3h4eHjv4rURQNsw2uO0tl3h4eHhneT93oWHh4eHh4eHh/cB1x985F3JVWM7qgAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Object-C/">Object-C</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/03/11/Object-C01/" class="leancloud-views_num" data-flag-title="Object-C入门(一)">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Object-C入门(一)&url=http://yoursite.com/2018/03/11/Object-C01/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Object-C入门(一)&url=http://yoursite.com/2018/03/11/Object-C01/index.html&via=Felix" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/03/11/Object-C01/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/03/11/Object-C01/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Felix&title=Object-C入门(一)&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/03/11/Object-C01/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2018/03/11/Object-C01/index.html&text=Object-C入门(一)" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>object-c中类、对象和方法的简单应用与实现</p>
+<h2 id="简单的应用"><a href="#简单的应用" class="headerlink" title="简单的应用"></a>简单的应用</h2><pre><code>//main.m
+#import &lt;Foundation/Foundation.h&gt;
+
+//----@interface部分----
+//用于描述类和类的方法,为类声明实例变量
+
+@interface Fraction: NSObject
+
+-(void) print;     //通知编译器这是一个实例方法
+//-(int) currentAge 可以声明返回值的类型。
+-(void) setNumerator:(int) n;
+//不返回值的实例方法，定义参数名n，将方法传递给n这个整形参数，且没有返回值。
+-(void) setDenominator:(int) d;
+
+@end
+
+//----@implementation部分----
+//用于描述数据（类对象的实例变量存储的数据）
+@implementation Fraction
+{
+    int numerator;
+    int denominator;
+    //指定哪种类型的数据将要存储到Fraction中
+}
+-(void) print;
+{
+    NSLog(@&quot;%i/%i&quot;,numerator,denominator);
+}
+-(void) setNumerator: (int) n
+{
+    numerator = n;
+}
+-(void) setDenominator: (int) d
+{
+    denominator = d;
+}
+
+@end
+
+//----program部分----
+//实现程序预期的目的，包含解决特定问题的代码，可跨越多个文件
+int main (int argc, char * argv[])
+{
+    @autoreleasepool {
+        Fraction *myFraction;
+        //*表明myFraction是Fraction对象的引用（或指针）
+
+        //创建一个分数实例
+        myFraction = [Fraction alloc];
+        //alloc为新分数分配内存存储空间
+        myFraction = [myFraction init];
+        //初始化实例变量
+        //简写形式 Fraction *myFraction = [[Fraction alloc] init];
+
+        //设置分数为1/3
+        [myFraction setNumerator: 1];
+        [myFraction setDenominator: 3];
+
+        //使用打印方法打印结果
+        NSLog(@&quot;The value of myFraction is:&quot;);
+        [myFraction print];
+    }
+    return 0;
+
+}
+</code></pre>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz",
+        appKey: "MyrPvAMueBwQRnN1wicjYCr4",
+        placeholder: "来都来了，不留下点痕迹么",
+        pageSize:'10',
+        avatar:'wavatar',
+        lang:'zh-cn'
+    });
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/03/10/Csharp-1/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -642,6 +855,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
