@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="评论功能上线啦！"><meta name="keywords" content="Valine"><meta name="author" content="Felix,undefined"><meta name="copyright" content="Felix"><title>评论功能上线啦！ | 缄默</title><link rel="shortcut icon" href="/favicon.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.0"><script>var GLOBAL = { 
+  root: '/',
+  algolia: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  localSearch: {"labels":{"input_placeholder":"你想找啥呢？","hits_empty":"没有查找到哦~: ${query}"},"path":"search.xml"}
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#评论及流量采集已上线"><span class="toc-number">1.</span> <span class="toc-text">评论及流量采集已上线</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Felix</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">21</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">15</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">10</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" href="https://blog.viosey.com/" target="_blank">Viosey</a><a class="author-info-links__name text-center" href="http://chuangzaoshi.com/" target="_blank">创造狮</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/background.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">缄默</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">主页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">评论功能上线啦！</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-02-26</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Study/">Study</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">480</span><span class="post-meta__separator">|</span><span>阅读时长: 2 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div id="post-content"><p>评论功能的实现效果</p>
+<h2 id="评论及流量采集已上线"><a href="#评论及流量采集已上线" class="headerlink" title="评论及流量采集已上线"></a>评论及流量采集已上线</h2><hr>
+<p>经过反复测试及部分崩坏，终于搞定了评论功能，先说一下评论需求开始的考量。</p>
+<p>以下个人说法仅经过material主题测试。</p>
+<hr>
+<p> <strong>1. Disqus</strong><br> 国外评论系统，需科学上网，pass</p>
+<hr>
+<p> <strong>2. 畅言</strong><br> 域名需备案，暂时pass</p>
+<hr>
+<p> <strong>3. 来必利</strong><br> 韩国人开发的评论系统，测试着用了一下，先说安装方法吧。</p>
+<ol>
+<li>注册来必利账号</li>
+<li>进入账号后台</li>
+<li>点击代码管理</li>
+<li>拷贝data-uid=”此处未需要拷贝的内容”&gt;</li>
+<li>进入主题内的_config.yml配置文件</li>
+<li>将comment: use:后改为livere</li>
+<li>添加livere_data_uid:在后加入复制内容</li>
+</ol>
+<p>以上功能请务必<strong>确保_widget/comment/下有livere</strong>这个文件夹</p>
+<p>接下来说一下这个评论系统的尴尬之处</p>
+<ol>
+<li>在refer处添加的评论系统，加载速度感人</li>
+<li>评论必须登录第三方账号，游客类型恐怕留言兴趣都没有（哪有游客？不存在的）</li>
+<li>丑</li>
+</ol>
+<hr>
+<p> <strong>4. valine</strong></p>
+<p> 主人公登场！<br> 这个评论系统应该是我个人感觉最满意的！<br> 无需登录！界面简洁！流量记录！<br> 迫不及待的安利起来了</p>
+<ol>
+<li>注册leancloud账号</li>
+<li>进入控制台</li>
+<li>创建应用（默认JavaScript SDK）</li>
+<li>创建class，名称为Counter</li>
+<li><strong>ACL权限必须无限制</strong></li>
+<li>进入主题内的_config.yml配置文件</li>
+<li>将comment: use:后改为valine</li>
+<li>添加valine_leancloud_appId和valine_leancloud_appKey</li>
+<li>appId和appKey在leancloud设置-应用key里可以找到</li>
+<li>顺便添加流量采集与流量分析</li>
+<li>修改leadcloud enable:true（默认为false）</li>
+<li>配置app_id与app_key，与valine一致。</li>
+</ol>
+<p>以上功能请务必<strong>确保_widget/comment/下有valine</strong>这个文件夹</p>
+<hr>
+<p>至此博客评论及流量采集已经完成，撒花~~~</p>
+<p>作者 Felix<br>2018 年 02月 26日    </p>
+</div></article><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Valine/">Valine</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2018/02/26/IOS-1/"><i class="fa fa-chevron-left">  </i><span>IOS开发学习(一)</span></a></div><div class="next-post pull-right"><a href="/2018/02/26/Blog-2/"><span>记一次Hexo同时部署GitHub和Coding</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz',
+  appKey:'MyrPvAMueBwQRnN1wicjYCr4',
+  placeholder:'来都来了，不留下点痕迹么',
+  avatar:'wavatar',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2018 By Felix</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.0"></script><script src="/js/fancybox.js?version=1.5.0"></script><script src="/js/sidebar.js?version=1.5.0"></script><script src="/js/copy.js?version=1.5.0"></script><script src="/js/fireworks.js?version=1.5.0"></script><script src="/js/transition.js?version=1.5.0"></script><script src="/js/scroll.js?version=1.5.0"></script><script src="/js/head.js?version=1.5.0"></script></body></html>
