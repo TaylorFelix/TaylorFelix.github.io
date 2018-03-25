@@ -1,8 +1,8 @@
 ### 个人小站
 
-基于Hexo+Next主题（感谢大佬
+基于Hexo+Material主题（感谢大佬
 
 个人博客地址：  
-- GitHub: [缄默](https://taylorfelix.github.io/)
+- GitHub: [寒冷最灼人](https://taylorfelix.github.io/)
 
-- Coding: [缄默](http://taylorfelix.coding.me/)
+- Coding: [寒冷最灼人](http://taylorfelix.coding.me/)
