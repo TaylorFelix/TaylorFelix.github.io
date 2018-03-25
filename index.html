@@ -1,3176 +1,1643 @@
 <!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
 
 
-<html class="theme-next mist" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
 
 
 
 
 
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        寒冷最灼人
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#E74C3F">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
   
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #E74C3F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #E74C3F !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #E74C3F !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #E74C3F !important;
+  }
+
+  .toTop {
+    background: #E74C3F !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #E74C3F;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #E74C3F;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #E74C3F;
+  }
+
+  .post-toc a:hover {
+    color: #E74C3F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F6F6F6;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
 
 
 
 
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
 
 
+<!-- Import Font -->
+<!-- Import Roboto -->
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
+<!-- Import Material Icons -->
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="缄默" type="application/atom+xml" />
-
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
 
 
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
 
-<meta name="description" content="Since there your elements assemble">
-<meta property="og:type" content="website">
-<meta property="og:title" content="缄默">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="缄默">
-<meta property="og:description" content="Since there your elements assemble">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="缄默">
-<meta name="twitter:description" content="Since there your elements assemble">
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="寒冷最灼人">
+    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-navbutton-color" content="#E74C3F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="寒冷最灼人">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
+    <!-- Site Verification -->
+    
+    
 
+    <!-- RSS -->
+    
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="寒冷最灼人">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "寒冷最灼人",
+        "logo": "/img/favicon.png"
     },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+    "url": "http://yoursite.com",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/img/favicon.png"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    },
+    "description": ""
+}
 </script>
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
 
+    
 
+    <!-- Analytics -->
+    
+    
+    
 
-
-
-  <title>缄默</title>
-  
-
-
-
-
-
-
-
+    <!-- Custom Head -->
+    
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
     
-  
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-    <a href="https://github.com/TaylorFelix" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-    
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">缄默</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+        <!-- Paradox Header -->
+        <!-- Daily pic -->
+<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
+
+    <!-- Pic & Slogan -->
+    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.jpg)">
+        <p class="index-top-block-slogan"><a href="/about">
+        
+            
+                To make the stars come out
+            
+        
+        </a></p>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
+    <!-- Avatar & Name -->
+    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+        <!-- Author Avatar -->
+        <div id="author-avatar">
+            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
+        </div>
+        <div>
+            <strong>Felix</strong>
+        </div>
+    </div>
+</div>
+
+        <!-- Blog info -->
+<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
+
+    <!-- Search -->
+    
+
+
+
+
+    <!-- Local -->
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
+        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
+            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
+        </label>
+
+        <form autocomplete="off" id="search-form" class="mdl-textfield__expandable-holder">
+            <input type="text" id="search" class="form-control mdl-textfield__input search-input" name="q" results="0" placeholder=""/>
+            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+        </form>
+    </div>
+    <div id="local-search-result"></div>
+
+
+
+    <!-- LOGO -->
+    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
+        <a href="#" target="_blank">
+            <img src="/img/logo.png" alt="logo" />
+        </a>
+    </div>
+
+    <!-- Infomation -->
+    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+        <!-- Blog Title -->
+        <div>
+            <strong>寒冷最灼人</strong>
+        </div>
+        <div class="section-spacer"></div>
+
+        <!-- Pages -->
+        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">view_carousel</i>
+            <span class="visuallyhidden">Pages</span>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
+            
+                <a class="index_share-link" href="/timeline" title="时间线">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        时间线
+                    </li>
+                </a>
+            
+                <a class="index_share-link" href="/about" title="关于我">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        关于我
+                    </li>
+                </a>
+            
+                <a class="index_share-link" href="/tags" title="标签云">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        标签云
+                    </li>
+                </a>
+            
+                <a class="index_share-link" href="/links" title="友情链接">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        友情链接
+                    </li>
+                </a>
+            
+        </ul>
+
+        <!-- Menu -->
+        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">more_vert</i>
+            <span class="visuallyhidden">show menu</span>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
+            
+                <!-- All Site UV -->
+                <a class="index_share-link" href="#">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        <span id="busuanzi_container_site_uv">
+                            <span id="busuanzi_value_site_uv"></span>&nbsp;浏览量
+                        </span>
+                    </li>
+                </a>
+            
+
+            
+
+            
+                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=寒冷最灼人&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        分享到微博
+                    </li>
+                </a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+                <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=寒冷最灼人&title=寒冷最灼人&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com" target="_blank">
+                    <li class="mdl-menu__item">
+                        分享到 QQ
+                    </li>
+                </a>
+            
+
+            
+        </ul>
+    </div>
+</div>
+
+    
+    <div class="locate-thumbnail-symbol"></div>
+
+    <!-- Pin on top -->
+    
+
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/20/Whisper-3/">最近着手换一套博客主题</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            应该架构还是采用Hexo
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/20/Whisper-3/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 20, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Whisper/">Whisper</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/19/SqlServer01/">转换思路，抛弃拼接，参数传值</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            拼接方式写Sql语句最近真是让我头大啊
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/19/SqlServer01/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 19, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/SqlServer/">SqlServer</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/19/Whisper-2/">备案那些事儿</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            最近在忙备案的事情
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/19/Whisper-2/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 19, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Whisper/">Whisper</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/19/MyResume/">MyResume</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            很久没做过简历了
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/19/MyResume/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 19, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/简历/">简历</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/19/Vuejs02/">Vuejs学习笔记02</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            指令与事件
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/19/Vuejs02/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 19, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Vuejs/">Vuejs</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/17/Vuejs01/">Vuejs学习笔记01</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            实例与数据绑定
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/17/Vuejs01/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 17, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Vuejs/">Vuejs</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/12/Object-C03/">Object-C入门(三)</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            循环结构的使用似乎都是一个样子  
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/12/Object-C03/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 12, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Object-C/">Object-C</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/12/Object-C02/">Object-C入门(二)</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            数据类型及常量
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/12/Object-C02/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 12, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Object-C/">Object-C</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/11/Object-C01/">Object-C入门(一)</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            object-c中类、对象和方法的简单应用与实现
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/11/Object-C01/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 11, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Object-C/">Object-C</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/03/10/Csharp-1/">关于sql server的增删改查</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            一个简单的报警维护页面
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/03/10/Csharp-1/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
+            </div>
+            <div>
+                <strong>Felix</strong>
+                <span>3月 10, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/C/">C#</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+    <!-- Index nav -->
+        <nav class="material-nav mdl-cell mdl-cell--12-col">
+            <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_forward</i></button></a>
+        </nav>
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 23 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
     </button>
-  </div>
-</div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Felix's avatar">
     </div>
-  </div>
-  <div id="local-search-result"></div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        m18896825060@163.com
+        <b class="caret"></b>
+    </a>
 </div>
 
 
-
-    </div>
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
             
-  <section id="posts" class="posts-expand">
+                <li>
+                    <a href="mailto: 1023614047@qq.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/20/Whisper-3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
     
-      <header class="post-header">
 
+    <!-- Archives  -->
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">subject</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/C/">C#<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Object-C/">Object-C<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/PHP/">PHP<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/SqlServer/">SqlServer<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Study/">Study<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/Vuejs/">Vuejs<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Whisper/">Whisper<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Work/">Work<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/简历/">简历<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
         
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间线">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间线
+            </a>
+        </li>
         
-          <h1 class="post-title" itemprop="name headline">
+    
+        <li>
+            <a href="/about" title="关于我">
                 
-                <a class="post-title-link" href="/2018/03/20/Whisper-3/" itemprop="url">最近着手换一套博客主题</a></h1>
+                    <i class="material-icons sidebar-material-icons">favorite</i>
+                
+                关于我
+            </a>
+        </li>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T21:19:53+08:00">
-                2018-03-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Whisper/" itemprop="url" rel="index">
-                    <span itemprop="name">Whisper</span>
-                  </a>
-                </span>
-
+    
+        <li>
+            <a href="/tags" title="标签云">
                 
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友情链接">
                 
-              
-            </span>
-          
+                友情链接
+            </a>
+        </li>
+        
+    
 
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/20/Whisper-3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/20/Whisper-3/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
+    <!-- Article Number  -->
+    
+</ul>
 
-          
-          
-             <span id="/2018/03/20/Whisper-3/" class="leancloud_visitors" data-flag-title="最近着手换一套博客主题">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
 
-          
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  71
-                </span>
-              
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
 
-              
-                <span class="post-meta-divider">|</span>
-              
+<!-- Sidebar Divider -->
 
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
+    <div class="sidebar-divider"></div>
 
-          
 
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
         </div>
-      </header>
-    
+    </a>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-      
+<!-- Help & Support -->
+<!--
 
-      
-        
-          
-            <p>应该架构还是采用Hexo</p>
-<h4 id="关于为什么会有这个想法"><a href="#关于为什么会有这个想法" class="headerlink" title="关于为什么会有这个想法"></a>关于为什么会有这个想法</h4><p>或许是累了？或许是厌倦了随机缩略图，准备更大气一点<br>目前还在四处收集东西，争取早日完工吧<br>可怜我又要重新建分支了–</p>
+-->
 
-          
-        
-      
-    </div>
-    
-    
-    
+<!-- Feedback -->
+<!--
 
-    
+-->
 
-    
+<!-- About Theme -->
+<!--
 
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/SqlServer01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/SqlServer01/" itemprop="url">转换思路，抛弃拼接，参数传值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T20:30:36+08:00">
-                2018-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SqlServer/" itemprop="url" rel="index">
-                    <span itemprop="name">SqlServer</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/19/SqlServer01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/19/SqlServer01/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/19/SqlServer01/" class="leancloud_visitors" data-flag-title="转换思路，抛弃拼接，参数传值">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  498
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>拼接方式写Sql语句最近真是让我头大啊</p>
-<h3 id="最近在写有关SqlServer增删改查多表联动"><a href="#最近在写有关SqlServer增删改查多表联动" class="headerlink" title="最近在写有关SqlServer增删改查多表联动"></a>最近在写有关SqlServer增删改查多表联动</h3><p>拼接有点烦啊，虽然构建起来简单，但是问题真是层出不穷（或许是因为我太菜了<br>考虑了好多遍，然后把全部都改成了参数方式，话说真的简单了很多<br>个人理解可能会有点青涩，但所有不都是从青涩起步的<br>话不多说，先贴上我写的来看看<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">if (e.CommandName == &quot;Delete&quot;)</span><br><span class="line">&#123;</span><br><span class="line">  string ProgramName = Grid1.DataKeys[e.RowIndex][0].ToString();</span><br><span class="line">  SqlParameter[] sqlparams = new SqlParameter[1];</span><br><span class="line">  sqlparams[0] = new SqlParameter(&quot;ProgramName&quot;, ProgramName);</span><br><span class="line">  string sql = &quot;select ProgramName,Manager from ProgramError_ProgramManager Where ProgramName=@ProgramName&quot;;</span><br><span class="line">  DataTable dt = DbHelperSQL.Query(sql, sqlparams).Tables[0];</span><br><span class="line">  if (dt.Rows.Count == 0)</span><br><span class="line">    &#123;</span><br><span class="line">      string sql2 = &quot;delete from ProgramError_ProgramName where ProgramName=@ProgramName&quot;;</span><br><span class="line">      DbHelperSQL.ExecuteSql(sql2, sqlparams);</span><br><span class="line">      string sql3 = &quot;delete from ProgramError_AlertPeople where ProgramName=@ProgramName&quot;;</span><br><span class="line">      DbHelperSQL.ExecuteSql(sql3, sqlparams);</span><br><span class="line">      Grid1Bind();</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">      Alert.Show(&quot;該類型下已有對應管理員，請先刪除類型對應管理員再執行刪除操作！&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>一个简单的条件判断，当执行删除操作时，先判断另一张表是否存在对应管理员，存在则不允许删除<br>本来准备Sql2和Sql3用一句解决的，但是测试几遍都没成，还需要多加学习啊- -<br>还有一个关于分页的写法，记录一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">sql = &quot;select ID,ProgramName,Manager from ProgramError_ProgramManager&quot;;</span><br><span class="line">string sql2 = &quot;select isnull(count(*),0) from (&quot; + sql + &quot;) ProgramError_ProgramManager&quot;;</span><br><span class="line">DataTable dtcount = DbHelperSQL.Query(sql2).Tables[0];</span><br><span class="line">Grid1.RecordCount = Convert.ToInt32(dtcount.Rows[0][0].ToString());</span><br><span class="line"></span><br><span class="line">int startIndex = Grid1.PageIndex * Convert.ToInt32(ddlGridPageSize.SelectedValue) + 1;</span><br><span class="line">int EndIndex = (Grid1.PageIndex + 1) * Convert.ToInt32(ddlGridPageSize.SelectedValue);</span><br><span class="line">sql = &quot;SELECT * FROM (SELECT ROW_NUMBER() OVER (order by ProgramName) as row,* from (&quot; + sql + &quot; )A )B where row between &quot; + startIndex.ToString() + &quot; and &quot; + EndIndex.ToString();</span><br><span class="line">DataSet ds = DbHelperSQL.Query(sql);</span><br><span class="line">Grid1.DataSource = ds.Tables[0];</span><br><span class="line">Grid1.DataBind();</span><br><span class="line"></span><br><span class="line">sql = &quot;select ProgramName from ProgramError_ProgramName&quot;;</span><br><span class="line">DataTable dt = DbHelperSQL.Query(sql).Tables[0];</span><br><span class="line">ddl_ProgramName.DataTextField = &quot;ProgramName&quot;;</span><br><span class="line">ddl_ProgramName.DataValueField = &quot;ProgramName&quot;;</span><br><span class="line">ddl_ProgramName.DataSource = dt;</span><br><span class="line">ddl_ProgramName.DataBind();</span><br></pre></td></tr></table></figure></p>
-<p>这个学习过程，说起来是挺轻松的，可能只是最简单的sql操作，还是学到了不少，很开心</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/Whisper-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/Whisper-2/" itemprop="url">备案那些事儿</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T20:21:32+08:00">
-                2018-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Whisper/" itemprop="url" rel="index">
-                    <span itemprop="name">Whisper</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/19/Whisper-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/19/Whisper-2/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/19/Whisper-2/" class="leancloud_visitors" data-flag-title="备案那些事儿">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  119
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近在忙备案的事情</p>
-<h2 id="真的过程是很繁琐"><a href="#真的过程是很繁琐" class="headerlink" title="真的过程是很繁琐"></a>真的过程是很繁琐</h2><p>这前后差不多一个星期，终于把材料寄了过去<br>话说阿里云速度是挺快的，照片审核秒过<br>不过我有个尴尬的地方，我只买了个轻量服务器，没有把项目部署到上面<br>如果查网站内容我这就坑了–<br>我真的只是准备目前把域名解析到GitHub</p>
-<h2 id="对了，域名是"><a href="#对了，域名是" class="headerlink" title="对了，域名是"></a>对了，域名是</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firelight.top</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/MyResume/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/MyResume/" itemprop="url">MyResume</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T20:20:22+08:00">
-                2018-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/简历/" itemprop="url" rel="index">
-                    <span itemprop="name">简历</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/19/MyResume/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/19/MyResume/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/19/MyResume/" class="leancloud_visitors" data-flag-title="MyResume">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  396
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>很久没做过简历了</p>
-<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><ul>
-<li>杨金科/男/1995</li>
-<li>本科/苏州大学应用技术学院软件工程（嵌入式培养） </li>
-<li>应届生</li>
-<li>技术博客：<a href="https://taylorfelix.github.io/" target="_blank" rel="noopener">https://taylorfelix.github.io/</a></li>
-<li>Github：<a href="https://github.com/TaylorFelix" target="_blank" rel="noopener">https://github.com/TaylorFelix</a></li>
-<li>期望职位：WEB前端工程师</li>
-<li>期望薪资：税前月薪6k~10k</li>
-<li>联系电话：18896825060<ul>
-<li>Email：<a href="mailto:m18896825060@163.com" target="_blank" rel="noopener">m18896825060@163.com</a></li>
-<li>微信：a1023614047</li>
-</ul>
-</li>
-</ul>
-<h1 id="实习情况"><a href="#实习情况" class="headerlink" title="实习情况"></a>实习情况</h1><h2 id="昆山淳华科技公司-（-2018年1月-2018年4月-）"><a href="#昆山淳华科技公司-（-2018年1月-2018年4月-）" class="headerlink" title="昆山淳华科技公司 （ 2018年1月 ~ 2018年4月 ）"></a>昆山淳华科技公司 （ 2018年1月 ~ 2018年4月 ）</h2><h2 id="企业微信Oauth2验证"><a href="#企业微信Oauth2验证" class="headerlink" title="企业微信Oauth2验证"></a>企业微信Oauth2验证</h2><p>结合企业微信官方开发文档，采用php调用API，实现了企业微信加入先跳转到企业自己页面进行身份验证，验证成功后加入企业微信。在这个项目中，关于接口调用及验证实现加深了我对API的理解及Json的使用。</p>
-<h2 id="C-SqlServer进行WEB页面维护"><a href="#C-SqlServer进行WEB页面维护" class="headerlink" title="C#+SqlServer进行WEB页面维护"></a>C#+SqlServer进行WEB页面维护</h2><p>接手到此项目，从对C#一无所知，到熟练构建WEB页面与数据库多表查询删除操作，使我对于数据库操作了解更加深入。</p>
-<h1 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h1><h2 id="基于SpringMVC水上乐园电子门票后台系统"><a href="#基于SpringMVC水上乐园电子门票后台系统" class="headerlink" title="基于SpringMVC水上乐园电子门票后台系统"></a>基于SpringMVC水上乐园电子门票后台系统</h2><p>毕业设计课题，小组开发，主要负责UI，使用H5+Bootstrap进行页面构建，参与数据表设计。</p>
-<h2 id="个人博客（TaylorFelix-github-io）"><a href="#个人博客（TaylorFelix-github-io）" class="headerlink" title="个人博客（TaylorFelix.github.io）"></a>个人博客（TaylorFelix.github.io）</h2><p>个人博客搭建，博客功能完善，Markdown博客书写，域名备案。</p>
-<h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><ul>
-<li>Web开发：PHP</li>
-<li>前端框架：Bootstrap/HTML5/Vuejs</li>
-<li>数据库相关：MySQL/SqlServer</li>
-<li>版本管理、文档和自动化部署工具：Git/Composer</li>
-</ul>
-<hr>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢您花时间阅读我的简历，期待能够得到同您面谈/面试的机会。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/Vuejs02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/Vuejs02/" itemprop="url">Vuejs学习笔记02</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T19:35:11+08:00">
-                2018-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vuejs/" itemprop="url" rel="index">
-                    <span itemprop="name">Vuejs</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/19/Vuejs02/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/19/Vuejs02/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/19/Vuejs02/" class="leancloud_visitors" data-flag-title="Vuejs学习笔记02">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  329
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>指令与事件</p>
-<h3 id="指令与事件"><a href="#指令与事件" class="headerlink" title="指令与事件"></a>指令与事件</h3><p>指令的主要职责就是当其表达式的值改变时，相应地将某些行为应用到DOM上。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line"> &lt;p v-if=&quot;show&quot;&gt;显示文本&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      show: true</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>当数据show的值为true时，p元素会被插入。数据驱动DOM是Vue.js的核心理念。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;a v-bind:href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">  &lt;img v-bind:src=&quot;imgUrl&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      url: &apos;https://www.github.com&apos;,</span><br><span class="line">      imgUrl: &apos;http://xxx.xxx.xx/img.png&apos;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如上，链接与图片均进行了数据绑定。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;p v-if=&quot;show&quot;&gt;显示文本&lt;/p&gt;</span><br><span class="line">  &lt;button v-on:click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      show: true</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      handleClose: function ()&#123;</span><br><span class="line">        this.show = false;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>在button按钮上，使用v-on:click给该元素绑定了一个点击事件，v-on可以监听原生的DOM事件。</p>
-<h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a v-bind:href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">&lt;img v-bind:src=&quot;imgUrl&quot;&gt;</span><br><span class="line">&lt;!--缩写为--&gt;</span><br><span class="line">&lt;a :href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">&lt;img :src=&quot;imgUrl&quot;&gt;</span><br></pre></td></tr></table></figure>
-<p>v-on可以直接用@来缩写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button v-on:click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br><span class="line">&lt;!--缩写为--&gt;</span><br><span class="line">&lt;button @click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/Vuejs01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/17/Vuejs01/" itemprop="url">Vuejs学习笔记01</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-17T19:35:05+08:00">
-                2018-03-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vuejs/" itemprop="url" rel="index">
-                    <span itemprop="name">Vuejs</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/17/Vuejs01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/17/Vuejs01/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/17/Vuejs01/" class="leancloud_visitors" data-flag-title="Vuejs学习笔记01">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  42
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>实例与数据绑定</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/10826501-ad4f7309fea2e8e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="内容截图"></p>
-<hr>
-<p>真的难受啊，无论怎么都上传不了这一篇，说是markdown编码冲突，我还在研究，只能先上图了</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/12/Object-C03/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/12/Object-C03/" itemprop="url">Object-C入门(三)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-12T20:46:00+08:00">
-                2018-03-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Object-C/" itemprop="url" rel="index">
-                    <span itemprop="name">Object-C</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/12/Object-C03/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/12/Object-C03/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/12/Object-C03/" class="leancloud_visitors" data-flag-title="Object-C入门(三)">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  194
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><ul>
-<li>for<ul>
-<li>先求初始表达式的值</li>
-<li>求循环条件的值</li>
-<li>执行组成循环体的程序语句</li>
-<li>求循环表达式的值</li>
-<li>返回到第二步<br>键盘输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scanf ();</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<p>嵌套的for循环</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for ()&#123;</span><br><span class="line">  for()&#123;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>for循环的变体</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for(i=0,j=100;i&lt;10;++i,j-=10)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>while</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while ()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>do<br>do语句只是while语句的简单转置，它把循环条件放在循环的结尾，而不是开头。</p>
-</li>
-<li><p>break语句<br>满足特定条件就退出循环</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">break;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>continue语句<br>与break语句类似，但它不会使循环结束，会跳过该句直到循环结尾处之间的所有语句。</p>
-</li>
-<li><p>switch</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">switch ()</span><br><span class="line">&#123;</span><br><span class="line">  case value1:</span><br><span class="line"></span><br><span class="line">     break;</span><br><span class="line">  case value2:</span><br><span class="line"></span><br><span class="line">     break;</span><br><span class="line">  default:</span><br><span class="line"></span><br><span class="line">     break;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/12/Object-C02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/12/Object-C02/" itemprop="url">Object-C入门(二)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-12T20:45:52+08:00">
-                2018-03-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Object-C/" itemprop="url" rel="index">
-                    <span itemprop="name">Object-C</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/12/Object-C02/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/12/Object-C02/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/12/Object-C02/" class="leancloud_visitors" data-flag-title="Object-C入门(二)">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  796
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>数据类型及常量</p>
-<h2 id="简单梳理一下"><a href="#简单梳理一下" class="headerlink" title="简单梳理一下"></a>简单梳理一下</h2><ul>
-<li><p>int类型<br>整数常量由一个或多个数字的序列组成。 序列前的负号表示该值是负数。</p>
-</li>
-<li><p>float类型<br>声明为float类型的变量可以存储包含小数位的值，如果要显示浮点值，可用NSLog转换字符%f或者%g。<br>浮点常量也能用所谓的科学计数法来表示。值1.7e4代表1.7*10^4。</p>
-</li>
-<li><p>char类型<br>char变量可存储单个字符。将字符放入一对单引号中就能得到字符常量。<br>‘\n’换行符是一个合法的字符常量。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">int    integerVal =100;</span><br><span class="line">float  floatingVar =331.79;</span><br><span class="line">double doubleVar =8.44e+11;</span><br><span class="line">char   charVar =&apos;w&apos;;</span><br><span class="line"></span><br><span class="line">NSLog (@&quot;integerVal =%i&quot;,integerVal);</span><br><span class="line">NSLog (@&quot;floatingVar =%f&quot;,floatingVar);</span><br><span class="line">NSLog (@&quot;doubleVar =%e&quot;,doubleVar);</span><br><span class="line">NSLog (@&quot;doubleVar =%g&quot;,doubleVar);</span><br><span class="line">NSLog (@&quot;charVar =%c&quot;,charVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>限定词：long,long long,short,unsigned,signed</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long int factorial;</span><br></pre></td></tr></table></figure>
-<p>这句将变量factorial声明为Long的整形变量。</p>
-<ul>
-<li>id类型<br>id数据类型可存储任何类型的对象。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id graphicObject;</span><br></pre></td></tr></table></figure>
-<p>将graphicObject声明为id类型的变量。可声明方法使其具有id类型的返回值，如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-(id) newObject: (int) type;</span><br></pre></td></tr></table></figure>
-<p>这个程序行声明了一个名为newObject的实例方法，它具有type的单个整形参数并有id类型的返回值。</p>
-<h2 id="算术表达式"><a href="#算术表达式" class="headerlink" title="算术表达式"></a>算术表达式</h2><ul>
-<li><p>运算符的优先级<br>如加减乘除一致优先级</p>
-</li>
-<li><p>整数运算和一元负号运算符<br>与其他运算符相比，一元负号运算符具有更高的优先级。</p>
-</li>
-<li><p>模运算符 %<br>模运算符的优先级与乘法和除法的优先级相等。</p>
-</li>
-<li><p>整型值和浮点值的相互转换</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">i1 = f1; //浮点数到整数的转换</span><br><span class="line">NSLog(@&quot;%f assigned to an int produces %i&quot;,f1,i1);</span><br><span class="line"></span><br><span class="line">f1 = i2; //整数到浮点数的转换</span><br><span class="line">NSLog(@&quot;%i assigned to a float produces %f&quot;,i2,f1);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>类型转换运算符<br>类型转换运算符通常用于将一般id类型的对象转换成特定类的对象。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">id myNumber;</span><br><span class="line">Fraction *myFraction;</span><br><span class="line">...</span><br><span class="line">myFraction = (Fraction *) myNumber;</span><br></pre></td></tr></table></figure>
-<p>将id变量myNumber的值强制类型转换成一个Fraction对象。转换结果赋给Fraction变量myFraction。</p>
-<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p>Object-C语言允许使用以下的一般格式将算术运算符和赋值运算符合并到一起</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">op=</span><br></pre></td></tr></table></figure>
-<p>在这个格式中，op是任何算术运算符，还可以是任何用于移位和屏蔽操作的位运算符。</p>
-<h2 id="Calculator类"><a href="#Calculator类" class="headerlink" title="Calculator类"></a>Calculator类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;Foundation/Foundation.h&gt;</span><br><span class="line"></span><br><span class="line">@interface Calculator: NSObject</span><br><span class="line"></span><br><span class="line">-(void) setAccumulator: (double) value;</span><br><span class="line">-(void) clear;</span><br><span class="line">-(double) accumulator;</span><br><span class="line"></span><br><span class="line">-(void) add: (double) value;</span><br><span class="line">-(void) subtract: (double) value;</span><br><span class="line">-(void) multiply: (double) value;</span><br><span class="line">-(void) divide: (double) value;</span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">@implementation Calculator</span><br><span class="line">&#123;</span><br><span class="line">    double accumulator;</span><br><span class="line">&#125;</span><br><span class="line">-(void) setAccumulator:(double)value</span><br><span class="line">&#123;</span><br><span class="line">    accumulator=value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(void) clear</span><br><span class="line">&#123;</span><br><span class="line">    accumulator = 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(double) accumulator</span><br><span class="line">&#123;</span><br><span class="line">    return accumulator;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(void) add:(double) value</span><br><span class="line">&#123;</span><br><span class="line">    accumulator +=value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(void) subtract:(double)value</span><br><span class="line">&#123;</span><br><span class="line">    accumulator -=value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(void) multiply:(double)value</span><br><span class="line">&#123;</span><br><span class="line">    accumulator *=value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(void) divide:(double)value</span><br><span class="line">&#123;</span><br><span class="line">    accumulator /=value;</span><br><span class="line">&#125;</span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">int main (int argc, char *argv[])</span><br><span class="line">&#123;</span><br><span class="line">    @autoreleasepool &#123;</span><br><span class="line">        Calculator *deskCalc = [[Calculator alloc] init];</span><br><span class="line"></span><br><span class="line">        [deskCalc setAccumulator:100.0];</span><br><span class="line">        [deskCalc add:200.];</span><br><span class="line">        [deskCalc divide:15.0];</span><br><span class="line">        [deskCalc subtract:10.0];</span><br><span class="line">        [deskCalc multiply:5];</span><br><span class="line">        NSLog(@&quot;The result is %g&quot;,[deskCalc accumulator]);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/11/Object-C01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/11/Object-C01/" itemprop="url">Object-C入门(一)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-11T20:27:52+08:00">
-                2018-03-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Object-C/" itemprop="url" rel="index">
-                    <span itemprop="name">Object-C</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/11/Object-C01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/11/Object-C01/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/11/Object-C01/" class="leancloud_visitors" data-flag-title="Object-C入门(一)">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  378
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>object-c中类、对象和方法的简单应用与实现</p>
-<h2 id="简单的应用"><a href="#简单的应用" class="headerlink" title="简单的应用"></a>简单的应用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">//main.m</span><br><span class="line">#import &lt;Foundation/Foundation.h&gt;</span><br><span class="line"></span><br><span class="line">//----@interface部分----</span><br><span class="line">//用于描述类和类的方法,为类声明实例变量</span><br><span class="line"></span><br><span class="line">@interface Fraction: NSObject</span><br><span class="line"></span><br><span class="line">-(void) print;     //通知编译器这是一个实例方法</span><br><span class="line">//-(int) currentAge 可以声明返回值的类型。</span><br><span class="line">-(void) setNumerator:(int) n;</span><br><span class="line">//不返回值的实例方法，定义参数名n，将方法传递给n这个整形参数，且没有返回值。</span><br><span class="line">-(void) setDenominator:(int) d;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">//----@implementation部分----</span><br><span class="line">//用于描述数据（类对象的实例变量存储的数据）</span><br><span class="line">@implementation Fraction</span><br><span class="line">&#123;</span><br><span class="line">    int numerator;</span><br><span class="line">    int denominator;</span><br><span class="line">    //指定哪种类型的数据将要存储到Fraction中</span><br><span class="line">&#125;</span><br><span class="line">-(void) print;</span><br><span class="line">&#123;</span><br><span class="line">    NSLog(@&quot;%i/%i&quot;,numerator,denominator);</span><br><span class="line">&#125;</span><br><span class="line">-(void) setNumerator: (int) n</span><br><span class="line">&#123;</span><br><span class="line">    numerator = n;</span><br><span class="line">&#125;</span><br><span class="line">-(void) setDenominator: (int) d</span><br><span class="line">&#123;</span><br><span class="line">    denominator = d;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">//----program部分----</span><br><span class="line">//实现程序预期的目的，包含解决特定问题的代码，可跨越多个文件</span><br><span class="line">int main (int argc, char * argv[])</span><br><span class="line">&#123;</span><br><span class="line">    @autoreleasepool &#123;</span><br><span class="line">        Fraction *myFraction;</span><br><span class="line">        //*表明myFraction是Fraction对象的引用（或指针）</span><br><span class="line"></span><br><span class="line">        //创建一个分数实例</span><br><span class="line">        myFraction = [Fraction alloc];</span><br><span class="line">        //alloc为新分数分配内存存储空间</span><br><span class="line">        myFraction = [myFraction init];</span><br><span class="line">        //初始化实例变量</span><br><span class="line">        //简写形式 Fraction *myFraction = [[Fraction alloc] init];</span><br><span class="line"></span><br><span class="line">        //设置分数为1/3</span><br><span class="line">        [myFraction setNumerator: 1];</span><br><span class="line">        [myFraction setDenominator: 3];</span><br><span class="line"></span><br><span class="line">        //使用打印方法打印结果</span><br><span class="line">        NSLog(@&quot;The value of myFraction is:&quot;);</span><br><span class="line">        [myFraction print];</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/10/Csharp-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="缄默">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/10/Csharp-1/" itemprop="url">关于sql server的增删改查</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-10T09:36:05+08:00">
-                2018-03-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index">
-                    <span itemprop="name">C#</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/10/Csharp-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/10/Csharp-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/03/10/Csharp-1/" class="leancloud_visitors" data-flag-title="关于sql server的增删改查">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>°C</span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  996
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="一个简单的报警维护页面"><a href="#一个简单的报警维护页面" class="headerlink" title="一个简单的报警维护页面"></a>一个简单的报警维护页面</h2><p>采用Fineui,C#,SQLServer完成</p>
-<blockquote>
-<p>开发工具 Visual Studio</p>
-</blockquote>
-<h3 id="开发成果"><a href="#开发成果" class="headerlink" title="开发成果"></a>开发成果</h3><p><img src="http://upload-images.jianshu.io/upload_images/10826501-09924404c1854c3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="报警维护页面"></p>
-<p>如图所有功能均可实现</p>
-<ul>
-<li>输入类别（必须）和备注后点击新增将数据插入数据库并呈现在下表中<br><img src="http://upload-images.jianshu.io/upload_images/10826501-1bd3587d25111320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="若该类别已存在，则提示不要增加"></li>
-<li>输入关键字可进行查询，查询结果在下表中展示<br><img src="http://upload-images.jianshu.io/upload_images/10826501-d2ebe427285f168e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查询页面支持单个字体"></li>
-<li>点击删除，提示是否删除，确定后删除成功<br><img src="http://upload-images.jianshu.io/upload_images/10826501-c6c50f85075bc448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="提示是否删除"></li>
-</ul>
-<h2 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h2><ul>
-<li><p>首先添加一个新建项<br><img src="http://upload-images.jianshu.io/upload_images/10826501-441a9f4bf6ca6099.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="私命名为MachineWarningProgramName"></p>
-</li>
-<li><p>构造前端页面（基于FineUI）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;</span><br><span class="line">  &lt;f:PageManager ID=&quot;PageManager1&quot; AutoSizePanelID=&quot;Panel1&quot; runat=&quot;server&quot; /&gt;</span><br><span class="line">    &lt;f:Panel ID=&quot;Panel1&quot; runat=&quot;server&quot; BodyPadding=&quot;5px&quot; ShowBorder=&quot;false&quot; Layout=&quot;VBox&quot; BoxConfigAlign=&quot;Stretch&quot; BoxConfigPosition=&quot;Start&quot; ShowHeader=&quot;false&quot; Title=&quot;報警維護&quot;&gt;</span><br><span class="line">      &lt;Items&gt;                </span><br><span class="line">        &lt;f:Form ID=&quot;Form&quot; runat=&quot;server&quot; ShowHeader=&quot;false&quot; ShowBorder=&quot;false&quot; LabelWidth=&quot;90px&quot;&gt;</span><br><span class="line">          &lt;Rows&gt;</span><br><span class="line">            &lt;f:FormRow&gt;</span><br><span class="line">              &lt;Items&gt;</span><br><span class="line">                &lt;f:Label ID=&quot;Label2&quot; Text=&quot;&quot; Width=&quot;100&quot; MarginRight=&quot;8&quot; runat=&quot;server&quot;&gt;</span><br><span class="line">                &lt;/f:Label&gt;</span><br><span class="line">              &lt;/Items&gt;</span><br><span class="line">            &lt;/f:FormRow&gt;</span><br><span class="line">          &lt;/Rows&gt;</span><br><span class="line">        &lt;/f:Form&gt;</span><br><span class="line">      &lt;f:Grid ID=&quot;Grid1&quot; runat=&quot;server&quot; BoxFlex=&quot;1&quot; ShowBorder=&quot;true&quot; ShowHeader=&quot;false&quot; DataKeyNames=&quot;ProgramName,ErrorMessage&quot; EnableRowDoubleClickEvent=&quot;true&quot; OnRowCommand=&quot;Grid1_RowCommand&quot;  OnRowDoubleClick=&quot;Grid1_RowDoubleClick&quot;&gt;</span><br><span class="line">        &lt;Toolbars&gt;</span><br><span class="line">          &lt;f:Toolbar ID=&quot;Toolbar1&quot; runat=&quot;server&quot;&gt;</span><br><span class="line">            &lt;Items&gt;</span><br><span class="line">              &lt;f:TextBox ID=&quot;tbProgramName&quot; runat=&quot;server&quot; Label=&quot;報警類別&quot; LabelWidth=&quot;70px&quot; Width=&quot;260px&quot; TabIndex=&quot;1&quot;&gt;&lt;/f:TextBox&gt;</span><br><span class="line">              &lt;f:TextBox ID=&quot;tbErrorMessage&quot; runat=&quot;server&quot; Label=&quot;信息備註&quot; LabelWidth=&quot;70px&quot; Width=&quot;260px&quot; TabIndex=&quot;1&quot;&gt;&lt;/f:TextBox&gt;</span><br><span class="line">            &lt;/Items&gt;</span><br><span class="line">          &lt;/f:Toolbar&gt;</span><br><span class="line">          &lt;f:Toolbar ID=&quot;Toolbar2&quot; runat=&quot;server&quot;&gt;</span><br><span class="line">            &lt;Items&gt;</span><br><span class="line">              &lt;f:Button ID=&quot;btnSave&quot; runat=&quot;server&quot; Text=&quot;新增&quot; OnClick=&quot;btnSave_Click&quot; Icon=&quot;Add&quot; ValidateForms=&quot;Form&quot; &gt;&lt;/f:Button&gt;</span><br><span class="line">              &lt;f:Button ID=&quot;btnSearch&quot; runat=&quot;server&quot; Text=&quot;查詢&quot; OnClick=&quot;btnSearch_Click&quot; Icon=&quot;Zoom&quot; &gt;&lt;/f:Button&gt;</span><br><span class="line">              &lt;f:HiddenField ID=&quot;hidLx&quot; runat=&quot;server&quot;&gt;&lt;/f:HiddenField&gt; </span><br><span class="line">              &lt;f:HiddenField ID=&quot;HidCb&quot; runat=&quot;server&quot;&gt;&lt;/f:HiddenField&gt; </span><br><span class="line">              &lt;f:HiddenField ID=&quot;HidQxDm&quot; runat=&quot;server&quot;&gt;&lt;/f:HiddenField&gt;</span><br><span class="line">              &lt;f:HiddenField ID=&quot;HidDeptId&quot; runat=&quot;server&quot;&gt;&lt;/f:HiddenField&gt; </span><br><span class="line">            &lt;/Items&gt;</span><br><span class="line">          &lt;/f:Toolbar&gt;</span><br><span class="line">        &lt;/Toolbars&gt;</span><br><span class="line">        &lt;Columns&gt;</span><br><span class="line">          &lt;f:RowNumberField Width=&quot;40px&quot; /&gt;                        </span><br><span class="line">          &lt;f:BoundField DataField=&quot;ProgramName&quot; HeaderText=&quot;報警類別&quot;  Width=&quot;100px&quot;  HeaderTextAlign=&quot;Center&quot;  /&gt;</span><br><span class="line">          &lt;f:BoundField DataField=&quot;ErrorMessage&quot; HeaderText=&quot;信息維護&quot; Width=&quot;100px&quot;  HeaderTextAlign=&quot;Center&quot; /&gt;</span><br><span class="line">          &lt;f:BoundField DataField=&quot;C_USER&quot; HeaderText=&quot;錄入人&quot; Width=&quot;160px&quot;  HeaderTextAlign=&quot;Center&quot; /&gt;                  </span><br><span class="line">          &lt;f:BoundField DataField=&quot;C_Date&quot; HeaderText=&quot;錄入時間&quot; Width=&quot;140px&quot; DataFormatString=&quot;&#123;0:yyyy/MM/dd&#125;&quot; HeaderTextAlign=&quot;Center&quot; /&gt;</span><br><span class="line">          &lt;f:BoundField DataField=&quot;U_USER&quot; HeaderText=&quot;更新人&quot; Width=&quot;160px&quot;  HeaderTextAlign=&quot;Center&quot;  /&gt;</span><br><span class="line">          &lt;f:BoundField DataField=&quot;U_Date&quot; HeaderText=&quot;更新時間&quot; Width=&quot;160px&quot; DataFormatString=&quot;&#123;0:yyyy/MM/dd&#125;&quot;  HeaderTextAlign=&quot;Center&quot; /&gt; </span><br><span class="line">          &lt;f:LinkButtonField ColumnID=&quot;deleteField&quot; TextAlign=&quot;Center&quot; Icon=&quot;Delete&quot; HeaderText=&quot;刪除&quot; ToolTip=&quot;刪除&quot; ConfirmText=&quot;確定刪除？&quot; ConfirmTarget=&quot;Self&quot; CommandName=&quot;Delete&quot; Width=&quot;100px&quot;&gt;&lt;/f:LinkButtonField&gt;</span><br><span class="line">        &lt;/Columns&gt;</span><br><span class="line">      &lt;/f:Grid&gt;              </span><br><span class="line">    &lt;/Items&gt;</span><br><span class="line">  &lt;/f:Panel&gt;      </span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>前端构造也就都那么回事，看着长主要是在做格式。</p>
-<ul>
-<li>功能实现<br>通过前端各个数据的绑定，进行后端数据的书写。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">protected void Page_Load(object sender, EventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">  Grid1Bind();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private void Grid1Bind()</span><br><span class="line">&#123;</span><br><span class="line">  string strDept = &quot; select ProgramName,ErrorMessage,C_user,C_DATE,U_user,U_DATE from  ProgramError_ProgramName where ProgramName like &apos;%&quot; + tbProgramName.Text.Trim() + &quot;%&apos; and ErrorMessage like &apos;%&quot; + tbErrorMessage.Text.Trim() + &quot;%&apos;&quot;;</span><br><span class="line">  DataTable dt = DbHelperSQL.Query(strDept).Tables[0];</span><br><span class="line">  Grid1.DataSource = dt;</span><br><span class="line">  Grid1.DataBind();</span><br><span class="line">  // 查詢programerror_programname表內所有programname數據</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protected void Grid1_RowCommand(object sender, GridCommandEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">  DataTable dt = Grid1.DataSource as DataTable;</span><br><span class="line">  string programname = Grid1.DataKeys[e.RowIndex][0].ToString();</span><br><span class="line">  // 選取programname所在行</span><br><span class="line">  if (e.CommandName == &quot;Delete&quot;)</span><br><span class="line">  &#123;</span><br><span class="line">    string sql = &quot;delete from ProgramError_ProgramName where programName =&apos;&quot; + dt.Rows[e.RowIndex][&quot;programName&quot;].ToString() + &quot;&apos;&quot;;</span><br><span class="line">    DbHelperSQL.ExecuteSql(sql);</span><br><span class="line">    Grid1Bind();</span><br><span class="line">  &#125;;</span><br><span class="line">  // command事件觸發delete，執行刪除數據</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protected void btnSearch_Click(object sender, EventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">  Grid1Bind();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protected void btnSave_Click(object sender, EventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">  if (tbProgramName.Text.Trim() == &quot;&quot;)</span><br><span class="line">  &#123;</span><br><span class="line">    Alert.Show(&quot;報警類別不能為空!&quot;);</span><br><span class="line">    return;</span><br><span class="line">  &#125;</span><br><span class="line">  StringBuilder sb = new StringBuilder();</span><br><span class="line">  if (hidLx.Text.Trim() == &quot;&quot;)</span><br><span class="line">  &#123;</span><br><span class="line">    string strSql = &quot;select * from [ProgramError_ProgramName] where   ProgramName =&apos;&quot; + tbProgramName.Text.Trim() + &quot;&apos; and [ErrorMessage]=&apos;&quot; + tbErrorMessage.Text.Trim().Trim() + &quot; &apos; &quot;;</span><br><span class="line">    DataTable dt = DbHelperSQL.Query(strSql).Tables[0];</span><br><span class="line">    if (dt.Rows.Count &gt; 0)</span><br><span class="line">    &#123;</span><br><span class="line">      Alert.Show(&quot;要保存的報警類別已存在，請不要重新增加！&quot;);</span><br><span class="line">      return;</span><br><span class="line">    &#125;</span><br><span class="line">    sb.AppendLine(&quot; insert into ProgramError_ProgramName (ProgramName,ErrorMessage,C_user,C_DATE) &quot;);</span><br><span class="line">    sb.AppendLine(&quot; values (N&apos;&quot; + tbProgramName.Text.Trim() + &quot;&apos;,&apos;&quot; + tbErrorMessage.Text.Trim().Trim() + &quot;&apos; &quot;);</span><br><span class="line">    sb.AppendLine(&quot;  ,&apos;&quot; + GetIdentityName() + &quot;&apos;,getdate() )&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  else</span><br><span class="line">  &#123;</span><br><span class="line">    sb.AppendLine(&quot; update ProgramError_ProgramName  set ProgramName =&apos;&quot; + tbProgramName.Text.Trim() + &quot;&apos;,ErrorMessage=&apos;&quot; + tbErrorMessage.Text.Trim().Trim() + &quot;&apos; &quot;);</span><br><span class="line">    sb.AppendLine(&quot; ,U_USER=&apos;&quot; + GetIdentityName() + &quot;&apos;,U_DATE=getdate() &quot;);</span><br><span class="line">    sb.AppendLine(&quot; where ProgramName =&apos;&quot; + HidCb.Text.Trim() + &quot;&apos;  &quot;);</span><br><span class="line">  &#125;</span><br><span class="line">  try</span><br><span class="line">  &#123;</span><br><span class="line">    int rows = DbHelperSQL.ExecuteSql(sb.ToString());</span><br><span class="line">    if (rows &gt; 0)</span><br><span class="line">    &#123;</span><br><span class="line">      tbProgramName.Text = &quot;&quot;;</span><br><span class="line">      tbProgramName.Enabled = true;</span><br><span class="line">      tbErrorMessage.Text = &quot;&quot;;</span><br><span class="line">      hidLx.Text = &quot;&quot;;</span><br><span class="line">      Grid1Bind();</span><br><span class="line">      Alert.Show(&quot;添加成功！&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  catch (Exception ex)</span><br><span class="line">  &#123;</span><br><span class="line">    Alert.Show(&quot;添加失敗:&quot; + ex);</span><br><span class="line">    return;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protected void Grid1_RowDoubleClick(object sender, GridRowClickEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">  hidLx.Text = &quot;1&quot;;</span><br><span class="line">  HidCb.Text = Grid1.DataKeys[e.RowIndex][0].ToString();</span><br><span class="line">  tbProgramName.Enabled = false;</span><br><span class="line">  tbProgramName.Text = Grid1.DataKeys[e.RowIndex][0].ToString();</span><br><span class="line">  tbErrorMessage.Text = Grid1.DataKeys[e.RowIndex][1].ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>代码真多–<br>用了将近一星期吸收理解sql server</p>
-<p>have a nice day!</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/avatar.png"
-                alt="Felix" />
-            
-              <p class="site-author-name" itemprop="name">Felix</p>
-              <p class="site-description motion-element" itemprop="description">Since there your elements assemble</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">21</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:m18896825060@163.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.pixiv.net/" target="_blank" title="Pixiv">
-                      
-                        <i class="fa fa-fw fa-image"></i>Pixiv</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.acfun.cn/" target="_blank" title="Acfun">
-                      
-                        <i class="fa fa-fw fa-star"></i>Acfun</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://blog.viosey.com/" title="Viosey" target="_blank">Viosey</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://chuangzaoshi.com/" title="创造狮" target="_blank">创造狮</a>
-                  </li>
-                
-              </ul>
-            </div>
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
+-->
 
     </div>
-  </aside>
 
+    <!-- Sidebar Image -->
+    
 
-        
-      </div>
-    </main>
+</aside>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Felix</span>
+                    
 
-  
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
 </div>
 
- <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+                    
 
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
 
+    <!-- Facebook -->
+    
 
-  <span class="post-meta-divider">|</span>
+    <!-- Google + -->
+    
 
+    <!-- Weibo -->
+    
 
+    <!-- Instagram -->
+    
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+    <!-- Tumblr -->
+    
 
+    <!-- Github -->
+    
+        <a href="https://github.com/TaylorFelix" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
 
+    <!-- LinkedIn -->
+    
 
+    <!-- Zhihu -->
+    
 
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.0k字</span>
-</div>
-        
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/5157165/#/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
 
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
+    <!-- Telegram -->
+    
 
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
+    <!-- V2EX -->
+    
+        <a href="https://www.v2ex.com/member/a1023614047" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-v2ex">
+                <span class="visuallyhidden">V2EX</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Segmentfault -->
+    
 </div>
 
 
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;寒冷最灼人
+            
+        </div>
 
+        <!-- Paradox Footer Right Section -->
 
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
 
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
 
-
-
-        
-      </div>
-    </footer>
-
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+</footer>
 
-    
 
-  </div>
+                    <!-- Import JS File -->
 
-  
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#E74C3F'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #E74C3F, 0 0 15px #E74C3F'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#E74C3F',
+        'border-left-color': '#E74C3F'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
 </script>
 
 
 
 
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz',
-        appKey: 'MyrPvAMueBwQRnN1wicjYCr4',
-        placeholder: '来都来了，不留下点痕迹么',
-        avatar:'wavatar',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz", "MyrPvAMueBwQRnN1wicjYCr4");</script>
-  <script>
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz', 'MyrPvAMueBwQRnN1wicjYCr4');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
     function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
         });
     }
 
     function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
       var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
+      query.equalTo('url', url);
       query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
         },
         error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
+            console.log('Error:' + error.code + ' ' + error.message);
         }
       });
     }
-
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
     });
-  </script>
+</script>
 
 
 
-  
 
-  
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-  
-  
 
-  
 
-  
+   
 
-  
 
-</body>
+
+
+    <!-- Swiftye -->
+    
+
+    <!-- Local Search-->
+    
+        <script type="text/ls-javascript" id="search-local-js-script">
+    var searchFunc=function(c,a,b){$.ajax({url:c,dataType:"xml",success:function(e){var d=$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get();var g=document.getElementById(a);var f=document.getElementById(b);g.addEventListener("input",function(){var i='<ul class="search-result-list">';var h=this.value.trim().toLowerCase().split(/[\s\-]+/);f.innerHTML="";if(this.value.trim().length<=0){return}d.forEach(function(o){var n=true;var s=[];var t=o.title.trim().toLowerCase();var m=o.content.trim().replace(/<[^>]+>/g,"").toLowerCase();var j=o.url;var u=-1;var q=-1;var p=-1;if(t!==""&&m!==""){h.forEach(function(w,x){u=t.indexOf(w);q=m.indexOf(w);if(u<0&&q<0){n=false}else{if(q<0){q=0}if(x===0){p=q}}})}if(n){i+='<li><a href="'+j+'" class="search-result-title" target="_blank">'+t;var r=o.content.trim().replace(/<[^>]+>/g,"");if(p>=0){var k=p-6;var l=p+6;if(k<0){k=0}if(k===0){l=10}if(l>r.length){l=r.length}var v=r.substr(k,l);h.forEach(function(w){var x=new RegExp(w,"gi");v=v.replace(x,'<em class="search-keyword">'+w+"</em>")});i+='<p class="search-result">'+v+"...</p></a>"}}});f.innerHTML=i})}})};
+</script>
+
+
+        <script type="text/ls-javascript" id="search-input-script">
+            var inputArea = document.querySelector('#search');
+            var getSearchFile = function() {
+                var path = 'search.xml';
+                searchFunc(path, 'search', 'local-search-result');
+            }
+
+            if(inputArea) {
+                inputArea.onfocus = function() {
+                    getSearchFile();
+                }
+            }
+        </script>
+    
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
 </html>
