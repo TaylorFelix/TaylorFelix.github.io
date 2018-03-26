@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript小纪]]></title>
+    <url>%2F2018%2F03%2F26%2FJavaScript01%2F</url>
+    <content type="text"><![CDATA[一些闲来无事打的markdown JavaScript用法 JavaScript直接写入HTML输出流document.write(&quot;&lt;h1&gt;这是一个标题&lt;/h1&gt;&quot;) document.write(&quot;&lt;p&gt;这是一个段落&lt;/p&gt;&quot;) 可直接插入到HTML中 JavaScript对事件的反应&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;欢迎&#39;)&quot;&gt;点击！&lt;/script&gt; JavaScript改变HTML内容&lt;p id=&quot;demo&quot;&gt; JavaScript 能改变 HTML 元素的内容。 &lt;/p&gt; &lt;script&gt; function myFunction() { x=document.getElementById(&quot;demo&quot;); // 找到元素 x.innerHTML=&quot;Hello JavaScript!&quot;; // 改变内容 } &lt;/script&gt; &lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt; DOM(Document Object Model)是用于访问HTML的W3C标准 JavaScript改变HTML图像&lt;script&gt; function changeImage() { element=document.getElementById(&#39;myimage&#39;) if (element.src.match(&quot;bulbon&quot;)) { element.src=&quot;/images/pic_bulboff.gif&quot;; } else { element.src=&quot;/images/pic_bulbon.gif&quot;; } } &lt;/script&gt; &lt;img id=&quot;myimage&quot; onclick=&quot;changeImage()&quot; src=&quot;/images/pic_bulboff.gif&quot; width=&quot;100&quot; height=&quot;180&quot;&gt; &lt;p&gt;点击灯泡就可以打开或关闭这盏灯&lt;/p&gt; JavaScript改变HTML样式&lt;p id=&quot;demo&quot;&gt; JavaScript 能改变 HTML 元素的样式。 &lt;/p&gt; &lt;script&gt; function myFunction() { x=document.getElementById(&quot;demo&quot;) // 找到元素 x.style.color=&quot;red&quot;; // 改变样式 } &lt;/script&gt; &lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt; JavaScript验证输入&lt;input id=&quot;demo&quot; type=&quot;text&quot;&gt; &lt;script&gt; function myFunction() { var x=document.getElementById(&quot;demo&quot;).value; if(x==&quot;&quot;||isNaN(x)) { alert(&quot;不是数字&quot;); } } &lt;/script&gt; JavaScript输出 使用window.alert()弹出警告框 使用document.write()将内容写入到HTML 使用innerHTML写入到HTML元素 使用console.log()写入到浏览器的控制台 JavaScript语法&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt; &lt;script&gt; var x, y, z; x = 5; y = 6; z = (x + y) * 10; document.getElementById(&quot;demo&quot;).innerHTML = z; &lt;/script&gt; 变量，操作符，关键字。 JavaScript函数 function myFunction(a, b) { return a * b; } 对代码进行换行，采用反斜杠 document.write(&quot;你好 \ 世界&quot;); 变量 &lt;button onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt; &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt; &lt;script&gt; function myFunction(){ var carname=&quot;Volvo&quot;; document.getElementById(&quot;demo&quot;).innerHTML=carname; } &lt;/script&gt; 创建名为carname的变量，赋值Volvo，然后将值放入demo里，插入到HTML中。]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[最近着手换一套博客主题]]></title>
     <url>%2F2018%2F03%2F20%2FWhisper-3%2F</url>
     <content type="text"><![CDATA[应该架构还是采用Hexo 关于为什么会有这个想法或许是累了？或许是厌倦了随机缩略图，准备更大气一点目前还在四处收集东西，争取早日完工吧可怜我又要重新建分支了–]]></content>

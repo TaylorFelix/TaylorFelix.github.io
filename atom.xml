@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-25T13:07:11.229Z</updated>
+  <updated>2018-03-26T14:12:44.380Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript小纪</title>
+    <link href="http://yoursite.com/2018/03/26/JavaScript01/"/>
+    <id>http://yoursite.com/2018/03/26/JavaScript01/</id>
+    <published>2018-03-26T14:08:13.000Z</published>
+    <updated>2018-03-26T14:12:44.380Z</updated>
+    
+    <content type="html"><![CDATA[<p>一些闲来无事打的markdown</p><h3 id="JavaScript用法"><a href="#JavaScript用法" class="headerlink" title="JavaScript用法"></a>JavaScript用法</h3><ul><li>JavaScript直接写入HTML输出流<pre><code>document.write(&quot;&lt;h1&gt;这是一个标题&lt;/h1&gt;&quot;)document.write(&quot;&lt;p&gt;这是一个段落&lt;/p&gt;&quot;)</code></pre>可直接插入到HTML中</li><li>JavaScript对事件的反应<pre><code>&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;欢迎&#39;)&quot;&gt;点击！&lt;/script&gt;</code></pre></li><li>JavaScript改变HTML内容<pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript 能改变 HTML 元素的内容。&lt;/p&gt;&lt;script&gt;function myFunction(){  x=document.getElementById(&quot;demo&quot;);  // 找到元素  x.innerHTML=&quot;Hello JavaScript!&quot;;    // 改变内容}&lt;/script&gt;&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt;</code></pre>DOM(Document Object Model)是用于访问HTML的W3C标准</li><li>JavaScript改变HTML图像<pre><code>&lt;script&gt;function changeImage(){  element=document.getElementById(&#39;myimage&#39;)  if (element.src.match(&quot;bulbon&quot;))   {        element.src=&quot;/images/pic_bulboff.gif&quot;;    }  else {        element.src=&quot;/images/pic_bulbon.gif&quot;; }}&lt;/script&gt;&lt;img id=&quot;myimage&quot; onclick=&quot;changeImage()&quot;src=&quot;/images/pic_bulboff.gif&quot; width=&quot;100&quot; height=&quot;180&quot;&gt;&lt;p&gt;点击灯泡就可以打开或关闭这盏灯&lt;/p&gt;</code></pre></li><li>JavaScript改变HTML样式<pre><code>&lt;p id=&quot;demo&quot;&gt;JavaScript 能改变 HTML 元素的样式。&lt;/p&gt;&lt;script&gt;function myFunction(){  x=document.getElementById(&quot;demo&quot;) // 找到元素  x.style.color=&quot;red&quot;;          // 改变样式}&lt;/script&gt;&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt;</code></pre></li><li>JavaScript验证输入<pre><code>&lt;input id=&quot;demo&quot; type=&quot;text&quot;&gt;&lt;script&gt;function myFunction(){  var x=document.getElementById(&quot;demo&quot;).value;  if(x==&quot;&quot;||isNaN(x))  {      alert(&quot;不是数字&quot;);  }}&lt;/script&gt;</code></pre></li></ul><h3 id="JavaScript输出"><a href="#JavaScript输出" class="headerlink" title="JavaScript输出"></a>JavaScript输出</h3><ul><li>使用window.alert()弹出警告框</li><li>使用document.write()将内容写入到HTML</li><li>使用innerHTML写入到HTML元素</li><li>使用console.log()写入到浏览器的控制台</li></ul><h3 id="JavaScript语法"><a href="#JavaScript语法" class="headerlink" title="JavaScript语法"></a>JavaScript语法</h3><pre><code>&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;&lt;script&gt;var x, y, z;x = 5;y = 6;z = (x + y) * 10;document.getElementById(&quot;demo&quot;).innerHTML = z;&lt;/script&gt;</code></pre><p>变量，操作符，关键字。</p><p><strong>JavaScript函数</strong></p><pre><code>function myFunction(a, b) {       return a * b;}</code></pre><p>对代码进行换行，采用反斜杠</p><pre><code>document.write(&quot;你好 \ 世界&quot;);</code></pre><ul><li>变量</li></ul><pre><code>&lt;button onclick=&quot;myFunction()&quot;&gt;点击这里&lt;/button&gt;&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;&lt;script&gt;function myFunction(){    var carname=&quot;Volvo&quot;;    document.getElementById(&quot;demo&quot;).innerHTML=carname;}&lt;/script&gt;</code></pre><p>创建名为carname的变量，赋值Volvo，然后将值放入demo里，插入到HTML中。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一些闲来无事打的markdown&lt;/p&gt;
+&lt;h3 id=&quot;JavaScript用法&quot;&gt;&lt;a href=&quot;#JavaScript用法&quot; class=&quot;headerlink&quot; title=&quot;JavaScript用法&quot;&gt;&lt;/a&gt;JavaScript用法&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>最近着手换一套博客主题</title>
@@ -518,32 +545,6 @@
     
     
       <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>产线环境体验</title>
-    <link href="http://yoursite.com/2018/02/24/Work-1/"/>
-    <id>http://yoursite.com/2018/02/24/Work-1/</id>
-    <published>2018-02-24T07:47:40.000Z</published>
-    <updated>2018-03-25T13:08:22.348Z</updated>
-    
-    <content type="html"><![CDATA[<p>各在其位，各司其职</p><h2 id="初体验厂企生产流程"><a href="#初体验厂企生产流程" class="headerlink" title="初体验厂企生产流程"></a>初体验厂企生产流程</h2><p>今天得有机会看了下产线的生产流程，伴随着浓厚的化学气味，走完了部分产线，可能是刚刚开工的缘故，部分产线员工稀少，有的已经满员。<br>虽然只是一次以围观者和学习者的心态走过产线，还是会有些个人感触，以下仅代表个人观点，不喜请忘。</p><hr><ol><li>真是忙的忙死，闲的闲死</li><li>科学技术是第一生产力（认真脸）</li><li>化工产品对身体危害真的很大</li><li>庆幸自己非产线人员（非歧视）</li></ol><hr><p>大致感受也不会太多，仅此而已</p><p>作者 Felix<br>2018 年 02月 24日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;各在其位，各司其职&lt;/p&gt;
-&lt;h2 id=&quot;初体验厂企生产流程&quot;&gt;&lt;a href=&quot;#初体验厂企生产流程&quot; class=&quot;headerlink&quot; title=&quot;初体验厂企生产流程&quot;&gt;&lt;/a&gt;初体验厂企生产流程&lt;/h2&gt;&lt;p&gt;今天得有机会看了下产线的生产流程，伴随着浓厚的化学
-      
-    
-    </summary>
-    
-      <category term="Work" scheme="http://yoursite.com/categories/Work/"/>
-    
-    
-      <category term="Work" scheme="http://yoursite.com/tags/Work/"/>
     
   </entry>
   
