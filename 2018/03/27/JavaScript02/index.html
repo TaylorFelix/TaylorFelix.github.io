@@ -47,7 +47,7 @@
     
     <title>
         
-            归档 | 
+            JavaScript摘抄 | 
         
         寒冷最灼人
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",JavaScript">
     <meta name="theme-color" content="#E74C3F">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="寒冷最灼人">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/page/3/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/03/27/JavaScript02/">
     <meta name="msapplication-navbutton-color" content="#E74C3F">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="寒冷最灼人">
@@ -234,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/page/3/">
+    <meta property="og:url" content="http://yoursite.com/2018/03/27/JavaScript02/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | 寒冷最灼人">
+    <meta property="og:title" content="JavaScript摘抄 | 寒冷最灼人">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="JavaScript"> 
 
+    
+        <meta property="article:published_time" content="Tue Mar 27 2018 20:34:11 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 27 2018 20:44:14 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -248,13 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/page/3/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/03/27/JavaScript02/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/03/27/JavaScript02/index.html",
+    "headline": "JavaScript摘抄",
+    "datePublished": "Tue Mar 27 2018 20:34:11 GMT+0800",
+    "dateModified": "Tue Mar 27 2018 20:44:14 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Felix",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "To make the stars come out"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "寒冷最灼人",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",JavaScript",
+    "description": "",
+}
+</script>
 
 
     
@@ -288,352 +321,499 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#依旧是基础"><span class="post-toc-number">1.</span> <span class="post-toc-text">依旧是基础</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 23 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/26/Blog-1/">评论功能上线啦！</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            评论功能的实现效果
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/26/Blog-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Study/">Study</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/26/Blog-2/">记一次Hexo同时部署GitHub和Coding</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            如何优化加载速度与部署问题
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/26/Blog-2/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Study/">Study</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/24/Git-1/">常用命令采集</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            一些常用的Git指令
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/24/Git-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Study/">Study</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/24/Work-1/">产线环境体验</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            各在其位，各司其职
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/24/Work-1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 24, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Work/">Work</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/23/Hello/">你好，Blog</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            将碎片化时间利用起来
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/23/Hello/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Felix's avatar">
-            </div>
-            <div>
-                <strong>Felix</strong>
-                <span>2月 23, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Whisper/">Whisper</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-    <!-- Index nav -->
-        <nav class="material-nav mdl-cell mdl-cell--12-col">
-            <a class="extend prev" rel="prev" href="/archives/page/2/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_back</i></button></a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
-        </nav>
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 23 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                JavaScript摘抄
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Felix</strong>
+        <span>3月 27, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/03/27/JavaScript02/" class="leancloud-views_num" data-flag-title="JavaScript摘抄">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=JavaScript摘抄&url=http://yoursite.com/2018/03/27/JavaScript02/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=寒冷最灼人&title=JavaScript摘抄&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/03/27/JavaScript02/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>记笔记这种事从来不觉得累</p>
+<h4 id="依旧是基础"><a href="#依旧是基础" class="headerlink" title="依旧是基础"></a>依旧是基础</h4><ul>
+<li>toUpperCase() 把一个字符串全部变大写</li>
+<li>toLowerCase() 把一个字符串全部变小写</li>
+<li>indexOf() 搜索字符串出现的位置</li>
+</ul>
+<pre><code class="javascript">var s = &#39;hello,world&#39;;
+s.indexOf(&#39;world&#39;);   // 7
+</code></pre>
+<ul>
+<li>substring() 返回指定索引区间的子串</li>
+</ul>
+<pre><code class="javascript">var s = &#39;hello world&#39;;
+s.substring(0,5); //从索引0开始到5（不包括5），返回hello
+s.substring(7); //从索引7开始到结束
+</code></pre>
+<ul>
+<li>获取Array的长度</li>
+</ul>
+<pre><code class="javascript">var arr = [1,2,3,4,&#39;hello&#39;,true,false];
+arr.lenght; //6
+</code></pre>
+<ul>
+<li>indexOf 搜索一个指定的元素的位置</li>
+</ul>
+<pre><code class="javascript">var arr = [10,20,&#39;30&#39;,&#39;xyz&#39;];
+arr.indexOf(10); //索引为0
+arr.indexOf(30); //无元素30，返回-1
+</code></pre>
+<ul>
+<li>slice 对应string的substring(),截取Array的部分元素，返回新的Array</li>
+</ul>
+<pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;,&#39;E&#39;];
+arr.slice(0,3);     //[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]从0开始，到3结束，不包括3
+</code></pre>
+<p>若不给<b>slice</b>传递任何参数，它会全部截取，可以用作复制。</p>
+<ul>
+<li>push和pop<br>push()和Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉</li>
+</ul>
+<pre><code class="javascript">var arr = [1,2];
+arr.push(&#39;A&#39;,&#39;B&#39;);
+arr; // [1,2,&#39;A&#39;,&#39;B&#39;]
+arr.pop();
+arr; //[1,2,&#39;A&#39;]
+</code></pre>
+<ul>
+<li>unshift和shift<br>往Array头部添加若干元素，使用unshift()方法,shift()方法则把Array第一个元素删除掉</li>
+</ul>
+<pre><code class="javascript">var arr = [1,2];
+arr.unshift(&#39;A&#39;,&#39;B&#39;);
+arr; // [&#39;A&#39;,&#39;B&#39;,1,2]
+arr.shift();
+arr; // [&#39;B&#39;,1,2]
+</code></pre>
+<ul>
+<li><p>sort 对当前Array进行排序</p>
+</li>
+<li><p>reverse会把整个元素反转</p>
+</li>
+<li><p>splice方法是修改Array的万能方法<br>它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素</p>
+</li>
+</ul>
+<pre><code class="javascript">var arr = [&#39;Microsoft&#39;,&#39;Apple&#39;,&#39;Yahoo&#39;,&#39;AOL&#39;,&#39;Excite&#39;,&#39;Oracle&#39;];
+//从索引2开始删除3个元素，然后再添加两个元素
+arr.splice(2,3,&#39;Google&#39;,&#39;Facebook&#39;);
+//只删除，不添加
+arr.splice(2,2);
+</code></pre>
+<ul>
+<li>concat()方法把当前的Array和赢一个Array连接起来</li>
+</ul>
+<pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+var added = arr.concat([1,2,3]);
+added; //[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,1,2,3]
+</code></pre>
+<ul>
+<li>join()方法<br>join()方法会把当前Array的每个元素都用指定的字符串连接起来，然后返回字符串</li>
+</ul>
+<pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,1,2,3];
+arr.join(&#39;-&#39;);  // &#39;A-B-C-1-2-3&#39;
+</code></pre>
+<ul>
+<li>多维数组<br>如果数组的某个元素又是一个Array。则可以形成多维数组</li>
+</ul>
+<pre><code class="javascript">var arr = [[1,2,3],[4,5,6],&#39;-&#39;];
+</code></pre>
+<ul>
+<li>对象<blockquote>
+<p>javascript的对象是一种无序的集合数据类型，它由若干键值对组成</p>
+</blockquote>
+</li>
+</ul>
+<pre><code class="javascript">var person = {
+  name: &#39;felix&#39;,
+  birth: 1995,
+  school: &#39;Suchou University&#39;,
+  height: 175,
+  weight: 73,
+  score: null
+};
+person.age;  //undefined
+</code></pre>
+<p>对于访问不存在的属性不报错，返回undefined<br>由于Javascript的对象是动态类型，可以给一个对象添加或删除属性</p>
+<pre><code class="javascript">person.age = 24;
+delete person.age;
+</code></pre>
+<p>检测person是否拥有某一属性，可以用in操作符</p>
+<pre><code class="javascript">&#39;name&#39; in person; //true
+</code></pre>
+<p>in只能检测是否有，而无法判断是否是继承来的对象，可以用hsaOwnProperty来检测是否是本身拥有的</p>
+<pre><code class="javascript">person.hasOwnProperty(&#39;name&#39;);
+</code></pre>
+<ul>
+<li>条件判断与循环和其他预览类似<br>关于过滤对象继承是属性</li>
+</ul>
+<pre><code class="javascript">var o = {
+  name: &#39;felix&#39;,
+  age: 24,
+  city: &#39;Beijing&#39;
+};
+for (var key in o){
+  if(o.hasOwnProperty(key)){
+    alert(key); // &#39;name&#39;,&#39;age&#39;,&#39;city&#39;
+  }
+}
+</code></pre>
+<ul>
+<li>Map和Set<br>javascript的默认对象表示方式{}可以视为其他语言中的Map或Dictionary的数据结构</li>
+</ul>
+<pre><code class="javascript">&#39;use strict&#39;;
+var m = new Map();
+var s = new Set();
+alert(&#39;你的浏览器支持Map和Set&#39;);
+</code></pre>
+<ul>
+<li>Map</li>
+</ul>
+<blockquote>
+<p>Map是一组键值对的结构，具有极快的查找速度</p>
+</blockquote>
+<pre><code class="javascript">var m = new Map([[&#39;Micheal&#39;,95],[&#39;Bob&#39;,75],[&#39;Tracy&#39;,85]]);
+m.get(&#39;Micheal&#39;);   //95
+</code></pre>
+<p>初始化Map需要一个二维数组，或者直接初始化一个空的Map</p>
+<pre><code class="javascript">var m = new Map(); //初始化一个空的Map
+m.set(&#39;Adam&#39;,67); //添加新的key-value
+m.set(&#39;Bob&#39;,59);
+m.has(&#39;Adam&#39;);  //判断是否存在key:&#39;Adam&#39;,返回true
+m.get(&#39;Adam&#39;); //67
+m.delete(&#39;Adam&#39;); //删除key: &#39;Adam&#39;
+m.get(&#39;Adam&#39;);  //undefined
+</code></pre>
+<p>一个key只能对应一个value，所以，多次一个key赋值，会把前面的覆盖掉</p>
+<pre><code class="javascript">var m = new Map();
+m.set(&#39;Adam&#39;,67);
+m.set(&#39;Adam&#39;,88);
+m.get(&#39;Adam&#39;);
+</code></pre>
+<ul>
+<li>set<blockquote>
+<p>set和Map类似，也是一组key的集合，但不存储value</p>
+</blockquote>
+</li>
+</ul>
+<p>要创建一个set,需要提供一个Array并输入，或者可以直接定义一个空的set</p>
+<pre><code class="javascript">var s1 = new Set([1,2,3]);
+var s2 = new Set();
+</code></pre>
+<p>重复的key会在set中被自动过滤掉，使用add和delete来给set添加或删除</p>
+<pre><code class="javascript">var s = new Set();
+s.add(4);
+</code></pre>
+<pre><code class="javascript">var s = new Set([1,2,3]);
+s;
+s.delete(3);
+s;
+</code></pre>
+<ul>
+<li>Iterable<blockquote>
+<p>ES6引入的iterable类型，Array,Map,Set都属于iterable类型</p>
+</blockquote>
+</li>
+</ul>
+<p>具有iterable类型的集合可以通过新的for…of循环来遍历</p>
+<pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+var m = new Map([[1,&#39;x&#39;],[2,&#39;y&#39;],[3,&#39;z&#39;]]);
+var s = new Set([&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]);
+for(let x of a) {      //遍历Array
+  console.log(x);
+}
+
+for(let x of s) {      //遍历Set
+  console.log(x);
+}
+
+for(let x of m) {      //遍历Map
+  console.log(x[0] + &#39;=&#39; + x[1]);
+}
+</code></pre>
+<p>for…of和for…in的区别：<br>for…in循环由于历史问题，实际上它遍历的是对象的属性名称，那么Array也是一种对象，Array的每个元素的下标被视为属性，当我们手动给Array添加额外的元素后，for…in循环会出现额外的情况</p>
+<pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+a.name = &#39;Hello&#39;;
+for(var x in a) {
+  console.log(x);   //0,1,2,name
+}
+</code></pre>
+<p>而for…of循环解决了这个问题，它只遍历集合本身的元素</p>
+<pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+a.name = &#39;Hello&#39;;
+for(var x of a) {
+  console.log(x);    //&#39;A&#39;,&#39;B&#39;,&#39;C&#39;
+}
+</code></pre>
+<p>在iterable中，还有一个内置方法forEach，它接收一个函数，每次迭代就自动回调该函数</p>
+<pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+a.forEach(function(element,index,array){
+  //element指向当前元素的值
+  //index指向当前索引
+  //array指向Array本身
+  console.log(element);
+})
+</code></pre>
+<p>set与Array类似，但set没有索引，回调函数的前两个参数都是元素本身</p>
+<pre><code class="javascript">var s = new Set([&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]);
+s.forEach(function(element, sameElement, set) {
+  console.log(element);
+});
+</code></pre>
+<p>Map的回调参数依次为value,key和map本身</p>
+<pre><code class="javascript">var m = new Map([[1,&#39;x&#39;],[2,&#39;y&#39;],[3,&#39;z&#39;]]);
+m.forEach(function(value, key, map) {
+  console.log(value);
+});
+</code></pre>
+<p>forEach的回调函数中的参数不必全部写完，只需要Array的元素值</p>
+<pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];
+a.forEach(function(element) {
+  console.log(element);
+});
+</code></pre>
+<p>引自：<a href="https://www.jianshu.com/p/80b612534691" title="JavaScript简明教程" target="_blank" rel="noopener">JavaScript简明教程</a>  </p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz",
+        appKey: "MyrPvAMueBwQRnN1wicjYCr4",
+        placeholder: "留个脚印吧~",
+        pageSize:'10',
+        avatar:'wavatar',
+        lang:'zh-cn'
+    });
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/03/27/Vuejs04/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/03/26/JavaScript01/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

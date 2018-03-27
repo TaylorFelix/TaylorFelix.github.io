@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-26T14:12:44.380Z</updated>
+  <updated>2018-03-27T12:40:07.575Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vuejs学习笔记04</title>
+    <link href="http://yoursite.com/2018/03/27/Vuejs04/"/>
+    <id>http://yoursite.com/2018/03/27/Vuejs04/</id>
+    <published>2018-03-27T12:38:24.000Z</published>
+    <updated>2018-03-27T12:40:07.575Z</updated>
+    
+    <content type="html"><![CDATA[<p>待改善</p><h3 id="v-bind及class与style绑定"><a href="#v-bind及class与style绑定" class="headerlink" title="v-bind及class与style绑定"></a>v-bind及class与style绑定</h3><p>在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用<code>v-bind</code>计算出表达式最终的字符串就可以，不过有时候表达式的逻辑较复杂，使用字符串拼接方法较难阅读和维护，所以Vue.js增强了对class和style的绑定。  </p><p><strong>绑定class的几种方式</strong></p><ul><li>对象语法<pre><code>&lt;div id=&quot;app&quot;&gt;&lt;div :class=&quot;{ &#39;active&#39;: isActive }&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;var app = new Vue({  el: &#39;#app&#39;,  data: {    isActive: true  }  })&lt;/script&gt;</code></pre>如上，类名active依赖数据isActive，当其为true时，div会拥有类名Active，为false时则没有，所以得出渲染结果：  <pre><code>&lt;div class=&quot;active&quot;&gt;&lt;/div&gt;</code></pre>class可以与语法糖:class共存<pre><code>&lt;div class=&quot;static&quot; :class=&quot;{ &#39;active&#39;: isActive, &#39;error&#39;: isError }&quot;&gt;&lt;/div&gt;</code></pre></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;待改善&lt;/p&gt;
+&lt;h3 id=&quot;v-bind及class与style绑定&quot;&gt;&lt;a href=&quot;#v-bind及class与style绑定&quot; class=&quot;headerlink&quot; title=&quot;v-bind及class与style绑定&quot;&gt;&lt;/a&gt;v-bind及class与st
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript摘抄</title>
+    <link href="http://yoursite.com/2018/03/27/JavaScript02/"/>
+    <id>http://yoursite.com/2018/03/27/JavaScript02/</id>
+    <published>2018-03-27T12:34:11.000Z</published>
+    <updated>2018-03-27T12:44:14.702Z</updated>
+    
+    <content type="html"><![CDATA[<p>记笔记这种事从来不觉得累</p><h4 id="依旧是基础"><a href="#依旧是基础" class="headerlink" title="依旧是基础"></a>依旧是基础</h4><ul><li>toUpperCase() 把一个字符串全部变大写</li><li>toLowerCase() 把一个字符串全部变小写</li><li>indexOf() 搜索字符串出现的位置</li></ul><pre><code class="javascript">var s = &#39;hello,world&#39;;s.indexOf(&#39;world&#39;);   // 7</code></pre><ul><li>substring() 返回指定索引区间的子串</li></ul><pre><code class="javascript">var s = &#39;hello world&#39;;s.substring(0,5); //从索引0开始到5（不包括5），返回hellos.substring(7); //从索引7开始到结束</code></pre><ul><li>获取Array的长度</li></ul><pre><code class="javascript">var arr = [1,2,3,4,&#39;hello&#39;,true,false];arr.lenght; //6</code></pre><ul><li>indexOf 搜索一个指定的元素的位置</li></ul><pre><code class="javascript">var arr = [10,20,&#39;30&#39;,&#39;xyz&#39;];arr.indexOf(10); //索引为0arr.indexOf(30); //无元素30，返回-1</code></pre><ul><li>slice 对应string的substring(),截取Array的部分元素，返回新的Array</li></ul><pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;,&#39;E&#39;];arr.slice(0,3);     //[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]从0开始，到3结束，不包括3</code></pre><p>若不给<b>slice</b>传递任何参数，它会全部截取，可以用作复制。</p><ul><li>push和pop<br>push()和Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉</li></ul><pre><code class="javascript">var arr = [1,2];arr.push(&#39;A&#39;,&#39;B&#39;);arr; // [1,2,&#39;A&#39;,&#39;B&#39;]arr.pop();arr; //[1,2,&#39;A&#39;]</code></pre><ul><li>unshift和shift<br>往Array头部添加若干元素，使用unshift()方法,shift()方法则把Array第一个元素删除掉</li></ul><pre><code class="javascript">var arr = [1,2];arr.unshift(&#39;A&#39;,&#39;B&#39;);arr; // [&#39;A&#39;,&#39;B&#39;,1,2]arr.shift();arr; // [&#39;B&#39;,1,2]</code></pre><ul><li><p>sort 对当前Array进行排序</p></li><li><p>reverse会把整个元素反转</p></li><li><p>splice方法是修改Array的万能方法<br>它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素</p></li></ul><pre><code class="javascript">var arr = [&#39;Microsoft&#39;,&#39;Apple&#39;,&#39;Yahoo&#39;,&#39;AOL&#39;,&#39;Excite&#39;,&#39;Oracle&#39;];//从索引2开始删除3个元素，然后再添加两个元素arr.splice(2,3,&#39;Google&#39;,&#39;Facebook&#39;);//只删除，不添加arr.splice(2,2);</code></pre><ul><li>concat()方法把当前的Array和赢一个Array连接起来</li></ul><pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];var added = arr.concat([1,2,3]);added; //[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,1,2,3]</code></pre><ul><li>join()方法<br>join()方法会把当前Array的每个元素都用指定的字符串连接起来，然后返回字符串</li></ul><pre><code class="javascript">var arr = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,1,2,3];arr.join(&#39;-&#39;);  // &#39;A-B-C-1-2-3&#39;</code></pre><ul><li>多维数组<br>如果数组的某个元素又是一个Array。则可以形成多维数组</li></ul><pre><code class="javascript">var arr = [[1,2,3],[4,5,6],&#39;-&#39;];</code></pre><ul><li>对象<blockquote><p>javascript的对象是一种无序的集合数据类型，它由若干键值对组成</p></blockquote></li></ul><pre><code class="javascript">var person = {  name: &#39;felix&#39;,  birth: 1995,  school: &#39;Suchou University&#39;,  height: 175,  weight: 73,  score: null};person.age;  //undefined</code></pre><p>对于访问不存在的属性不报错，返回undefined<br>由于Javascript的对象是动态类型，可以给一个对象添加或删除属性</p><pre><code class="javascript">person.age = 24;delete person.age;</code></pre><p>检测person是否拥有某一属性，可以用in操作符</p><pre><code class="javascript">&#39;name&#39; in person; //true</code></pre><p>in只能检测是否有，而无法判断是否是继承来的对象，可以用hsaOwnProperty来检测是否是本身拥有的</p><pre><code class="javascript">person.hasOwnProperty(&#39;name&#39;);</code></pre><ul><li>条件判断与循环和其他预览类似<br>关于过滤对象继承是属性</li></ul><pre><code class="javascript">var o = {  name: &#39;felix&#39;,  age: 24,  city: &#39;Beijing&#39;};for (var key in o){  if(o.hasOwnProperty(key)){    alert(key); // &#39;name&#39;,&#39;age&#39;,&#39;city&#39;  }}</code></pre><ul><li>Map和Set<br>javascript的默认对象表示方式{}可以视为其他语言中的Map或Dictionary的数据结构</li></ul><pre><code class="javascript">&#39;use strict&#39;;var m = new Map();var s = new Set();alert(&#39;你的浏览器支持Map和Set&#39;);</code></pre><ul><li>Map</li></ul><blockquote><p>Map是一组键值对的结构，具有极快的查找速度</p></blockquote><pre><code class="javascript">var m = new Map([[&#39;Micheal&#39;,95],[&#39;Bob&#39;,75],[&#39;Tracy&#39;,85]]);m.get(&#39;Micheal&#39;);   //95</code></pre><p>初始化Map需要一个二维数组，或者直接初始化一个空的Map</p><pre><code class="javascript">var m = new Map(); //初始化一个空的Mapm.set(&#39;Adam&#39;,67); //添加新的key-valuem.set(&#39;Bob&#39;,59);m.has(&#39;Adam&#39;);  //判断是否存在key:&#39;Adam&#39;,返回truem.get(&#39;Adam&#39;); //67m.delete(&#39;Adam&#39;); //删除key: &#39;Adam&#39;m.get(&#39;Adam&#39;);  //undefined</code></pre><p>一个key只能对应一个value，所以，多次一个key赋值，会把前面的覆盖掉</p><pre><code class="javascript">var m = new Map();m.set(&#39;Adam&#39;,67);m.set(&#39;Adam&#39;,88);m.get(&#39;Adam&#39;);</code></pre><ul><li>set<blockquote><p>set和Map类似，也是一组key的集合，但不存储value</p></blockquote></li></ul><p>要创建一个set,需要提供一个Array并输入，或者可以直接定义一个空的set</p><pre><code class="javascript">var s1 = new Set([1,2,3]);var s2 = new Set();</code></pre><p>重复的key会在set中被自动过滤掉，使用add和delete来给set添加或删除</p><pre><code class="javascript">var s = new Set();s.add(4);</code></pre><pre><code class="javascript">var s = new Set([1,2,3]);s;s.delete(3);s;</code></pre><ul><li>Iterable<blockquote><p>ES6引入的iterable类型，Array,Map,Set都属于iterable类型</p></blockquote></li></ul><p>具有iterable类型的集合可以通过新的for…of循环来遍历</p><pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];var m = new Map([[1,&#39;x&#39;],[2,&#39;y&#39;],[3,&#39;z&#39;]]);var s = new Set([&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]);for(let x of a) {      //遍历Array  console.log(x);}for(let x of s) {      //遍历Set  console.log(x);}for(let x of m) {      //遍历Map  console.log(x[0] + &#39;=&#39; + x[1]);}</code></pre><p>for…of和for…in的区别：<br>for…in循环由于历史问题，实际上它遍历的是对象的属性名称，那么Array也是一种对象，Array的每个元素的下标被视为属性，当我们手动给Array添加额外的元素后，for…in循环会出现额外的情况</p><pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];a.name = &#39;Hello&#39;;for(var x in a) {  console.log(x);   //0,1,2,name}</code></pre><p>而for…of循环解决了这个问题，它只遍历集合本身的元素</p><pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];a.name = &#39;Hello&#39;;for(var x of a) {  console.log(x);    //&#39;A&#39;,&#39;B&#39;,&#39;C&#39;}</code></pre><p>在iterable中，还有一个内置方法forEach，它接收一个函数，每次迭代就自动回调该函数</p><pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];a.forEach(function(element,index,array){  //element指向当前元素的值  //index指向当前索引  //array指向Array本身  console.log(element);})</code></pre><p>set与Array类似，但set没有索引，回调函数的前两个参数都是元素本身</p><pre><code class="javascript">var s = new Set([&#39;A&#39;,&#39;B&#39;,&#39;C&#39;]);s.forEach(function(element, sameElement, set) {  console.log(element);});</code></pre><p>Map的回调参数依次为value,key和map本身</p><pre><code class="javascript">var m = new Map([[1,&#39;x&#39;],[2,&#39;y&#39;],[3,&#39;z&#39;]]);m.forEach(function(value, key, map) {  console.log(value);});</code></pre><p>forEach的回调函数中的参数不必全部写完，只需要Array的元素值</p><pre><code class="javascript">var a = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;];a.forEach(function(element) {  console.log(element);});</code></pre><p>引自：<a href="https://www.jianshu.com/p/80b612534691" title="JavaScript简明教程" target="_blank" rel="noopener">JavaScript简明教程</a>  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;记笔记这种事从来不觉得累&lt;/p&gt;
+&lt;h4 id=&quot;依旧是基础&quot;&gt;&lt;a href=&quot;#依旧是基础&quot; class=&quot;headerlink&quot; title=&quot;依旧是基础&quot;&gt;&lt;/a&gt;依旧是基础&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;toUpperCase() 把一个字符串全部变大写&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript小纪</title>
@@ -48,7 +102,7 @@
     <link href="http://yoursite.com/2018/03/20/Whisper-3/"/>
     <id>http://yoursite.com/2018/03/20/Whisper-3/</id>
     <published>2018-03-20T13:19:53.000Z</published>
-    <updated>2018-03-25T13:07:11.229Z</updated>
+    <updated>2018-03-27T12:42:25.286Z</updated>
     
     <content type="html"><![CDATA[<p>应该架构还是采用Hexo</p><h4 id="关于为什么会有这个想法"><a href="#关于为什么会有这个想法" class="headerlink" title="关于为什么会有这个想法"></a>关于为什么会有这个想法</h4><p>或许是累了？或许是厌倦了随机缩略图，准备更大气一点<br>目前还在四处收集东西，争取早日完工吧<br>可怜我又要重新建分支了–</p>]]></content>
     
@@ -66,6 +120,33 @@
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vuejs学习笔记03</title>
+    <link href="http://yoursite.com/2018/03/20/Vuejs03/"/>
+    <id>http://yoursite.com/2018/03/20/Vuejs03/</id>
+    <published>2018-03-20T11:35:17.000Z</published>
+    <updated>2018-03-27T12:40:01.205Z</updated>
+    
+    <content type="html"><![CDATA[<p>计算属性</p><h3 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h3><p>使用计算属性的目的是在遇到复杂逻辑时，避免臃肿和难以阅读与维护。</p><pre><code>&lt;div id=&quot;app&quot;&gt;  {{ reversedText }}&lt;/div&gt;&lt;script&gt;  var app = new Vue({    el: &#39;#app&#39;,    data: {      text: &#39;123,456&#39;    },    computed: {      reversedText: function (){        return this.text.split(&#39;,&#39;).reverse().join(&#39;,&#39;);      }    }    })&lt;/script&gt;</code></pre><p>所有计算属性都以函数的形式写在Vue实例内的computed选项内。</p><pre><code>&lt;div id=&quot;app&quot;&gt;  总价: {{ prices }}&lt;/div&gt;&lt;script&gt;  var app = new Vue({    el: &#39;#app&#39;,    data: {      package1: [        {          name: &#39;iphome 7&#39;,          price: 7199,          count: 2        },{          name: &#39;ipad&#39;,          price: 2888,          count: 1        }      ],      package2: [        {          name: &#39;apple&#39;,          price: 3,          count: 5        },        {          name: &#39;banana&#39;,          price: 2,          count: 10        }      ]    },    computed: {      var prices = 0;      for (var i = 0; i &lt; this.package1.length; i++){        prices += this.package1 [i].price * this.package1[i].count;      }      for (var i = 0; i &lt; this.package2.length; i++){        prices += this.package2 [i].price * this.package2[i].count;      }      return prices;    }  })&lt;/script&gt;</code></pre><p>当<code>package1</code>和<code>package2</code>发生变化，<code>prices</code>自动更新。<br>每一个计算属性都包含一个<code>getter</code>和<code>setter</code>。</p><pre><code>&lt;div id=&quot;app&quot;&gt;  姓名：{{ fullName }}&lt;/div&gt;&lt;script&gt;  var app = new Vue({    el: &#39;#app&#39;,    data: {      firstName: &#39;Jack&#39;,      lastName: &#39;Green&#39;    },    computed: {      fullName: {        get: function (){          return this.firstName + &#39;&#39; + this.lastName;        },        set: function (newValue) {          var names = newValue.split(&#39; &#39;);          this.firstName = names[0];          this.lastName = names[names.length -1];        }      }    }  });&lt;/script&gt;</code></pre><p>当执行<code>app.fullName=&#39;John Doe&#39;</code>时，<code>setter</code>就会被调用，视图随之更新。</p><h3 id="计算属性缓存"><a href="#计算属性缓存" class="headerlink" title="计算属性缓存"></a>计算属性缓存</h3><p>调用methods方法也可以与计算属性起同样作用。</p><pre><code>&lt;div id=&quot;app&quot;&gt;  {{ reversedText() }}&lt;/div&gt;&lt;script&gt;  var app = new Vue({    el: &#39;#app&#39;,    data: {      text: &#39;123,456&#39;    },    methods: {      reversedText: function (){        return this.text.split(&#39;,&#39;).reverse().join(&#39;,&#39;);      }    }    })&lt;/script&gt;</code></pre><p>methods里定义一个方法实现了相同效果，还可接受参数，使用灵活，那为何还要使用计算属性？<br>计算属性是基于它的依赖缓存的，当数据发送变化时，它才会重新取值，只要text不改变，计算属性就不更新。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;计算属性&lt;/p&gt;
+&lt;h3 id=&quot;计算属性&quot;&gt;&lt;a href=&quot;#计算属性&quot; class=&quot;headerlink&quot; title=&quot;计算属性&quot;&gt;&lt;/a&gt;计算属性&lt;/h3&gt;&lt;p&gt;使用计算属性的目的是在遇到复杂逻辑时，避免臃肿和难以阅读与维护。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;l
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
     
   </entry>
   
@@ -181,7 +262,7 @@
     <link href="http://yoursite.com/2018/03/17/Vuejs01/"/>
     <id>http://yoursite.com/2018/03/17/Vuejs01/</id>
     <published>2018-03-17T11:35:05.000Z</published>
-    <updated>2018-03-25T13:08:15.760Z</updated>
+    <updated>2018-03-27T12:40:03.674Z</updated>
     
     <content type="html"><![CDATA[<p>实例与数据绑定</p><p><img src="https://upload-images.jianshu.io/upload_images/10826501-ad4f7309fea2e8e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="内容截图"></p><hr><p>真的难受啊，无论怎么都上传不了这一篇，说是markdown编码冲突，我还在研究，只能先上图了</p>]]></content>
     
@@ -465,86 +546,6 @@
     
     
       <category term="IOS" scheme="http://yoursite.com/tags/IOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>评论功能上线啦！</title>
-    <link href="http://yoursite.com/2018/02/26/Blog-1/"/>
-    <id>http://yoursite.com/2018/02/26/Blog-1/</id>
-    <published>2018-02-26T06:41:09.000Z</published>
-    <updated>2018-03-01T04:14:26.851Z</updated>
-    
-    <content type="html"><![CDATA[<p>评论功能的实现效果</p><h2 id="评论及流量采集已上线"><a href="#评论及流量采集已上线" class="headerlink" title="评论及流量采集已上线"></a>评论及流量采集已上线</h2><hr><p>经过反复测试及部分崩坏，终于搞定了评论功能，先说一下评论需求开始的考量。</p><p>以下个人说法仅经过material主题测试。</p><hr><p> <strong>1. Disqus</strong><br> 国外评论系统，需科学上网，pass</p><hr><p> <strong>2. 畅言</strong><br> 域名需备案，暂时pass</p><hr><p> <strong>3. 来必利</strong><br> 韩国人开发的评论系统，测试着用了一下，先说安装方法吧。</p><ol><li>注册来必利账号</li><li>进入账号后台</li><li>点击代码管理</li><li>拷贝data-uid=”此处未需要拷贝的内容”&gt;</li><li>进入主题内的_config.yml配置文件</li><li>将comment: use:后改为livere</li><li>添加livere_data_uid:在后加入复制内容</li></ol><p>以上功能请务必<strong>确保_widget/comment/下有livere</strong>这个文件夹</p><p>接下来说一下这个评论系统的尴尬之处</p><ol><li>在refer处添加的评论系统，加载速度感人</li><li>评论必须登录第三方账号，游客类型恐怕留言兴趣都没有（哪有游客？不存在的）</li><li>丑</li></ol><hr><p> <strong>4. valine</strong></p><p> 主人公登场！<br> 这个评论系统应该是我个人感觉最满意的！<br> 无需登录！界面简洁！流量记录！<br> 迫不及待的安利起来了</p><ol><li>注册leancloud账号</li><li>进入控制台</li><li>创建应用（默认JavaScript SDK）</li><li>创建class，名称为Counter</li><li><strong>ACL权限必须无限制</strong></li><li>进入主题内的_config.yml配置文件</li><li>将comment: use:后改为valine</li><li>添加valine_leancloud_appId和valine_leancloud_appKey</li><li>appId和appKey在leancloud设置-应用key里可以找到</li><li>顺便添加流量采集与流量分析</li><li>修改leadcloud enable:true（默认为false）</li><li>配置app_id与app_key，与valine一致。</li></ol><p>以上功能请务必<strong>确保_widget/comment/下有valine</strong>这个文件夹</p><hr><p>至此博客评论及流量采集已经完成，撒花~~~</p><p>作者 Felix<br>2018 年 02月 26日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;评论功能的实现效果&lt;/p&gt;
-&lt;h2 id=&quot;评论及流量采集已上线&quot;&gt;&lt;a href=&quot;#评论及流量采集已上线&quot; class=&quot;headerlink&quot; title=&quot;评论及流量采集已上线&quot;&gt;&lt;/a&gt;评论及流量采集已上线&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;经过反复测试及部分崩坏，终于搞定
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="Valine" scheme="http://yoursite.com/tags/Valine/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记一次Hexo同时部署GitHub和Coding</title>
-    <link href="http://yoursite.com/2018/02/26/Blog-2/"/>
-    <id>http://yoursite.com/2018/02/26/Blog-2/</id>
-    <published>2018-02-26T02:58:38.000Z</published>
-    <updated>2018-03-01T04:13:34.172Z</updated>
-    
-    <content type="html"><![CDATA[<p>如何优化加载速度与部署问题</p><h2 id="Hexo同时部署GitHub和Coding"><a href="#Hexo同时部署GitHub和Coding" class="headerlink" title="Hexo同时部署GitHub和Coding"></a>Hexo同时部署GitHub和Coding</h2><hr><p>GitHub加载速度实在是太慢了，静态资源加载可以说是等一年–<br>参考部分大佬优化加载的方式，最后选择了coding<br>这是原博<a href="http://gaomf.cn/2015/11/01/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/" target="_blank" rel="noopener">Hexo博客优化加载速度</a></p><p> <strong>首先需要注册一个coding账号</strong><br> 傻瓜式操作不再多加说明</p><p> <strong>创建新项目</strong><br> 点击创建新项目，项目名称一定要是 <strong>你的用户名+coding.me</strong><br> 例如：taylorfelix.coding.me</p><p> <strong>点击Page服务</strong><br> 静态page-部署来源-master</p><p> <strong>部署ssh</strong><br> 点击部署公钥，添加ssh-rsa<br> 此处ssh应与github部署的ssh一致</p><p> 此处已完成coding所有配置</p><p> <strong>修改Hexo根目录_config.yml文件</strong><br> 直接拉到最底部，在deploy处配置<br> <pre>deploy:<br> type: git<br> repository:<br>   github: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:TaylorFelix/TaylorFelix.github.io.git<br>   coding: <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a>:taylorfelix/taylorfelix.coding.me.git<br> branch: master</pre><br> 此处每个：后应空一格</p><p> <strong>配置完成开始部署</strong><br> 打开cmd（此处对于windows而言）,到你的项目目录<br> <pre>hexo d -g</pre><br> 完成部署</p><hr><p>作者 Felix<br>2018 年 02月 26日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;如何优化加载速度与部署问题&lt;/p&gt;
-&lt;h2 id=&quot;Hexo同时部署GitHub和Coding&quot;&gt;&lt;a href=&quot;#Hexo同时部署GitHub和Coding&quot; class=&quot;headerlink&quot; title=&quot;Hexo同时部署GitHub和Coding&quot;&gt;&lt;/a&gt;He
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用命令采集</title>
-    <link href="http://yoursite.com/2018/02/24/Git-1/"/>
-    <id>http://yoursite.com/2018/02/24/Git-1/</id>
-    <published>2018-02-24T08:08:18.000Z</published>
-    <updated>2018-03-01T04:13:35.161Z</updated>
-    
-    <content type="html"><![CDATA[<p>一些常用的Git指令</p><h2 id="常用指令采集"><a href="#常用指令采集" class="headerlink" title="常用指令采集"></a>常用指令采集</h2><hr><p><strong>Hexo与Git库同步（本地同步至git）</strong></p><pre>hexo d -g</pre><hr><p><strong>Hexo运行测试预览</strong></p><pre>hexo s</pre><hr><p><strong>GitHub同步指令集</strong></p><p><pre>git init</pre></p><p><pre>git add .</pre></p><p><pre>git commit -m “此处为项目说明”</pre></p><p><pre>git remote add origin 远程库地址</pre><br>   此处为关联远程数据库</p><p><pre>git pull –rebase origin master</pre><br>此处为远程库与本地同步合并（若远程库不为空一定要做这一步）</p><p><pre>git -u origin master</pre><br>内容推送到远程（之后开始验证然后上传）</p><p><pre>git status</pre><br>状态查询</p><hr><p><strong>Git常用命令</strong><br>生成.ssh文件</p><p><pre>ssh-keygen -t rsa -C “<a href="mailto:1023614047@qq.com" target="_blank" rel="noopener">1023614047@qq.com</a>“</pre><br>判断是否在本机配置远程连接成功</p><p><pre>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></pre><br>删除远程仓库</p><p><pre>git remote rm origin</pre><br>更新本地仓库到github</p><p><pre>git push -u origin master</pre><br>将文件夹下所有文件添加到版本库</p><hr><p>作者 Felix<br>2018 年 02月 24日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一些常用的Git指令&lt;/p&gt;
-&lt;h2 id=&quot;常用指令采集&quot;&gt;&lt;a href=&quot;#常用指令采集&quot; class=&quot;headerlink&quot; title=&quot;常用指令采集&quot;&gt;&lt;/a&gt;常用指令采集&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Hexo与Git库同步（本地同步至git）&lt;/
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
     
   </entry>
   
