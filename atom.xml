@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-27T12:40:07.575Z</updated>
+  <updated>2018-04-05T13:23:15.351Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Whisper-4</title>
+    <link href="http://yoursite.com/2018/04/05/Whisper-4/"/>
+    <id>http://yoursite.com/2018/04/05/Whisper-4/</id>
+    <published>2018-04-05T13:17:09.000Z</published>
+    <updated>2018-04-05T13:23:15.351Z</updated>
+    
+    <content type="html"><![CDATA[<p>只有不断接触新事物才能不断认识到自己的不足</p><h3 id="关于最近"><a href="#关于最近" class="headerlink" title="关于最近"></a>关于最近</h3><p>其实很烦，去杭州面试了一次，前端。<br>可惜吧，虽然公司不大，氛围也还行，但自己真的是没有那个基础，我已经在努力写前端了，可惜是能力不足。<br>连续三个问题答不出来，我其实是很尴尬的，我都难以回忆当时是怎么走出办公楼的。<br>还有上海，企业是真的大，环境是真的好，要求是真的高。<br>我感觉自己不足的地方很多，那段时间，感觉自己真的是啥都不行。   </p><h3 id="关于答辩"><a href="#关于答辩" class="headerlink" title="关于答辩"></a>关于答辩</h3><p>很生气吧，也很后悔，干嘛要进小组项目，自己能全部答出来，然后他俩什么都不会，然后就凉了<br>我是真的无语，进入到二辩。<br>傻吊班主任，我是真的烦你。<br>二辩走过场，但也很烦。    </p><h3 id="关于住宿"><a href="#关于住宿" class="headerlink" title="关于住宿"></a>关于住宿</h3><p>或许是公司惜才（雾<br>现在住在员工宿舍，4人间只住两个，目前还算舒适。    </p><h3 id="接下来的计划"><a href="#接下来的计划" class="headerlink" title="接下来的计划"></a>接下来的计划</h3><p>买个MacBookPro，毕竟一直以来的想法还是要实现的。<br>我不会放弃前端的。    </p><p>2018/4/5</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;只有不断接触新事物才能不断认识到自己的不足&lt;/p&gt;
+&lt;h3 id=&quot;关于最近&quot;&gt;&lt;a href=&quot;#关于最近&quot; class=&quot;headerlink&quot; title=&quot;关于最近&quot;&gt;&lt;/a&gt;关于最近&lt;/h3&gt;&lt;p&gt;其实很烦，去杭州面试了一次，前端。&lt;br&gt;可惜吧，虽然公司不大，氛
+      
+    
+    </summary>
+    
+      <category term="Whisper" scheme="http://yoursite.com/categories/Whisper/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Vuejs学习笔记04</title>
@@ -519,33 +545,6 @@
     
     
       <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IOS开发学习(一)</title>
-    <link href="http://yoursite.com/2018/02/26/IOS-1/"/>
-    <id>http://yoursite.com/2018/02/26/IOS-1/</id>
-    <published>2018-02-26T09:34:09.000Z</published>
-    <updated>2018-03-01T04:09:20.854Z</updated>
-    
-    <content type="html"><![CDATA[<p>C程序的结构与变量</p><h1 id="IOS开发学习"><a href="#IOS开发学习" class="headerlink" title="IOS开发学习"></a>IOS开发学习</h1><p>新的起点</p><h1 id="C程序的结构"><a href="#C程序的结构" class="headerlink" title="C程序的结构"></a>C程序的结构</h1><h2 id="main例程"><a href="#main例程" class="headerlink" title="main例程"></a>main例程</h2><p>所有c程序都有一个main例程。在OS加载第一个C程序后，程序开始执行main例程中的第一行代码。</p><pre><code>int main(int argc, const char *argv[]){return 0;}</code></pre><p>关键特性包括:</p><ol><li>第一行上的指导int提升main给OS返回一个整形值，作为返回代码</li><li>main是必需的</li><li>main接收argc个参数，存储在数组argv中</li><li>return 0; 指示将0作为返回代码传给OS<br>简化形式：<pre><code>int main (void){}</code></pre>格式化</li></ol><hr><p>语句用分号;终止</p><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>经典注释<pre>//</pre><br>封闭注释<pre>/**/</pre></p><h2 id="变量和函数名称"><a href="#变量和函数名称" class="headerlink" title="变量和函数名称"></a>变量和函数名称</h2><p>首字符采用下划线或字母<br>以下划线开头的名称传统上用于打算设置为私有的或者供内部使用的变量和函数</p><pre><code>_privateVariable</code></pre><p>名称区分大小写，且不能有任何空白<br>驼峰式命名方式</p><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p>朴素的C程序代码放在一个或多个拓展名为<strong>.c</strong>的文件中</p><pre><code>ACProgram.c</code></pre><p>使用Object-C对象的代码放在一个或多个拓展名为<strong>.m</strong>的文件中</p><pre><code>AnObjectiveProgram.m</code></pre><p>C程序还使用头文件，头文件通常包含可以被许多.c和.m文件共享的多种定义。通过使用#include或#import预处理指令</p><pre><code>AHeaderFile.h</code></pre><h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>变量声明形式如下：</p><pre><code>variabletype name;</code></pre><p>C语言允许在单个声明中声明多个变量：</p><pre><code>variabletype name1,name2,name3;</code></pre><h2 id="整形"><a href="#整形" class="headerlink" title="整形"></a>整形</h2><p>C语言提供了以下类型用于保存整数：char、short、int、long、long long.<br>可以把整形声明为unsigned:</p><pre><code>unsigned char a;unsigned short b;unsigned int c;unsigned long d;unsigned long long e;</code></pre><p>单独使用unsigned时，意指 unsigned int:</p><pre><code>unsigned a;   // a is an unsigned int</code></pre><p>unsinged通常赋值为正数。</p><h2 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h2><p>浮点型是float、double、long double<br>浮点值总是带符号的</p><pre><code>float aFloat;double aDouble;long double aLongDouble;</code></pre><h2 id="真值"><a href="#真值" class="headerlink" title="真值"></a>真值</h2><p>普通的表达式通常用于真值。求值为0的表达式被视为“假”，而求值为非0的表达式视为“真”</p><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>可以在声明变量时初始化它们：</p><pre><code>int a=9;int b=2*4;float c=3.14159;char d=&#39;a&#39;;</code></pre><h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p>指针是其值为一个内存地址的变量。它“指向”内存中的某个位置。<br>声明一个指针，在变量名称前面放置一个*</p><pre><code>int *pointerVar;</code></pre><p><strong>泛型指针</strong><br>如果一个变量被声明为指向void的指针，那它成为泛型指针。</p><pre><code>int a=9;int b;void *genericPointer;genericPointer = &amp;a;b = *(( int *) genericPointer );   </code></pre><p>上例使用强制转换运算符(int *)强制编译器把genericPointer视作一个指向整数的指针。</p><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>C数组是同类型元素的有序集合。</p><pre><code>int a[100];</code></pre><p>通过下面的方式访问各个元素</p><pre><code>a [6] = 9;</code></pre><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>声明方式如下：</p><pre><code>int b[4][10];</code></pre><p>多维数组以线性方式逐行存储在内存中。<br>使用指针表示法：</p><pre><code>b[i][j]</code></pre><p>可能写作：</p><pre><code>*(b+i*10+j)</code></pre><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>C语言的字符串是字节的一维数组，并利用0字节终止。</p><pre><code>char *aString =&quot;Hello&quot;;aString = &quot;World&quot;;</code></pre><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>结构可以成为单个实体的相关变量的集合。</p><pre><code>struct dailyTemperatures{  float high;  float low;  int year;  int dayOfYear;}</code></pre><p>结构中各个变量称为成员变量。<br>关键字struct后面的名称是结构标签。<br>结构可以具有其他结构作为成员。</p><pre><code>struct hiLow{  float high;  float low;};struct dailyTemperatures{  struct hiLow tempExtremes;  int year;  int dayOfYear;};</code></pre><p>这样，设置today的高温将如下显示</p><pre><code>struct dailyTemperatures today;today.tempExtremes.high=68.0;</code></pre><h2 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h2><p>typedef声明提供了一种用于为变量类型创建别名的方式：</p><pre><code>typedef float Temperature;</code></pre><p>Temperature可用于声明变量，就像它是内置的类型之一一样：</p><pre><code>Temperature high,low;</code></pre><h2 id="枚举常量"><a href="#枚举常量" class="headerlink" title="枚举常量"></a>枚举常量</h2><p>enum语句允许定义一组整形常量：</p><pre><code>enum woodwind { oboe,flute,clarinet,bassoon };</code></pre><p>上句的结果是：obue、flute、clarinet、bassoon分别是值为0、1、2、3的常量。<br>enum后面的名称成为枚举标签。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;C程序的结构与变量&lt;/p&gt;
-&lt;h1 id=&quot;IOS开发学习&quot;&gt;&lt;a href=&quot;#IOS开发学习&quot; class=&quot;headerlink&quot; title=&quot;IOS开发学习&quot;&gt;&lt;/a&gt;IOS开发学习&lt;/h1&gt;&lt;p&gt;新的起点&lt;/p&gt;
-&lt;h1 id=&quot;C程序的结构&quot;&gt;&lt;a href=
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="IOS" scheme="http://yoursite.com/tags/IOS/"/>
     
   </entry>
   
