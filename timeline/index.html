@@ -1,1858 +1,743 @@
-<!DOCTYPE html>
-<html style="display: none;" lang="zh">
-    <head>
-    <meta charset="utf-8">
-    <!--
-        © Material Theme
-        https://github.com/viosey/hexo-theme-material
-        Version: 1.5.2 -->
-    <script>
-        window.materialVersion = "1.5.2"
-        // Delete localstorage with these tags
-        window.oldVersion = [
-            'codestartv1',
-            '1.3.4',
-            '1.4.0',
-            '1.4.0b1',
-            '1.5.0'
-        ]
-    </script>
-
-    <!-- dns prefetch -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-
-
-    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
-
-
-    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+<!doctype html>
 
 
 
-
-
-
-
-
-
-
-
-
-    <!-- Meta & Info -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!-- Title -->
-    
-    <title>
-        
-            timeline | 
-        
-        Para-para-paradise
-    </title>
-
-    <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" href="/img/favicon.png">
-
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
-    <meta name="theme-color" content="#E74C3F">
-
-    <!-- Disable Fucking Bloody Baidu Tranformation -->
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-    <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/css/ie-blocker.css">
-
-        
-            <script src="/js/ie-blocker.zhCN.js"></script>
-        
-    <![endif]-->
-
-    <!-- Import lsloader -->
-    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
-
-    <!-- Import queue -->
-    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
-
-    <!-- Import CSS -->
-    
-        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-
-        
-
-    
-
-    
-
-    <!-- Config CSS -->
-
-<!-- Other Styles -->
-<style>
-  body, html {
-    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    overflow-x: hidden !important;
-  }
   
-  code {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  }
-
-  a {
-    color: #E74C3F;
-  }
-
-  .mdl-card__media,
-  #search-label,
-  #search-form-label:after,
-  #scheme-Paradox .hot_tags-count,
-  #scheme-Paradox .sidebar_archives-count,
-  #scheme-Paradox .sidebar-colored .sidebar-header,
-  #scheme-Paradox .sidebar-colored .sidebar-badge{
-    background-color: #E74C3F !important;
-  }
-
-  /* Sidebar User Drop Down Menu Text Color */
-  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
-  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-    color: #E74C3F !important;
-  }
-
-  #post_entry-right-info,
-  .sidebar-colored .sidebar-nav li:hover > a,
-  .sidebar-colored .sidebar-nav li:hover > a i,
-  .sidebar-colored .sidebar-nav li > a:hover,
-  .sidebar-colored .sidebar-nav li > a:hover i,
-  .sidebar-colored .sidebar-nav li > a:focus i,
-  .sidebar-colored .sidebar-nav > .open > a,
-  .sidebar-colored .sidebar-nav > .open > a:hover,
-  .sidebar-colored .sidebar-nav > .open > a:focus,
-  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-    color: #E74C3F !important;
-  }
-
-  .toTop {
-    background: #E74C3F !important;
-  }
-
-  .material-layout .material-post>.material-nav,
-  .material-layout .material-index>.material-nav,
-  .material-nav a {
-    color: #E74C3F;
-  }
-
-  #scheme-Paradox .MD-burger-layer {
-    background-color: #E74C3F;
-  }
-
-  #scheme-Paradox #post-toc-trigger-btn {
-    color: #E74C3F;
-  }
-
-  .post-toc a:hover {
-    color: #E74C3F;
-    text-decoration: underline;
-  }
-
-</style>
 
 
-<!-- Theme Background Related-->
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <style>
-      body{
-        background-color: #F6F6F6;
-      }
 
-      /* blog_info bottom background */
-      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
-        background-color: #fff;
-      }
-    </style>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
 
-<!-- Fade Effect -->
-
-    <style>
-      .fade {
-        transition: all 800ms linear;
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-        opacity: 1;
-      }
-
-      .fade.out{
-        opacity: 0;
-      }
-    </style>
-
-
-<!-- Import Font -->
-<!-- Import Roboto -->
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-
-
-<!-- Import Material Icons -->
-
-
-    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
 
 
-    <!-- Import jQuery -->
-    
-        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
-    
-
-    <!-- WebAPP Icons -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Para-para-paradise">
-    <meta name="msapplication-starturl" content="http://yoursite.com/timeline/">
-    <meta name="msapplication-navbutton-color" content="#E74C3F">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Para-para-paradise">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
-
-    <!-- Site Verification -->
-    
-    
-
-    <!-- RSS -->
-    
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/timeline/">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="timeline | Para-para-paradise">
-    <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="">
-    
-
-    
-
-    <!-- The Twitter Card protocol -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Add canonical link for SEO -->
-    
-        <link rel="canonical" href="http://yoursite.com/timeline/index.html" />
-    
-
-    <!-- Structured-data for SEO -->
-    
-        
 
 
 
-    
 
-    <!-- Analytics -->
-    
-    
-    
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
-    <!-- Custom Head -->
-    
 
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexTD" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Para-para-paradise" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="timeline">
+<meta property="og:url" content="http://yoursite.com/timeline/index.html">
+<meta property="og:site_name" content="Para-para-paradise">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-25T12:36:18.235Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="timeline">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: undefined,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/timeline/"/>
+
+  <title>
+  
+
+  
+    timeline | Para-para-paradise
+  
+</title>
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
+  
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s6.cnzz.com/stat.php?id=CNZZ&web_id=CNZZ" type="text/javascript"></script>
+  </div>
+
+
+
+
+
+  
+  
     
-        <body id="scheme-Paradox" class="lazy">
-            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
-                
-
-                <!-- Main Container -->
-                <main class="material-layout__content" id="main">
-
-                    <!-- Top Anchor -->
-                    <div id="top"></div>
-
-                    
-                        <!-- Hamburger Button -->
-                        <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
-                        </button>
-                    
-
-                    <!-- Post TOC -->
-
-
-<!-- Layouts -->
-
-    <!-- Single Timeline Page -->
-    <style>
-	.md-container {
-		width: 90%;
-		max-width: 1170px;
-		margin: 0 auto;
-	}
-	.md-container::after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-	#md-timeline {
-		position: relative;
-		padding: 2em 0;
-		margin-top: 2em;
-		margin-bottom: 2em;
-	}
-	@media screen and (max-device-width:480px){
-		#md-timeline {
-			margin-top: 6em;
-		}
-	}
-	#md-timeline::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 18px;
-		height: 100%;
-		width: 2px;
-		background: #d7e4ed;
-	}
-	.md-timeline-title {
-		font-size: 20px;
-		line-height: 24px;
-	}
-	.md-timeline-content a {
-		text-decoration: none;
-	}
-	.md-timeline-info {
-		height: 20px;
-		width: 100%;
-		margin: 10px 0px;
-	}
-	.md-timeline-info-span {
-		float: right;
-		margin-right: 10px;
-		text-align: right;
-	}
-	.md-timeline-excerpt {
-	    	clear: right; 
-	}
-	@media only screen and (min-width: 1170px) {
-		#md-timeline {
-			margin-top: 3em;
-			margin-bottom: 3em;
-		}
-		#md-timeline::before {
-			left: 50%;
-			margin-left: -2px;
-		}
-	}
-	.md-timeline-block {
-		position: relative;
-		margin: 2em 0;
-	}
-	.md-timeline-block:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	.md-timeline-block:first-child {
-		margin-top: 0;
-	}
-	.md-timeline-block:last-child {
-		margin-bottom: 0;
-	}
-	@media only screen and (min-width: 1170px) {
-		.md-timeline-block {
-			margin: 4em 0;
-		}
-		.md-timeline-block:first-child {
-			margin-top: 0;
-		}
-		.md-timeline-block:last-child {
-			margin-bottom: 0;
-		}
-	}
-	.md-timeline-date {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 60px;
-		height: 40px;
-		border-radius: box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-	}
-	.md-timeline-date.blue {
-		background: #0D395F;
-		-webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-	}
-	@media only screen and (min-width: 1170px) {
-		.md-timeline-date {
-			width: 60px;
-			height: 60px;
-			left: 50%;
-			margin-left: -30px;
-			/* Force Hardware Acceleration in WebKit */
-			-webkit-transform: translateZ(0);
-			-webkit-backface-visibility: hidden;
-		}
-		.cssanimations .md-timeline-date.is-hidden {
-			visibility: hidden;
-		}
-		.cssanimations .md-timeline-date.bounce-in {
-			visibility: visible;
-			-webkit-animation: md-bounce-1 0.6s;
-			-moz-animation: md-bounce-1 0.6s;
-			animation: md-bounce-1 0.6s;
-		}
-	}
-	@-webkit-keyframes md-bounce-1 {
-		0% {
-			opacity: 0;
-			-webkit-transform: scale(0.5);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: scale(1.2);
-		}
-		100% {
-			-webkit-transform: scale(1);
-		}
-	}
-	@-moz-keyframes md-bounce-1 {
-		0% {
-			opacity: 0;
-			-moz-transform: scale(0.5);
-		}
-		60% {
-			opacity: 1;
-			-moz-transform: scale(1.2);
-		}
-		100% {
-			-moz-transform: scale(1);
-		}
-	}
-	@keyframes md-bounce-1 {
-		0% {
-			opacity: 0;
-			-webkit-transform: scale(0.5);
-			-moz-transform: scale(0.5);
-			-ms-transform: scale(0.5);
-			-o-transform: scale(0.5);
-			transform: scale(0.5);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: scale(1.2);
-			-moz-transform: scale(1.2);
-			-ms-transform: scale(1.2);
-			-o-transform: scale(1.2);
-			transform: scale(1.2);
-		}
-		100% {
-			-webkit-transform: scale(1);
-			-moz-transform: scale(1);
-			-ms-transform: scale(1);
-			-o-transform: scale(1);
-			transform: scale(1);
-		}
-	}
-	.md-timeline-content {
-		position: relative;
-		margin-left: 60px;
-		background: white;
-		padding: 1em;
-		-webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-	}
-	.md-timeline-content:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	.md-timeline-content h2 {
-		color: #303e49;
-	}
-	.md-timeline-content p, .md-timeline-content .md-read-more, .md-timeline-content .md-date {
-		font-size: 13px;
-		font-size: 0.8125rem;
-	}
-	.md-timeline-content .md-read-more, .md-timeline-content .md-date {
-		display: inline-block;
-	}
-	.md-timeline-content p {
-		margin: 1em 0;
-		line-height: 1.6;
-	}
-	.md-timeline-content .md-read-more {
-		float: right;
-		padding: .8em 1em;
-		background: #acb7c0;
-		color: white;
-		border-radius: 0.25em;
-	}
-	.md-date {
-		color: white;
-		text-align: center;
-	}
-	.no-touch .md-timeline-content .md-read-more:hover {
-		background-color: #bac4cb;
-	}
-	.md-timeline-content::before {
-		content: '';
-		position: absolute;
-		top: 16px;
-		right: 100%;
-		height: 0;
-		width: 0;
-		border: 7px solid transparent;
-		border-right: 7px solid white;
-	}
-	@media only screen and (min-width: 768px) {
-		.md-timeline-content h2 {
-			font-size: 20px;
-			font-size: 1.25rem;
-		}
-		.md-timeline-content p {
-			font-size: 16px;
-			font-size: 1rem;
-		}
-		.md-timeline-content .md-read-more {
-			font-size: 14px;
-			font-size: 0.875rem;
-		}
-	}
-	@media only screen and (min-width: 1170px) {
-		.md-date {
-			text-align: center;
-			margin-top: 10px;
-			line-height: 20px;
-		}
-		.md-timeline-content {
-			margin-left: 0;
-			padding: 1.6em;
-			width: 45%;
-		}
-		.md-timeline-content::before {
-			top: 24px;
-			left: 100%;
-			border-color: transparent;
-			border-left-color: white;
-		}
-		.md-timeline-content .md-read-more {
-			float: left;
-		}
-		.md-timeline-block:nth-child(even) .md-timeline-content {
-			float: right;
-		}
-		.md-timeline-block:nth-child(even) .md-timeline-content::before {
-			top: 24px;
-			left: auto;
-			right: 100%;
-			border-color: transparent;
-			border-right-color: white;
-		}
-		.md-timeline-block:nth-child(even) .md-timeline-content .md-read-more {
-			float: right;
-		}
-		.cssanimations .md-timeline-content.is-hidden {
-			visibility: hidden;
-		}
-		.cssanimations .md-timeline-content.bounce-in {
-			visibility: visible;
-			-webkit-animation: md-bounce-2 0.6s;
-			-moz-animation: md-bounce-2 0.6s;
-			animation: md-bounce-2 0.6s;
-		}
-	}
-	@media only screen and (min-width: 1170px) {
-		/* inverse bounce effect on even content blocks */
-		.cssanimations .md-timeline-block:nth-child(even) .md-timeline-content.bounce-in {
-			-webkit-animation: md-bounce-2-inverse 0.6s;
-			-moz-animation: md-bounce-2-inverse 0.6s;
-			animation: md-bounce-2-inverse 0.6s;
-		}
-	}
-	@-webkit-keyframes md-bounce-2 {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateX(-100px);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: translateX(20px);
-		}
-		100% {
-			-webkit-transform: translateX(0);
-		}
-	}
-	@-moz-keyframes md-bounce-2 {
-		0% {
-			opacity: 0;
-			-moz-transform: translateX(-100px);
-		}
-		60% {
-			opacity: 1;
-			-moz-transform: translateX(20px);
-		}
-		100% {
-			-moz-transform: translateX(0);
-		}
-	}
-	@keyframes md-bounce-2 {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateX(-100px);
-			-moz-transform: translateX(-100px);
-			-ms-transform: translateX(-100px);
-			-o-transform: translateX(-100px);
-			transform: translateX(-100px);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: translateX(20px);
-			-moz-transform: translateX(20px);
-			-ms-transform: translateX(20px);
-			-o-transform: translateX(20px);
-			transform: translateX(20px);
-		}
-		100% {
-			-webkit-transform: translateX(0);
-			-moz-transform: translateX(0);
-			-ms-transform: translateX(0);
-			-o-transform: translateX(0);
-			transform: translateX(0);
-		}
-	}
-	@-webkit-keyframes md-bounce-2-inverse {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateX(100px);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: translateX(-20px);
-		}
-		100% {
-			-webkit-transform: translateX(0);
-		}
-	}
-	@-moz-keyframes md-bounce-2-inverse {
-		0% {
-			opacity: 0;
-			-moz-transform: translateX(100px);
-		}
-		60% {
-			opacity: 1;
-			-moz-transform: translateX(-20px);
-		}
-		100% {
-			-moz-transform: translateX(0);
-		}
-	}
-	@keyframes md-bounce-2-inverse {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateX(100px);
-			-moz-transform: translateX(100px);
-			-ms-transform: translateX(100px);
-			-o-transform: translateX(100px);
-			transform: translateX(100px);
-		}
-		60% {
-			opacity: 1;
-			-webkit-transform: translateX(-20px);
-			-moz-transform: translateX(-20px);
-			-ms-transform: translateX(-20px);
-			-o-transform: translateX(-20px);
-			transform: translateX(-20px);
-		}
-		100% {
-			-webkit-transform: translateX(0);
-			-moz-transform: translateX(0);
-			-ms-transform: translateX(0);
-			-o-transform: translateX(0);
-			transform: translateX(0);
-		}
-	}
-</style>
-
-<section id="md-timeline" class="md-container">
-   	   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">4月 05 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/04/05/Whisper-4/">Whisper-4</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Whisper/">Whisper</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/面试/">面试</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							只有不断接触新事物才能不断认识到自己的不足
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 27 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/27/Vuejs04/">Vuejs学习笔记04</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Vuejs/">Vuejs</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Vuejs/">Vuejs</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							待改善
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 27 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/27/JavaScript02/">JavaScript摘抄</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							记笔记这种事从来不觉得累
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 26 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/26/JavaScript01/">JavaScript小纪</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							一些闲来无事打的markdown
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 20 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/20/Whisper-3/">最近着手换一套博客主题</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Whisper/">Whisper</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Hexo/">Hexo</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							应该架构还是采用Hexo
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 20 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/20/Vuejs03/">Vuejs学习笔记03</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Vuejs/">Vuejs</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Vuejs/">Vuejs</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							计算属性
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 19 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/19/SqlServer01/">转换思路，抛弃拼接，参数传值</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/SqlServer/">SqlServer</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Sql/">Sql</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							拼接方式写Sql语句最近真是让我头大啊
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 19 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/19/Whisper-2/">备案那些事儿</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Whisper/">Whisper</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/备案/">备案</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							最近在忙备案的事情
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 19 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/19/MyResume/">MyResume</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/简历/">简历</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/简历/">简历</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							很久没做过简历了
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 19 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/19/Vuejs02/">Vuejs学习笔记02</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Vuejs/">Vuejs</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Vuejs/">Vuejs</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							指令与事件
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 17 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/17/Vuejs01/">Vuejs学习笔记01</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Vuejs/">Vuejs</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Vuejs/">Vuejs</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							实例与数据绑定
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 12 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/12/Object-C03/">Object-C入门(三)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Object-C/">Object-C</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Object-C/">Object-C</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							循环结构的使用似乎都是一个样子  
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 12 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/12/Object-C02/">Object-C入门(二)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Object-C/">Object-C</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Object-C/">Object-C</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							数据类型及常量
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 11 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/11/Object-C01/">Object-C入门(一)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Object-C/">Object-C</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Object-C/">Object-C</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							object-c中类、对象和方法的简单应用与实现
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 10 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/10/Csharp-1/">关于sql server的增删改查</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/C/">C#</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/C/">C#</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							一个简单的报警维护页面
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 06 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/06/Php-1/">记一次企业微信二次验证开发</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/PHP/">PHP</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/PHP/">PHP</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							如何合理运用微信api的二次验证与回调
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 06 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/06/Bug-1/">Hexo踩坑指北</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Hexo/">Hexo</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Bug/">Bug</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							HEXO在windows上真是不断的坑啊–
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 02 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/03/02/Whisper-1/">缺钱</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Whisper/">Whisper</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/money/">money</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							缺钱就像缺血一样
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 28 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/28/IOS-2/">IOS开发学习(二)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/IOS/">IOS</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							关于运算符与表达式的学习
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 28 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/28/Git-2/">Hexo多电脑更新博客</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/GitHub/">GitHub</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							解决Hexo多电脑更新博客内容
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 26 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/26/IOS-1/">IOS开发学习(一)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/IOS/">IOS</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							C程序的结构与变量
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 26 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/26/Blog-1/">评论功能上线啦！</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Valine/">Valine</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							评论功能的实现效果
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 26 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/26/Blog-2/">记一次Hexo同时部署GitHub和Coding</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/GitHub/">GitHub</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							如何优化加载速度与部署问题
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 24 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/24/Git-1/">常用命令采集</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Study/">Study</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/GitHub/">GitHub</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							一些常用的Git指令
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 24 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/24/Work-1/">产线环境体验</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Work/">Work</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Work/">Work</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							各在其位，各司其职
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">2月 23 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/02/23/Hello/">你好，Blog</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/Whisper/">Whisper</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/Whisper/">Whisper</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							将碎片化时间利用起来
-
-						...
-					</p>
-                    		</div>
-			</div>	
-   			   	  		
-   	</section>
-
-<script type="text/ls-javascript" id="page-timeline-script">
-    var adjustFooter = function() {
-        if( ($('#bottom').offset().top + $('#bottom').outerHeight() )<$(window).height() ) {
-            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
-            $('#bottom').css('bottom', '-' + footerBottom + 'px');
-        }
-    };
-    $(document).ready(function() {
-        adjustFooter();
-    });
-</script>
-
-
-
-
-
-                    
-                        <!-- Overlay For Active Sidebar -->
-<div class="sidebar-overlay"></div>
-
-<!-- Material sidebar -->
-<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
-    <div id="sidebar-main">
-        <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
-    <!-- Top bar -->
-    <div class="top-bar"></div>
-
-    <!-- Sidebar toggle button -->
-    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
-        <i class="material-icons">clear_all</i>
-        <span class="mdl-button__ripple-container">
-            <span class="mdl-ripple">
-            </span>
-        </span>
-    </button>
-
-    <!-- Sidebar Avatar -->
-    <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="Felix's avatar">
+  
+
+  <div class="container one-collumn sidebar-position-right  ">
+    <div class="headband"></div>
+    
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/home_bg.jpg');">
+      <div class="header-inner"><a class="site-home" href="/">Para-para-paradise</a>
+
+<div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <div href="/"  class="brand">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Para-para-paradise</span>
+      <span class="logo-line-after"><i></i></span>
     </div>
+  </div>
+  <p class="site-subtitle">but it flew away from reach</p>
+</div>
 
-    <!-- Sidebar Email -->
-    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        m18896825060@163.com
-        <b class="caret"></b>
-    </a>
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签云
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <input type="text" id="local-search-input">
+ <span class="search-icon fa fa-search"></span>
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
 </div>
 
 
-        <!-- Sidebar Navigation  -->
-        <ul class="nav sidebar-nav">
-    <!-- User dropdown  -->
-    <li class="dropdown">
-        <ul id="settings-dropdown" class="dropdown-menu">
-            
-                <li>
-                    <a href="mailto: 1023614047@qq.com" target="_blank" title="Email Me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        
-                        Email Me
-                    </a>
-                </li>
-            
-        </ul>
-    </li>
-
-    <!-- Homepage -->
-    
-        <li id="sidebar-first-li">
-            <a href="/">
-                
-                    <i class="material-icons sidebar-material-icons">home</i>
-                
-                主页
-            </a>
-        </li>
-        
-    
-
-    <!-- Archives  -->
-    
-
-    <!-- Categories  -->
-    
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                
-                    <i class="material-icons sidebar-material-icons">subject</i>
-                
-                分类
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                <a class="sidebar_archives-link" href="/categories/C/">C#<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Object-C/">Object-C<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/PHP/">PHP<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/SqlServer/">SqlServer<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Study/">Study<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/Vuejs/">Vuejs<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Whisper/">Whisper<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Work/">Work<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/简历/">简历<span class="sidebar_archives-count">1</span></a>
-            </ul>
-        </li>
-        
-    
-
-    <!-- Pages  -->
-    
-        <li>
-            <a href="/timeline" title="时间线">
-                
-                    <i class="material-icons sidebar-material-icons">timeline</i>
-                
-                时间线
-            </a>
-        </li>
-        
-    
-        <li>
-            <a href="/about" title="关于我">
-                
-                    <i class="material-icons sidebar-material-icons">favorite</i>
-                
-                关于我
-            </a>
-        </li>
-        
-    
-        <li>
-            <a href="/tags" title="标签云">
-                
-                标签云
-            </a>
-        </li>
-        
-    
-        <li>
-            <a href="/links" title="友情链接">
-                
-                友情链接
-            </a>
-        </li>
-        
-    
-
-    <!-- Article Number  -->
-    
-</ul>
-
-
-        <!-- Sidebar Footer -->
-        <!--
-I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
-If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
-It will not impact the appearance and can give developers a lot of support :)
-
-很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
-如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
-它不会影响美观并可以给开发者很大的支持和动力。 :)
--->
-
-<!-- Sidebar Divider -->
-
-    <div class="sidebar-divider"></div>
-
-
-<!-- Theme Material -->
-
-    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            主题 - Material
-            <span class="sidebar-badge badge-circle">i</span>
-        </div>
-    </a>
-
-
-<!-- Help & Support -->
-<!--
-
--->
-
-<!-- Feedback -->
-<!--
-
--->
-
-<!-- About Theme -->
-<!--
-
--->
-
     </div>
+  
+</nav>
 
-    <!-- Sidebar Image -->
-    
-
-</aside>
-
-                    
-
-                    
-
-                    <!--Footer-->
-<footer class="mdl-mini-footer" id="bottom">
-    
-        <!-- Paradox Footer Left Section -->
-        <div class="mdl-mini-footer--left-section sns-list">
-    <!-- Twitter -->
-    
-
-    <!-- Facebook -->
-    
-
-    <!-- Google + -->
-    
-
-    <!-- Weibo -->
-    
-
-    <!-- Instagram -->
-    
-
-    <!-- Tumblr -->
-    
-
-    <!-- Github -->
-    
-        <a href="https://github.com/TaylorFelix" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
-                <span class="visuallyhidden">Github</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- LinkedIn -->
-    
-
-    <!-- Zhihu -->
-    
-
-    <!-- Bilibili -->
-    
-        <a href="https://space.bilibili.com/5157165/#/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
-                <span class="visuallyhidden">Bilibili</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Telegram -->
-    
-
-    <!-- V2EX -->
-    
-        <a href="https://www.v2ex.com/member/a1023614047" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-v2ex">
-                <span class="visuallyhidden">V2EX</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Segmentfault -->
-    
-</div>
+ </div>
+    </header>
 
 
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Para-para-paradise
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
             
-                <br>
-                
-                    <a href="http://www.miitbeian.gov.cn" rel="nofollow">苏ICP备18015808号</a>
-                
-            
+
+  <div id="posts" class="posts-expand">
+    
+    
+      
+    
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
         </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
 
-        <!-- Paradox Footer Right Section -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
-        <!--
-        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
-        It will not impact the appearance and can give developers a lot of support :)
+      
 
-        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
-        它不会影响美观并可以给开发者很大的支持。 :)
-        -->
+      
 
-        <div class="mdl-mini-footer--right-section">
-            <div>
-                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Felix" />
+          <p class="site-author-name" itemprop="name">Felix</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              
             </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签云</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/TaylorFelix" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://space.bilibili.com/5157165/#/" target="_blank" title="Bilibili">
+                  
+                    <i class="fa fa-fw fa-gratipay"></i>
+                  
+                  Bilibili
+                </a>
+              </span>
+            
+          
         </div>
-    
-</footer>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
 
 
-                    <!-- Import JS File -->
+        
+      </div>
+    </main>
 
-    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Felix</span>
+</div>
+
+<div class="powered-by">
+  power by <a class="theme-link" href="http://hexo.io">Hexo</a> 
+</div>
+
+<div class="theme-info">
+  theme -
+  <a class="theme-link" href="https://github.com/BearD01001/hexo-theme-nextd">
+    NexTD
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
 
 
 
-    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+        
+      </div>
+    </footer>
 
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
 
+  
 
-    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
-
-
-<script type="text/ls-javascript" id="NProgress-script">
-    NProgress.configure({
-        showSpinner: true
-    });
-    NProgress.start();
-    $('#nprogress .bar').css({
-        'background': '#E74C3F'
-    });
-    $('#nprogress .peg').css({
-        'box-shadow': '0 0 10px #E74C3F, 0 0 15px #E74C3F'
-    });
-    $('#nprogress .spinner-icon').css({
-        'border-top-color': '#E74C3F',
-        'border-left-color': '#E74C3F'
-    });
-    setTimeout(function() {
-        NProgress.done();
-        $('.fade').removeClass('out');
-    }, 800);
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
 
 
 
-    <!-- Leancloud -->
-    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-    <script>
-        AV.initialize('ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz', 'MyrPvAMueBwQRnN1wicjYCr4');
-    </script>
-    <script type="text/ls-javascript" id="leancloud-views-script">
-    function showTime(Counter) {
-        var query = new AV.Query(Counter);
-        $('.leancloud-views_num').each(function() {
-            var url = $(this).attr('id').trim();
-            query.equalTo('url', url);
-            query.find({
-                success: function(results) {
-                    if (results.length === 0) {
-                        var content = '0 ' + $(document.getElementById(url)).text();
-                        $(document.getElementById(url)).text(content);
-                        return;
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').fadeToggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
                     }
-                    for (var i = 0; i < results.length; i++) {
-                        var object = results[i];
-                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
-                        $(document.getElementById(url)).text(content);
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ decodeURIComponent(data_url) +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
                     }
-                },
-                error: function(object, error) {
-                    console.log('Error: ' + error.code + ' ' + error.message);
-                }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
             });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').fadeOut(function() {
+          $(".popoverlay").remove();
+          $('body').css('overflow', '');
+      });
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("ckuTPe5U5E8ydkF2tgsTWidV-gzGzoHsz", "MyrPvAMueBwQRnN1wicjYCr4");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
         });
     }
 
     function addCount(Counter) {
-      var Counter = AV.Object.extend('Counter');
-      url = $('.leancloud-views_num').attr('id').trim();
-      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
       var query = new AV.Query(Counter);
-      query.equalTo('url', url);
+
+      query.equalTo("url", url);
       query.find({
-          success: function(results) {
-            if (results.length > 0) {
-                var counter = results[0];
-                counter.fetchWhenSave(true);
-                counter.increment('time');
-                counter.save(null, {
-                    success: function(counter) {
-                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
-                        $(document.getElementById(url)).text(content);
-                    },
-                    error: function(counter, error) {
-                        console.log('Failed to save Visitor num, with error message: ' + error.message);
-                    }
-                });
-            } else {
-              var newcounter = new Counter();
-              newcounter.set('title', title);
-              newcounter.set('url', url);
-              newcounter.set('time', 1);
-              newcounter.save(null, {
-                  success: function(newcounter) {
-                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
-                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
-                      $(document.getElementById(url)).text(content);
-                  },
-                  error: function(newcounter, error) {
-                      console.log('Failed to create');
-                  }
-              });
-            }
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
         },
         error: function(error) {
-            console.log('Error:' + error.code + ' ' + error.message);
+          console.log('Error:' + error.code + " " + error.message);
         }
       });
     }
+
     $(function() {
-        var Counter = AV.Object.extend('Counter');
-        if ($('.leancloud-views_num').length === 1) {
-            addCount(Counter);
-        } else if ($('.post-title-link').length > 1) {
-            showTime(Counter);
-        }
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
     });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
 </script>
 
 
-
-
-    <!-- Busuanzi -->
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-   
-
-
-
-
-
-<!-- UC Browser Compatible -->
-<script>
-	var agent = navigator.userAgent.toLowerCase();
-	if(agent.indexOf('ucbrowser')>0) {
-		document.write('<link rel="stylesheet" href="/css/uc.css">');
-	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
-	}
-</script>
-
-<!-- Import prettify js  -->
-
-
-    
-        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
-    
-
-
-<!-- Window Load -->
-<!-- add class for prettify -->
-<script type="text/ls-javascript" id="window-load">
-    $(window).on('load', function() {
-        // Post_Toc parent position fixed
-        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
-    });
-
-    
-    
-        
-        
-        HanabiBrowser.start('pre code',false);
-    
-</script>
-
-<!-- MathJax Load-->
-
-
-<!-- Bing Background -->
-
-
-<script type="text/ls-javascript" id="lazy-load">
-    // Offer LazyLoad
-    queue.offer(function(){
-        $('.lazy').lazyload({
-            effect : 'show'
-        });
-    });
-
-    // Start Queue
-    $(document).ready(function(){
-        setInterval(function(){
-            queue.execNext();
-        },200);
-    });
-</script>
-
-<!-- Custom Footer -->
-
-
-
-<script>
-    var copyrightNow = new Date().getFullYear();
-    var textContent = document.querySelector('span[year]')
-
-    copyrightSince = 0000;
-    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
-        textContent.textContent = copyrightNow
-    } else {
-        textContent.textContent = copyrightSince + ' - ' + copyrightNow
-    }
-
-    (function(){
-        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
-
-        for (var i = 0; i < scriptList.length; ++i) {
-            var item = scriptList[i];
-            lsloader.runInlineScript(item.id,item.id);
-        }
-    })()
-console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
-</script>
-
-                </main>
-            </div>
-        </body>
-    
+</body>
 </html>
