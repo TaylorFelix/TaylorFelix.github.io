@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Para-para-paradise</title>
+  <title>Paradise</title>
   
-  <subtitle>but it flew away from reach</subtitle>
+  <subtitle>Der schwer gefasste Entschluss</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-09T14:43:16.667Z</updated>
+  <updated>2018-04-10T14:29:25.935Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/04/05/Whisper-4/"/>
     <id>http://yoursite.com/2018/04/05/Whisper-4/</id>
     <published>2018-04-05T13:17:09.000Z</published>
-    <updated>2018-04-09T14:43:16.667Z</updated>
+    <updated>2018-04-10T14:29:25.935Z</updated>
     
     <content type="html"><![CDATA[<p>只有不断接触新事物才能不断认识到自己的不足</p><h3 id="关于最近"><a href="#关于最近" class="headerlink" title="关于最近"></a>关于最近</h3><p>其实很烦，去杭州面试了一次，前端。<br>可惜吧，虽然公司不大，氛围也还行，但自己真的是没有那个基础，我已经在努力写前端了，可惜是能力不足。<br>连续三个问题答不出来，我其实是很尴尬的，我都难以回忆当时是怎么走出办公楼的。<br>还有上海，企业是真的大，环境是真的好，要求是真的高。<br>我感觉自己不足的地方很多，那段时间，感觉自己真的是啥都不行。   </p><h3 id="关于答辩"><a href="#关于答辩" class="headerlink" title="关于答辩"></a>关于答辩</h3><p>很生气吧，也很后悔，干嘛要进小组项目，自己能全部答出来，然后他俩什么都不会，然后就凉了<br>我是真的无语，进入到二辩。<br>傻吊班主任，我是真的烦你。<br>二辩走过场，但也很烦。    </p><h3 id="关于住宿"><a href="#关于住宿" class="headerlink" title="关于住宿"></a>关于住宿</h3><p>或许是公司惜才（雾<br>现在住在员工宿舍，4人间只住两个，目前还算舒适。    </p><h3 id="接下来的计划"><a href="#接下来的计划" class="headerlink" title="接下来的计划"></a>接下来的计划</h3><p>买个MacBookPro，毕竟一直以来的想法还是要实现的。<br>我不会放弃前端的。    </p><p>2018/4/5</p>]]></content>
     
@@ -39,6 +39,32 @@
     
     
       <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vuejs学习笔记04</title>
+    <link href="http://yoursite.com/2018/03/27/Vuejs04/"/>
+    <id>http://yoursite.com/2018/03/27/Vuejs04/</id>
+    <published>2018-03-27T12:38:24.000Z</published>
+    <updated>2018-03-27T12:40:07.575Z</updated>
+    
+    <content type="html"><![CDATA[<p>待改善</p><h3 id="v-bind及class与style绑定"><a href="#v-bind及class与style绑定" class="headerlink" title="v-bind及class与style绑定"></a>v-bind及class与style绑定</h3><p>在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">**绑定class的几种方式**</span><br><span class="line">- 对象语法</span><br></pre></td></tr></table></figure></p><p><div id="app"><br>  <div :class="{ 'active': isActive }"></div><br></div></p><p><script><br>  var app = new Vue({<br>    el: ‘#app’,<br>    data: {<br>      isActive: true<br>    }<br>    })<br></script><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如上，类名active依赖数据isActive，当其为true时，div会拥有类名Active，为false时则没有，所以得出渲染结果：</span><br></pre></td></tr></table></figure></p><p><div class="active"></div><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class可以与语法糖:class共存</span><br></pre></td></tr></table></figure></p><p><div class="static" :class="{ 'active': isActive, 'error': isError }"></div><br><code>`</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;待改善&lt;/p&gt;
+&lt;h3 id=&quot;v-bind及class与style绑定&quot;&gt;&lt;a href=&quot;#v-bind及class与style绑定&quot; class=&quot;headerlink&quot; title=&quot;v-bind及class与style绑定&quot;&gt;&lt;/a&gt;v-bind及class与st
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
     
   </entry>
   
@@ -124,6 +150,32 @@
   </entry>
   
   <entry>
+    <title>Vuejs学习笔记03</title>
+    <link href="http://yoursite.com/2018/03/20/Vuejs03/"/>
+    <id>http://yoursite.com/2018/03/20/Vuejs03/</id>
+    <published>2018-03-20T11:35:17.000Z</published>
+    <updated>2018-04-10T13:29:50.787Z</updated>
+    
+    <content type="html"><![CDATA[<p>计算属性</p><h3 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h3><p>使用计算属性的目的是在遇到复杂逻辑时，避免臃肿和难以阅读与维护。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  &#123;&#123; reversedText &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  var app = new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#app',</span></span><br><span class="line"><span class="regexp">    data: &#123;</span></span><br><span class="line"><span class="regexp">      text: '123,456'</span></span><br><span class="line"><span class="regexp">    &#125;,</span></span><br><span class="line"><span class="regexp">    computed: &#123;</span></span><br><span class="line"><span class="regexp">      reversedText: function ()&#123;</span></span><br><span class="line"><span class="regexp">        return this.text.split(',').reverse().join(',');</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">    &#125;)</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure></p><p>所有计算属性都以函数的形式写在Vue实例内的computed选项内。    </p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  总价: &#123;&#123; prices &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  var app = new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#app',</span></span><br><span class="line"><span class="regexp">    data: &#123;</span></span><br><span class="line"><span class="regexp">      package1: [</span></span><br><span class="line"><span class="regexp">        &#123;</span></span><br><span class="line"><span class="regexp">          name: 'iphome 7',</span></span><br><span class="line"><span class="regexp">          price: 7199,</span></span><br><span class="line"><span class="regexp">          count: 2</span></span><br><span class="line"><span class="regexp">        &#125;,&#123;</span></span><br><span class="line"><span class="regexp">          name: 'ipad',</span></span><br><span class="line"><span class="regexp">          price: 2888,</span></span><br><span class="line"><span class="regexp">          count: 1</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">      ],</span></span><br><span class="line"><span class="regexp">      package2: [</span></span><br><span class="line"><span class="regexp">        &#123;</span></span><br><span class="line"><span class="regexp">          name: 'apple',</span></span><br><span class="line"><span class="regexp">          price: 3,</span></span><br><span class="line"><span class="regexp">          count: 5</span></span><br><span class="line"><span class="regexp">        &#125;,</span></span><br><span class="line"><span class="regexp">        &#123;</span></span><br><span class="line"><span class="regexp">          name: 'banana',</span></span><br><span class="line"><span class="regexp">          price: 2,</span></span><br><span class="line"><span class="regexp">          count: 10</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">      ]</span></span><br><span class="line"><span class="regexp">    &#125;,</span></span><br><span class="line"><span class="regexp">    computed: &#123;</span></span><br><span class="line"><span class="regexp">      var prices = 0;</span></span><br><span class="line"><span class="regexp">      for (var i = 0; i &lt; this.package1.length; i++)&#123;</span></span><br><span class="line"><span class="regexp">        prices += this.package1 [i].price * this.package1[i].count;</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">      for (var i = 0; i &lt; this.package2.length; i++)&#123;</span></span><br><span class="line"><span class="regexp">        prices += this.package2 [i].price * this.package2[i].count;</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">      return prices;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">  &#125;)</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure><p>当<strong>package1</strong>和<strong>package2</strong>发生变化，<strong>prices</strong>自动更新。<br>每一个计算属性都包含一个<strong>getter</strong>和<strong>setter</strong>。    </p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  姓名：&#123;&#123; fullName &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  var app = new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#app',</span></span><br><span class="line"><span class="regexp">    data: &#123;</span></span><br><span class="line"><span class="regexp">      firstName: 'Jack',</span></span><br><span class="line"><span class="regexp">      lastName: 'Green'</span></span><br><span class="line"><span class="regexp">    &#125;,</span></span><br><span class="line"><span class="regexp">    computed: &#123;</span></span><br><span class="line"><span class="regexp">      fullName: &#123;</span></span><br><span class="line"><span class="regexp">        get: function ()&#123;</span></span><br><span class="line"><span class="regexp">          return this.firstName + '' + this.lastName;</span></span><br><span class="line"><span class="regexp">        &#125;,</span></span><br><span class="line"><span class="regexp">        set: function (newValue) &#123;</span></span><br><span class="line"><span class="regexp">          var names = newValue.split(' ');</span></span><br><span class="line"><span class="regexp">          this.firstName = names[0];</span></span><br><span class="line"><span class="regexp">          this.lastName = names[names.length -1];</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">  &#125;);</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure><p>当执行<strong>app.fullName=’John Doe’</strong>时，<strong>setter</strong>就会被调用，视图随之更新。    </p><h3 id="计算属性缓存"><a href="#计算属性缓存" class="headerlink" title="计算属性缓存"></a>计算属性缓存</h3><p>调用methods方法也可以与计算属性起同样作用。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  &#123;&#123; reversedText() &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  var app = new Vue(&#123;</span></span><br><span class="line"><span class="regexp">    el: '#app',</span></span><br><span class="line"><span class="regexp">    data: &#123;</span></span><br><span class="line"><span class="regexp">      text: '123,456'</span></span><br><span class="line"><span class="regexp">    &#125;,</span></span><br><span class="line"><span class="regexp">    methods: &#123;</span></span><br><span class="line"><span class="regexp">      reversedText: function ()&#123;</span></span><br><span class="line"><span class="regexp">        return this.text.split(',').reverse().join(',');</span></span><br><span class="line"><span class="regexp">      &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">    &#125;)</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure></p><p>methods里定义一个方法实现了相同效果，还可接受参数，使用灵活，那为何还要使用计算属性？<br>计算属性是基于它的依赖缓存的，当数据发送变化时，它才会重新取值，只要text不改变，计算属性就不更新。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;计算属性&lt;/p&gt;
+&lt;h3 id=&quot;计算属性&quot;&gt;&lt;a href=&quot;#计算属性&quot; class=&quot;headerlink&quot; title=&quot;计算属性&quot;&gt;&lt;/a&gt;计算属性&lt;/h3&gt;&lt;p&gt;使用计算属性的目的是在遇到复杂逻辑时，避免臃肿和难以阅读与维护。&lt;br&gt;&lt;figure class=
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>转换思路，抛弃拼接，参数传值</title>
     <link href="http://yoursite.com/2018/03/19/SqlServer01/"/>
     <id>http://yoursite.com/2018/03/19/SqlServer01/</id>
@@ -200,6 +252,58 @@
     
     
       <category term="简历" scheme="http://yoursite.com/tags/%E7%AE%80%E5%8E%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vuejs学习笔记02</title>
+    <link href="http://yoursite.com/2018/03/19/Vuejs02/"/>
+    <id>http://yoursite.com/2018/03/19/Vuejs02/</id>
+    <published>2018-03-19T11:35:11.000Z</published>
+    <updated>2018-03-21T14:23:13.729Z</updated>
+    
+    <content type="html"><![CDATA[<p>指令与事件</p><h3 id="指令与事件"><a href="#指令与事件" class="headerlink" title="指令与事件"></a>指令与事件</h3><p>指令的主要职责就是当其表达式的值改变时，相应地将某些行为应用到DOM上。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line"> &lt;p v-if=&quot;show&quot;&gt;显示文本&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      show: true</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>当数据show的值为true时，p元素会被插入。数据驱动DOM是Vue.js的核心理念。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;a v-bind:href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">  &lt;img v-bind:src=&quot;imgUrl&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      url: &apos;https://www.github.com&apos;,</span><br><span class="line">      imgUrl: &apos;http://xxx.xxx.xx/img.png&apos;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>如上，链接与图片均进行了数据绑定。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;p v-if=&quot;show&quot;&gt;显示文本&lt;/p&gt;</span><br><span class="line">  &lt;button v-on:click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      show: true</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      handleClose: function ()&#123;</span><br><span class="line">        this.show = false;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>在button按钮上，使用v-on:click给该元素绑定了一个点击事件，v-on可以监听原生的DOM事件。</p><h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;a v-bind:href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">&lt;img v-bind:src=&quot;imgUrl&quot;&gt;</span><br><span class="line">&lt;!--缩写为--&gt;</span><br><span class="line">&lt;a :href=&quot;url&quot;&gt;链接&lt;/a&gt;</span><br><span class="line">&lt;img :src=&quot;imgUrl&quot;&gt;</span><br></pre></td></tr></table></figure><p>v-on可以直接用@来缩写</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;button v-on:click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br><span class="line">&lt;!--缩写为--&gt;</span><br><span class="line">&lt;button @click=&quot;handleClose&quot;&gt;点击隐藏&lt;/button&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;指令与事件&lt;/p&gt;
+&lt;h3 id=&quot;指令与事件&quot;&gt;&lt;a href=&quot;#指令与事件&quot; class=&quot;headerlink&quot; title=&quot;指令与事件&quot;&gt;&lt;/a&gt;指令与事件&lt;/h3&gt;&lt;p&gt;指令的主要职责就是当其表达式的值改变时，相应地将某些行为应用到DOM上。&lt;br&gt;&lt;figu
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vuejs学习笔记01</title>
+    <link href="http://yoursite.com/2018/03/17/Vuejs01/"/>
+    <id>http://yoursite.com/2018/03/17/Vuejs01/</id>
+    <published>2018-03-17T11:35:05.000Z</published>
+    <updated>2018-03-27T12:40:03.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>实例与数据绑定</p><p><img src="https://upload-images.jianshu.io/upload_images/10826501-ad4f7309fea2e8e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="内容截图"></p><hr><p>真的难受啊，无论怎么都上传不了这一篇，说是markdown编码冲突，我还在研究，只能先上图了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;实例与数据绑定&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/10826501-ad4f7309fea2e8e2.png?imageMogr2/auto-orient/strip%7Cimag
+      
+    
+    </summary>
+    
+      <category term="Vuejs" scheme="http://yoursite.com/categories/Vuejs/"/>
+    
+    
+      <category term="Vuejs" scheme="http://yoursite.com/tags/Vuejs/"/>
     
   </entry>
   
@@ -338,10 +442,10 @@
   
   <entry>
     <title>Hexo踩坑指北</title>
-    <link href="http://yoursite.com/2018/03/06/Bug-1/"/>
-    <id>http://yoursite.com/2018/03/06/Bug-1/</id>
+    <link href="http://yoursite.com/2018/03/06/Blog-3/"/>
+    <id>http://yoursite.com/2018/03/06/Blog-3/</id>
     <published>2018-03-06T12:12:14.000Z</published>
-    <updated>2018-04-09T13:54:52.318Z</updated>
+    <updated>2018-04-10T14:21:13.865Z</updated>
     
     <content type="html"><![CDATA[<p>HEXO在windows上真是不断的坑啊–</p><h2 id="关于多台电脑更新"><a href="#关于多台电脑更新" class="headerlink" title="关于多台电脑更新"></a>关于多台电脑更新</h2><p>之前有写过一篇，最近准备不在公司电脑上写，换到自己电脑上，各种操作过后，出现了及其尴尬的现象。<br><img src="http://upload-images.jianshu.io/upload_images/10826501-5560e79f69494b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p><p>我特么。。。<br>按照网上各种百度以及stackflow–<br>wtf？？？<br>并不管用好吗？</p><p>诸如<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p><p>诚心诚意的告诉你，并没有卵用</p><p>还有这种<br><img src="http://upload-images.jianshu.io/upload_images/10826501-96099e81e1adfefe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2.png"><br>在你电脑上给git配置环境变量<br>拜托，我都测试过很多遍了，别来坑我了好吗？</p><p>——–华丽的分割线——–<br>下面介绍真正管用的方法<br>首先你要确保你<figure class="highlight plain"><figcaption><span>d -g```这个操作前</span></figcaption><table><tr><td class="code"><pre><span class="line">```_config.yml```文件里</span><br></pre></td></tr></table></figure></p><p>deploy:<br>  type: git<br>  repository:<br>    github: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:TaylorFelix/TaylorFelix.github.io.git<br>    coding: <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a>:taylorfelix/taylorfelix.coding.me.git<br>  branch: master<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一定配置的要是ssh，别弄的什么https://github之类的</span><br><span class="line"></span><br><span class="line">然后，你需要放弃使用```cmd```，到你根目录，```git bush here</span><br></pre></td></tr></table></figure></p><p>然后执行<code>hexo d -g</code><br>如果你和我一样配置了coding.net<br>中间需要确认一次同步到coding<br>接下来就美滋滋啦<br><img src="http://upload-images.jianshu.io/upload_images/10826501-e87d7b6769f9ee76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"></p><p>以上。</p>]]></content>
     
@@ -355,7 +459,7 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Blog" scheme="http://yoursite.com/categories/Blog/"/>
     
     
       <category term="Bug" scheme="http://yoursite.com/tags/Bug/"/>
@@ -430,113 +534,6 @@
       
         &lt;p&gt;解决Hexo多电脑更新博客内容&lt;/p&gt;
 &lt;h4 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1.准备工作&quot;&gt;&lt;/a&gt;1.准备工作&lt;/h4&gt;&lt;p&gt;首先确保自己已经使用hexo在github搭建好了自己的个人博
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IOS开发学习(一)</title>
-    <link href="http://yoursite.com/2018/02/26/IOS-1/"/>
-    <id>http://yoursite.com/2018/02/26/IOS-1/</id>
-    <published>2018-02-26T09:34:09.000Z</published>
-    <updated>2018-04-09T13:55:14.587Z</updated>
-    
-    <content type="html"><![CDATA[<p>C程序的结构与变量</p><h1 id="IOS开发学习"><a href="#IOS开发学习" class="headerlink" title="IOS开发学习"></a>IOS开发学习</h1><p>新的起点</p><h1 id="C程序的结构"><a href="#C程序的结构" class="headerlink" title="C程序的结构"></a>C程序的结构</h1><h2 id="main例程"><a href="#main例程" class="headerlink" title="main例程"></a>main例程</h2><p>所有c程序都有一个main例程。在OS加载第一个C程序后，程序开始执行main例程中的第一行代码。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int main(int argc, const char *argv[])</span><br><span class="line">&#123;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>关键特性包括:</p><ol><li>第一行上的指导int提升main给OS返回一个整形值，作为返回代码</li><li>main是必需的</li><li>main接收argc个参数，存储在数组argv中</li><li>return 0; 指示将0作为返回代码传给OS<br>简化形式：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int main (void)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h2><p>语句用分号;终止</p><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>经典注释<pre>//</pre><br>封闭注释<pre>/**/</pre></p><h2 id="变量和函数名称"><a href="#变量和函数名称" class="headerlink" title="变量和函数名称"></a>变量和函数名称</h2><p>首字符采用下划线或字母<br>以下划线开头的名称传统上用于打算设置为私有的或者供内部使用的变量和函数<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_privateVariable</span><br></pre></td></tr></table></figure></p><p>名称区分大小写，且不能有任何空白<br>驼峰式命名方式</p><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p>朴素的C程序代码放在一个或多个拓展名为<strong>.c</strong>的文件中<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ACProgram.c</span><br></pre></td></tr></table></figure></p><p>使用Object-C对象的代码放在一个或多个拓展名为<strong>.m</strong>的文件中<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">AnObjectiveProgram.m</span><br></pre></td></tr></table></figure></p><p>C程序还使用头文件，头文件通常包含可以被许多.c和.m文件共享的多种定义。通过使用#include或#import预处理指令<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">AHeaderFile.h</span><br></pre></td></tr></table></figure></p><h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>变量声明形式如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variabletype name;</span><br></pre></td></tr></table></figure></p><p>C语言允许在单个声明中声明多个变量：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variabletype name1,name2,name3;</span><br></pre></td></tr></table></figure></p><h2 id="整形"><a href="#整形" class="headerlink" title="整形"></a>整形</h2><p>C语言提供了以下类型用于保存整数：char、short、int、long、long long.<br>可以把整形声明为unsigned:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unsigned char a;</span><br><span class="line">unsigned short b;</span><br><span class="line">unsigned int c;</span><br><span class="line">unsigned long d;</span><br><span class="line">unsigned long long e;</span><br></pre></td></tr></table></figure></p><p>单独使用unsigned时，意指 unsigned int:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">unsigned a;   // a is an unsigned int</span><br></pre></td></tr></table></figure></p><p>unsinged通常赋值为正数。</p><h2 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h2><p>浮点型是float、double、long double<br>浮点值总是带符号的<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">float aFloat;</span><br><span class="line">double aDouble;</span><br><span class="line">long double aLongDouble;</span><br></pre></td></tr></table></figure></p><h2 id="真值"><a href="#真值" class="headerlink" title="真值"></a>真值</h2><p>普通的表达式通常用于真值。求值为0的表达式被视为“假”，而求值为非0的表达式视为“真”</p><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>可以在声明变量时初始化它们：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int a=9;</span><br><span class="line">int b=2*4;</span><br><span class="line">float c=3.14159;</span><br><span class="line">char d=&apos;a&apos;;</span><br></pre></td></tr></table></figure></p><h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p>指针是其值为一个内存地址的变量。它“指向”内存中的某个位置。<br>声明一个指针，在变量名称前面放置一个*<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int *pointerVar;</span><br></pre></td></tr></table></figure></p><p><strong>泛型指针</strong><br>如果一个变量被声明为指向void的指针，那它成为泛型指针。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int a=9;</span><br><span class="line">int b;</span><br><span class="line">void *genericPointer;</span><br><span class="line">genericPointer = &amp;a;</span><br><span class="line">b = *(( int *) genericPointer );</span><br></pre></td></tr></table></figure></p><p>上例使用强制转换运算符(int *)强制编译器把genericPointer视作一个指向整数的指针。</p><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>C数组是同类型元素的有序集合。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int a[100];</span><br></pre></td></tr></table></figure></p><p>通过下面的方式访问各个元素<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a [6] = 9;</span><br></pre></td></tr></table></figure></p><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>声明方式如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int b[4][10];</span><br></pre></td></tr></table></figure></p><p>多维数组以线性方式逐行存储在内存中。<br>使用指针表示法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b[i][j]</span><br></pre></td></tr></table></figure></p><p>可能写作：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">*(b+i*10+j)</span><br></pre></td></tr></table></figure></p><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>C语言的字符串是字节的一维数组，并利用0字节终止。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char *aString =&quot;Hello&quot;;</span><br><span class="line">aString = &quot;World&quot;;</span><br></pre></td></tr></table></figure></p><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>结构可以成为单个实体的相关变量的集合。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">struct dailyTemperatures</span><br><span class="line">&#123;</span><br><span class="line">  float high;</span><br><span class="line">  float low;</span><br><span class="line">  int year;</span><br><span class="line">  int dayOfYear;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>结构中各个变量称为成员变量。<br>关键字struct后面的名称是结构标签。<br>结构可以具有其他结构作为成员。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">struct hiLow</span><br><span class="line">&#123;</span><br><span class="line">  float high;</span><br><span class="line">  float low;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">struct dailyTemperatures</span><br><span class="line">&#123;</span><br><span class="line">  struct hiLow tempExtremes;</span><br><span class="line">  int year;</span><br><span class="line">  int dayOfYear;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><p>这样，设置today的高温将如下显示<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">struct dailyTemperatures today;</span><br><span class="line">today.tempExtremes.high=68.0;</span><br></pre></td></tr></table></figure></p><h2 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h2><p>typedef声明提供了一种用于为变量类型创建别名的方式：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">typedef float Temperature;</span><br></pre></td></tr></table></figure></p><p>Temperature可用于声明变量，就像它是内置的类型之一一样：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Temperature high,low;</span><br></pre></td></tr></table></figure></p><h2 id="枚举常量"><a href="#枚举常量" class="headerlink" title="枚举常量"></a>枚举常量</h2><p>enum语句允许定义一组整形常量：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">enum woodwind &#123; oboe,flute,clarinet,bassoon &#125;;</span><br></pre></td></tr></table></figure></p><p>上句的结果是：obue、flute、clarinet、bassoon分别是值为0、1、2、3的常量。<br>enum后面的名称成为枚举标签。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;C程序的结构与变量&lt;/p&gt;
-&lt;h1 id=&quot;IOS开发学习&quot;&gt;&lt;a href=&quot;#IOS开发学习&quot; class=&quot;headerlink&quot; title=&quot;IOS开发学习&quot;&gt;&lt;/a&gt;IOS开发学习&lt;/h1&gt;&lt;p&gt;新的起点&lt;/p&gt;
-&lt;h1 id=&quot;C程序的结构&quot;&gt;&lt;a href=
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="IOS" scheme="http://yoursite.com/tags/IOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>评论功能上线啦！</title>
-    <link href="http://yoursite.com/2018/02/26/Blog-1/"/>
-    <id>http://yoursite.com/2018/02/26/Blog-1/</id>
-    <published>2018-02-26T06:41:09.000Z</published>
-    <updated>2018-04-09T13:54:46.922Z</updated>
-    
-    <content type="html"><![CDATA[<p>评论功能的实现效果</p><h2 id="评论及流量采集已上线"><a href="#评论及流量采集已上线" class="headerlink" title="评论及流量采集已上线"></a>评论及流量采集已上线</h2><hr><p>经过反复测试及部分崩坏，终于搞定了评论功能，先说一下评论需求开始的考量。</p><p>以下个人说法仅经过material主题测试。</p><hr><p> <strong>1. Disqus</strong><br> 国外评论系统，需科学上网，pass</p><hr><p> <strong>2. 畅言</strong><br> 域名需备案，暂时pass</p><hr><p> <strong>3. 来必利</strong><br> 韩国人开发的评论系统，测试着用了一下，先说安装方法吧。</p><ol><li>注册来必利账号</li><li>进入账号后台</li><li>点击代码管理</li><li>拷贝data-uid=”此处未需要拷贝的内容”&gt;</li><li>进入主题内的_config.yml配置文件</li><li>将comment: use:后改为livere</li><li>添加livere_data_uid:在后加入复制内容</li></ol><p>以上功能请务必<strong>确保_widget/comment/下有livere</strong>这个文件夹</p><p>接下来说一下这个评论系统的尴尬之处</p><ol><li>在refer处添加的评论系统，加载速度感人</li><li>评论必须登录第三方账号，游客类型恐怕留言兴趣都没有（哪有游客？不存在的）</li><li>丑</li></ol><hr><p> <strong>4. valine</strong></p><p> 主人公登场！<br> 这个评论系统应该是我个人感觉最满意的！<br> 无需登录！界面简洁！流量记录！<br> 迫不及待的安利起来了</p><ol><li>注册leancloud账号</li><li>进入控制台</li><li>创建应用（默认JavaScript SDK）</li><li>创建class，名称为Counter</li><li><strong>ACL权限必须无限制</strong></li><li>进入主题内的_config.yml配置文件</li><li>将comment: use:后改为valine</li><li>添加valine_leancloud_appId和valine_leancloud_appKey</li><li>appId和appKey在leancloud设置-应用key里可以找到</li><li>顺便添加流量采集与流量分析</li><li>修改leadcloud enable:true（默认为false）</li><li>配置app_id与app_key，与valine一致。</li></ol><p>以上功能请务必<strong>确保_widget/comment/下有valine</strong>这个文件夹</p><hr><p>至此博客评论及流量采集已经完成，撒花~~~</p><p>作者 Felix<br>2018 年 02月 26日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;评论功能的实现效果&lt;/p&gt;
-&lt;h2 id=&quot;评论及流量采集已上线&quot;&gt;&lt;a href=&quot;#评论及流量采集已上线&quot; class=&quot;headerlink&quot; title=&quot;评论及流量采集已上线&quot;&gt;&lt;/a&gt;评论及流量采集已上线&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;经过反复测试及部分崩坏，终于搞定
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="Valine" scheme="http://yoursite.com/tags/Valine/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记一次Hexo同时部署GitHub和Coding</title>
-    <link href="http://yoursite.com/2018/02/26/Blog-2/"/>
-    <id>http://yoursite.com/2018/02/26/Blog-2/</id>
-    <published>2018-02-26T02:58:38.000Z</published>
-    <updated>2018-04-09T13:54:45.854Z</updated>
-    
-    <content type="html"><![CDATA[<p>如何优化加载速度与部署问题</p><h2 id="Hexo同时部署GitHub和Coding"><a href="#Hexo同时部署GitHub和Coding" class="headerlink" title="Hexo同时部署GitHub和Coding"></a>Hexo同时部署GitHub和Coding</h2><hr><p>GitHub加载速度实在是太慢了，静态资源加载可以说是等一年–<br>参考部分大佬优化加载的方式，最后选择了coding<br>这是原博<a href="http://gaomf.cn/2015/11/01/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/" target="_blank" rel="noopener">Hexo博客优化加载速度</a></p><p> <strong>首先需要注册一个coding账号</strong><br> 傻瓜式操作不再多加说明</p><p> <strong>创建新项目</strong><br> 点击创建新项目，项目名称一定要是 <strong>你的用户名+coding.me</strong><br> 例如：taylorfelix.coding.me</p><p> <strong>点击Page服务</strong><br> 静态page-部署来源-master</p><p> <strong>部署ssh</strong><br> 点击部署公钥，添加ssh-rsa<br> 此处ssh应与github部署的ssh一致</p><p> 此处已完成coding所有配置</p><p> <strong>修改Hexo根目录_config.yml文件</strong><br> 直接拉到最底部，在deploy处配置<br> <pre>deploy:<br> type: git<br> repository:<br>   github: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:TaylorFelix/TaylorFelix.github.io.git<br>   coding: <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a>:taylorfelix/taylorfelix.coding.me.git<br> branch: master</pre><br> 此处每个：后应空一格</p><p> <strong>配置完成开始部署</strong><br> 打开cmd（此处对于windows而言）,到你的项目目录<br> <pre>hexo d -g</pre><br> 完成部署</p><hr><p>作者 Felix<br>2018 年 02月 26日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;如何优化加载速度与部署问题&lt;/p&gt;
-&lt;h2 id=&quot;Hexo同时部署GitHub和Coding&quot;&gt;&lt;a href=&quot;#Hexo同时部署GitHub和Coding&quot; class=&quot;headerlink&quot; title=&quot;Hexo同时部署GitHub和Coding&quot;&gt;&lt;/a&gt;He
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用命令采集</title>
-    <link href="http://yoursite.com/2018/02/24/Git-1/"/>
-    <id>http://yoursite.com/2018/02/24/Git-1/</id>
-    <published>2018-02-24T08:08:18.000Z</published>
-    <updated>2018-04-09T13:55:01.058Z</updated>
-    
-    <content type="html"><![CDATA[<p>一些常用的Git指令</p><h2 id="常用指令采集"><a href="#常用指令采集" class="headerlink" title="常用指令采集"></a>常用指令采集</h2><hr><p><strong>Hexo与Git库同步（本地同步至git）</strong></p><pre>hexo d -g</pre><hr><p><strong>Hexo运行测试预览</strong></p><pre>hexo s</pre><hr><p><strong>GitHub同步指令集</strong></p><p><pre>git init</pre></p><p><pre>git add .</pre></p><p><pre>git commit -m “此处为项目说明”</pre></p><p><pre>git remote add origin 远程库地址</pre><br>   此处为关联远程数据库</p><p><pre>git pull –rebase origin master</pre><br>此处为远程库与本地同步合并（若远程库不为空一定要做这一步）</p><p><pre>git -u origin master</pre><br>内容推送到远程（之后开始验证然后上传）</p><p><pre>git status</pre><br>状态查询</p><hr><p><strong>Git常用命令</strong><br>生成.ssh文件</p><p><pre>ssh-keygen -t rsa -C “<a href="mailto:1023614047@qq.com" target="_blank" rel="noopener">1023614047@qq.com</a>“</pre><br>判断是否在本机配置远程连接成功</p><p><pre>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></pre><br>删除远程仓库</p><p><pre>git remote rm origin</pre><br>更新本地仓库到github</p><p><pre>git push -u origin master</pre><br>将文件夹下所有文件添加到版本库</p><hr><p>作者 Felix<br>2018 年 02月 24日    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一些常用的Git指令&lt;/p&gt;
-&lt;h2 id=&quot;常用指令采集&quot;&gt;&lt;a href=&quot;#常用指令采集&quot; class=&quot;headerlink&quot; title=&quot;常用指令采集&quot;&gt;&lt;/a&gt;常用指令采集&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Hexo与Git库同步（本地同步至git）&lt;/
       
     
     </summary>

@@ -42,13 +42,13 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Bug," />
+  <meta name="keywords" content="Vuejs," />
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Para-para-paradise" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Paradise" type="application/atom+xml" />
 
 
 
@@ -60,22 +60,18 @@
 
 
 
-<meta name="description" content="HEXO在windows上真是不断的坑啊– 关于多台电脑更新之前有写过一篇，最近准备不在公司电脑上写，换到自己电脑上，各种操作过后，出现了及其尴尬的现象。 我特么。。。按照网上各种百度以及stackflow–wtf？？？并不管用好吗？ 诸如ssh -T git@github.com 诚心诚意的告诉你，并没有卵用 还有这种在你电脑上给git配置环境变量拜托，我都测试过很多遍了，别来坑我了好吗？ ——">
-<meta name="keywords" content="Bug">
+<meta name="description" content="待改善 v-bind及class与style绑定在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用**绑定class的几种方式**- 对象语法      var app = new Vue({    el: ‘#app’,    data: {      isActive: true    }">
+<meta name="keywords" content="Vuejs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo踩坑指北">
-<meta property="og:url" content="http://yoursite.com/2018/03/06/Bug-1/index.html">
-<meta property="og:site_name" content="Para-para-paradise">
-<meta property="og:description" content="HEXO在windows上真是不断的坑啊– 关于多台电脑更新之前有写过一篇，最近准备不在公司电脑上写，换到自己电脑上，各种操作过后，出现了及其尴尬的现象。 我特么。。。按照网上各种百度以及stackflow–wtf？？？并不管用好吗？ 诸如ssh -T git@github.com 诚心诚意的告诉你，并没有卵用 还有这种在你电脑上给git配置环境变量拜托，我都测试过很多遍了，别来坑我了好吗？ ——">
+<meta property="og:title" content="Vuejs学习笔记04">
+<meta property="og:url" content="http://yoursite.com/2018/03/27/Vuejs04/index.html">
+<meta property="og:site_name" content="Paradise">
+<meta property="og:description" content="待改善 v-bind及class与style绑定在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用**绑定class的几种方式**- 对象语法      var app = new Vue({    el: ‘#app’,    data: {      isActive: true    }">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10826501-5560e79f69494b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10826501-96099e81e1adfefe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10826501-e87d7b6769f9ee76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-04-09T13:54:52.318Z">
+<meta property="og:updated_time" content="2018-03-27T12:40:07.575Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo踩坑指北">
-<meta name="twitter:description" content="HEXO在windows上真是不断的坑啊– 关于多台电脑更新之前有写过一篇，最近准备不在公司电脑上写，换到自己电脑上，各种操作过后，出现了及其尴尬的现象。 我特么。。。按照网上各种百度以及stackflow–wtf？？？并不管用好吗？ 诸如ssh -T git@github.com 诚心诚意的告诉你，并没有卵用 还有这种在你电脑上给git配置环境变量拜托，我都测试过很多遍了，别来坑我了好吗？ ——">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/10826501-5560e79f69494b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="Vuejs学习笔记04">
+<meta name="twitter:description" content="待改善 v-bind及class与style绑定在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用**绑定class的几种方式**- 对象语法      var app = new Vue({    el: ‘#app’,    data: {      isActive: true    }">
 
 
 
@@ -96,9 +92,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/06/Bug-1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/27/Vuejs04/"/>
 
-  <title> Hexo踩坑指北 | Para-para-paradise </title>
+  <title> Vuejs学习笔记04 | Paradise </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -128,8 +124,8 @@
   <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
     
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/home_bg.jpg');">
-      <div class="header-inner"><a class="site-home" href="/">Para-para-paradise</a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/Whisper.png');">
+      <div class="header-inner"><a class="site-home" href="/">Paradise</a>
 
 <div class="site-meta ">
   
@@ -137,11 +133,11 @@
   <div class="custom-logo-site-title">
     <div href="/"  class="brand">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Para-para-paradise</span>
+      <span class="site-title">Paradise</span>
       <span class="logo-line-after"><i></i></span>
     </div>
   </div>
-  <p class="site-subtitle">but it flew away from reach</p>
+  <p class="site-subtitle">Der schwer gefasste Entschluss</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -224,15 +220,15 @@
   <div class="post-header">
       <div class="tags">
       
-        <a href="/tags/Bug/" rel="tag" title="Bug">Bug</a>
+        <a href="/tags/Vuejs/" rel="tag" title="Vuejs">Vuejs</a>
       
       </div>
-      <h1>Hexo踩坑指北</h1>
+      <h1>Vuejs学习笔记04</h1>
       <h2 class="subtitle"></h2>
       <div class="post-time">
         <span class="post-meta-item-text">发表于 </span>
-        <time itemprop="dateCreated" datetime="2018-03-06T20:12:14+08:00" content="2018-03-06" title="2018-03-06 20:12:14">
-          2018-03-06
+        <time itemprop="dateCreated" datetime="2018-03-27T20:38:24+08:00" content="2018-03-27" title="2018-03-27 20:38:24">
+          2018-03-27
         </time>
       </div>
   </div>
@@ -267,7 +263,7 @@
             
             
               
-                Hexo踩坑指北
+                Vuejs学习笔记04
               
             
           </h1>
@@ -279,8 +275,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-03-06T20:12:14+08:00" content="2018-03-06">
-              2018-03-06
+            <time itemprop="dateCreated" datetime="2018-03-27T20:38:24+08:00" content="2018-03-27">
+              2018-03-27
             </time>
           </span>
 
@@ -293,8 +289,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Vuejs/" itemprop="url" rel="index">
+                    <span itemprop="name">Vuejs</span>
                   </a>
                 </span>
 
@@ -313,7 +309,7 @@
 
           
           
-             <span id="/2018/03/06/Bug-1/" class="leancloud_visitors" data-flag-title="Hexo踩坑指北">
+             <span id="/2018/03/27/Vuejs04/" class="leancloud_visitors" data-flag-title="Vuejs学习笔记04">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,16 +336,12 @@
       
 
       
-        <p>HEXO在windows上真是不断的坑啊–</p>
-<h2 id="关于多台电脑更新"><a href="#关于多台电脑更新" class="headerlink" title="关于多台电脑更新"></a>关于多台电脑更新</h2><p>之前有写过一篇，最近准备不在公司电脑上写，换到自己电脑上，各种操作过后，出现了及其尴尬的现象。<br><img src="http://upload-images.jianshu.io/upload_images/10826501-5560e79f69494b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p>
-<p>我特么。。。<br>按照网上各种百度以及stackflow–<br>wtf？？？<br>并不管用好吗？</p>
-<p>诸如<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<p>诚心诚意的告诉你，并没有卵用</p>
-<p>还有这种<br><img src="http://upload-images.jianshu.io/upload_images/10826501-96099e81e1adfefe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2.png"><br>在你电脑上给git配置环境变量<br>拜托，我都测试过很多遍了，别来坑我了好吗？</p>
-<p>——–华丽的分割线——–<br>下面介绍真正管用的方法<br>首先你要确保你<figure class="highlight plain"><figcaption><span>d -g```这个操作前</span></figcaption><table><tr><td class="code"><pre><span class="line">```_config.yml```文件里</span><br></pre></td></tr></table></figure></p>
-<p>deploy:<br>  type: git<br>  repository:<br>    github: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:TaylorFelix/TaylorFelix.github.io.git<br>    coding: <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a>:taylorfelix/taylorfelix.coding.me.git<br>  branch: master<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一定配置的要是ssh，别弄的什么https://github之类的</span><br><span class="line"></span><br><span class="line">然后，你需要放弃使用```cmd```，到你根目录，```git bush here</span><br></pre></td></tr></table></figure></p>
-<p>然后执行<code>hexo d -g</code><br>如果你和我一样配置了coding.net<br>中间需要确认一次同步到coding<br>接下来就美滋滋啦<br><img src="http://upload-images.jianshu.io/upload_images/10826501-e87d7b6769f9ee76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"></p>
-<p>以上。</p>
+        <p>待改善</p>
+<h3 id="v-bind及class与style绑定"><a href="#v-bind及class与style绑定" class="headerlink" title="v-bind及class与style绑定"></a>v-bind及class与style绑定</h3><p>在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">**绑定class的几种方式**</span><br><span class="line">- 对象语法</span><br></pre></td></tr></table></figure></p>
+<p><div id="app"><br>  <div :class="{ 'active': isActive }"></div><br></div></p>
+<p><script><br>  var app = new Vue({<br>    el: ‘#app’,<br>    data: {<br>      isActive: true<br>    }<br>    })<br></script><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如上，类名active依赖数据isActive，当其为true时，div会拥有类名Active，为false时则没有，所以得出渲染结果：</span><br></pre></td></tr></table></figure></p>
+<p><div class="active"></div><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class可以与语法糖:class共存</span><br></pre></td></tr></table></figure></p>
+<p><div class="static" :class="{ 'active': isActive, 'error': isError }"></div><br><code>`</code></p>
 
         
       
@@ -373,7 +365,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Bug/" rel="tag">#Bug</a>
+            <a href="/tags/Vuejs/" rel="tag">#Vuejs</a>
           
         </div>
       
@@ -382,16 +374,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/02/Whisper-1/" rel="next" title="缺钱">
-                <i class="fa fa-chevron-left"></i> 缺钱
+              <a href="/2018/03/27/JavaScript02/" rel="next" title="JavaScript摘抄">
+                <i class="fa fa-chevron-left"></i> JavaScript摘抄
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/06/Php-1/" rel="prev" title="记一次企业微信二次验证开发">
-                记一次企业微信二次验证开发 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/05/Whisper-4/" rel="prev" title="诸事不顺">
+                诸事不顺 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -460,7 +452,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -468,7 +460,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -477,7 +469,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签云</span>
               </a>
             </div>
@@ -533,7 +525,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于多台电脑更新"><span class="nav-number">1.</span> <span class="nav-text">关于多台电脑更新</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-bind及class与style绑定"><span class="nav-number">1.</span> <span class="nav-text">v-bind及class与style绑定</span></a></li></ol></div>
             
           </div>
         </section>
@@ -560,7 +552,7 @@
 </div>
 
 <div class="powered-by">
-  power by <a class="theme-link" href="http://hexo.io">Hexo</a> 
+  <a class="theme-link" href="http://www.miitbeian.gov.cn/">苏ICP备18015808</a>
 </div>
 
 <div class="theme-info">
@@ -569,6 +561,8 @@
     NexTD
   </a>
 </div>
+
+
 
         
 
