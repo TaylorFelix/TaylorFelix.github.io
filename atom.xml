@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-10T14:29:25.935Z</updated>
+  <updated>2018-04-18T12:54:04.489Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有感</title>
+    <link href="http://yoursite.com/2018/04/18/Whisper-5/"/>
+    <id>http://yoursite.com/2018/04/18/Whisper-5/</id>
+    <published>2018-04-18T12:48:27.000Z</published>
+    <updated>2018-04-18T12:54:04.489Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="关于工作"><a href="#关于工作" class="headerlink" title="关于工作"></a>关于工作</h3><p>最近真的很烦，我已经快受够了这边，一直在忍受    </p><p>首先，如果你对我有意见，算了，也不用如果了，你对我有意见也不是一天两天了。我说想做IOS你不让，好。我答应。然后经理让做ICON，好，我做，然后呢？这是我的副业？工作做副业？那副业不收钱啊？  </p><h3 id="关于编程"><a href="#关于编程" class="headerlink" title="关于编程"></a>关于编程</h3><p>作为应届生，是应该听从安排，你让我做什么我做什么，然后呢？本来说好的想学什么都可以让学？然后现在也属于工作中的，你不让我做，那当时还发我Mac干嘛？忘了，现在Mac收回了，Nice！</p><h3 id="关于工资"><a href="#关于工资" class="headerlink" title="关于工资"></a>关于工资</h3><p>哦？我怎么感觉越来越少了？ 呵呵</p><h3 id="说你MB"><a href="#说你MB" class="headerlink" title="说你MB"></a>说你MB</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;关于工作&quot;&gt;&lt;a href=&quot;#关于工作&quot; class=&quot;headerlink&quot; title=&quot;关于工作&quot;&gt;&lt;/a&gt;关于工作&lt;/h3&gt;&lt;p&gt;最近真的很烦，我已经快受够了这边，一直在忍受    &lt;/p&gt;
+&lt;p&gt;首先，如果你对我有意见，算了，也不用如果了，你对我有意见
+      
+    
+    </summary>
+    
+      <category term="Whisper" scheme="http://yoursite.com/categories/Whisper/"/>
+    
+    
+      <category term="工作" scheme="http://yoursite.com/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>诸事不顺</title>
@@ -516,32 +542,6 @@
     
     
       <category term="IOS" scheme="http://yoursite.com/tags/IOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo多电脑更新博客</title>
-    <link href="http://yoursite.com/2018/02/28/Git-2/"/>
-    <id>http://yoursite.com/2018/02/28/Git-2/</id>
-    <published>2018-02-28T02:41:42.000Z</published>
-    <updated>2018-04-09T13:55:05.525Z</updated>
-    
-    <content type="html"><![CDATA[<p>解决Hexo多电脑更新博客内容</p><h4 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h4><p>首先确保自己已经使用hexo在github搭建好了自己的个人博客，github仓库中如下图显示：</p><p><img src="http://upload-images.jianshu.io/upload_images/10826501-3908ebdad815fde9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="0.png"></p><h4 id="2-对username-github-io仓库新建hexo分支，并克隆"><a href="#2-对username-github-io仓库新建hexo分支，并克隆" class="headerlink" title="2.对username.github.io仓库新建hexo分支，并克隆"></a>2.对username.github.io仓库新建hexo分支，并克隆</h4><p>在Github的username.github.io仓库上新建一个xxx分支，并切换到该分支，并在该仓库-&gt;Settings-&gt;Branches-&gt;Default branch中将默认分支设为xxx，save保存；然后将该仓库克隆到本地，进入该username.github.io文件目录。</p><p><img src="http://upload-images.jianshu.io/upload_images/10826501-c3ce7f59bba56d26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p><p><img src="http://upload-images.jianshu.io/upload_images/10826501-c4bc5e6ec4ed1a63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"></p><p>完成上面步骤后，在当前目录使用Git Bash执行<code>git branch</code>命令查看当前所在分支，应为新建的分支xxx：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">*hexo</span><br></pre></td></tr></table></figure><p><img src="http://upload-images.jianshu.io/upload_images/10826501-e5d732ed37ac7523.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4.png"></p><h4 id="3-将本地博客的部署文件拷贝进username-github-io文件目录"><a href="#3-将本地博客的部署文件拷贝进username-github-io文件目录" class="headerlink" title="3.将本地博客的部署文件拷贝进username.github.io文件目录"></a>3.将本地博客的部署文件拷贝进username.github.io文件目录</h4><p>如题，先将本地博客的部署文件（<strong>Hexo目录下的全部文件</strong>）全部拷贝进username.github.io文件目录中去。</p><p>接下来，进入username.github.io文件目录下，将该目录下的全部文件提交到xxx分支，提交之前需注意：</p><blockquote><ul><li>将themes目录以内中的主题的.git目录删除（如果有），因为一个git仓库中不能包含另一个git仓库，提交主题文件夹会失败。</li><li>可能有人会问，删除了themes目录中的.git不就不能<code>git pull</code>更新主题了吗，很简单，需要更新主题时在另一个地方<code>git clone</code>下来该主题的最新版本，然后将内容拷到当前主题目录即可</li></ul></blockquote><h4 id="4-提交hexo分支"><a href="#4-提交hexo分支" class="headerlink" title="4.提交hexo分支"></a>4.提交hexo分支</h4><p>执行<code>git add .</code>、<code>git commit -m &#39;back up hexo files&#39;</code>（引号内容可改）、<code>git push</code>即可将博客的hexo部署环境提交到GitHub个人仓库的xxx分支。</p><p>master分支和xxx分支各自保存着一个版本，master分支用于保存博客静态资源，提供博客页面供人访问；xxx分支用于备份博客部署文件，供自己维护更新，两者在一个GitHub仓库内互不冲突，完美！</p><h4 id="5-宿舍自己的电脑"><a href="#5-宿舍自己的电脑" class="headerlink" title="5.宿舍自己的电脑"></a>5.宿舍自己的电脑</h4><p>至此，你的博客已经可以在其他电脑上进行同步的维护和更新了，方法很简单：</p><blockquote><ul><li>将新电脑的生成的ssh key添加到GitHub账户上</li><li>在新电脑上克隆username.github.io仓库的xxx分支到本地，此时本地git仓库处于xxx分支</li><li>切换到username.github.io目录，执行<code>npm install</code>(由于仓库有一个.gitignore文件，里面默认是忽略掉 node_modules文件夹的，也就是说仓库的hexo分支并没有存储该目录[也不需要]，所以需要install下)</li></ul></blockquote><p>到这里了就可以开始在自己的电脑上写博客了！</p><blockquote><ul><li>编辑、撰写文章或其他博客更新改动</li><li>依次执行<code>git add .</code>、<code>git commit -m &#39;back up hexo files&#39;</code>（引号内容可改）、<code>git push</code>指令，保证xxx分支版本最新</li><li>执行<code>hexo d -g</code>指令（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到master分支了，两个分支互不干扰！</li></ul></blockquote><h4 id="6-原主电脑"><a href="#6-原主电脑" class="headerlink" title="6.原主电脑"></a>6.原主电脑</h4><blockquote><p><strong> 注意： 每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，最好先<code>git pull</code></strong></p></blockquote><p>按照之前的方法写自己博客，<br>然后将目录切换下username.github.io下，此时需要安装一下<code>npm install</code>，<br>最后执行<code>hexo g</code>、<code>hexo s</code>、<code>hexo d</code>等命令即可提交成功</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;解决Hexo多电脑更新博客内容&lt;/p&gt;
-&lt;h4 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1.准备工作&quot;&gt;&lt;/a&gt;1.准备工作&lt;/h4&gt;&lt;p&gt;首先确保自己已经使用hexo在github搭建好了自己的个人博
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
-    
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
     
   </entry>
   
