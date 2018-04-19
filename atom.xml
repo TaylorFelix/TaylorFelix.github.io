@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>沉默是金</title>
+  <title>起风了</title>
   
   <subtitle>Somebody that I need to know</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -73,16 +73,15 @@
     <link href="http://yoursite.com/2018/03/27/Vuejs04/"/>
     <id>http://yoursite.com/2018/03/27/Vuejs04/</id>
     <published>2018-03-27T12:38:24.000Z</published>
-    <updated>2018-03-27T12:40:07.575Z</updated>
+    <updated>2018-04-19T14:19:07.333Z</updated>
     
-    <content type="html"><![CDATA[<p>待改善</p><h3 id="v-bind及class与style绑定"><a href="#v-bind及class与style绑定" class="headerlink" title="v-bind及class与style绑定"></a>v-bind及class与style绑定</h3><p>在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">**绑定class的几种方式**</span><br><span class="line">- 对象语法</span><br></pre></td></tr></table></figure></p><p><div id="app"><br>  <div :class="{ 'active': isActive }"></div><br></div></p><p><script><br>  var app = new Vue({<br>    el: ‘#app’,<br>    data: {<br>      isActive: true<br>    }<br>    })<br></script><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如上，类名active依赖数据isActive，当其为true时，div会拥有类名Active，为false时则没有，所以得出渲染结果：</span><br></pre></td></tr></table></figure></p><p><div class="active"></div><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class可以与语法糖:class共存</span><br></pre></td></tr></table></figure></p><p><div class="static" :class="{ 'active': isActive, 'error': isError }"></div><br><code>`</code></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="v-bind及class与style绑定"><a href="#v-bind及class与style绑定" class="headerlink" title="v-bind及class与style绑定"></a>v-bind及class与style绑定</h3><p>在数据绑定中，最常见的两个需求就是元素的样式名称class和内联样式style的动态绑定，它们也是HTML的属性，因此可以使用v-bind指令。我们只需用<strong>v-bind</strong>计算出表达式最终的字符串就可以，不过有时候表达式的逻辑较复杂，使用字符串拼接方法较难阅读和维护，所以Vue.js增强了对class和style的绑定。  </p><p><strong>绑定class的几种方式</strong></p><ul><li>对象语法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">  &lt;div :class=&quot;&#123; &apos;active&apos;: isActive &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var app = new Vue(&#123;</span><br><span class="line">    el: &apos;#app&apos;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      isActive: true</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li></ul><p>如上，类名active依赖数据isActive，当其为true时，div会拥有类名Active，为false时则没有，所以得出渲染结果：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;active&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p><p>class可以与语法糖:class共存<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;static&quot; :class=&quot;&#123; &apos;active&apos;: isActive, &apos;error&apos;: isError &#125;&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;待改善&lt;/p&gt;
-&lt;h3 id=&quot;v-bind及class与style绑定&quot;&gt;&lt;a href=&quot;#v-bind及class与style绑定&quot; class=&quot;headerlink&quot; title=&quot;v-bind及class与style绑定&quot;&gt;&lt;/a&gt;v-bind及class与st
+        &lt;h3 id=&quot;v-bind及class与style绑定&quot;&gt;&lt;a href=&quot;#v-bind及class与style绑定&quot; class=&quot;headerlink&quot; title=&quot;v-bind及class与style绑定&quot;&gt;&lt;/a&gt;v-bind及class与style绑定&lt;/h3&gt;&lt;
       
     
     </summary>
